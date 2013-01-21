@@ -1,0 +1,18 @@
+<record id="collection-object">
+    <services-record-path id="walkerart">collectionobjects_walkerart:http://collectionspace.org/services/collectionobject/local/walkerart,collectionobjects_walkerart</services-record-path>
+    <section id="identificationInformation">
+        <field id="format" section="walkerart">
+            <selector>object-identification-format</selector>
+        </field>
+        <repeat id="collectionsWAC" section="walkerart">
+            <field id="collectionWAC" section="walkerart" autocomplete="vocab-collection" ui-type="enum">
+                <selector>object-identification-collectionWAC</selector>
+            </field>
+        </repeat>
+    </section>
+    <section id="referenceInformation">
+        <field id="catalogNumber" section="walkerart">
+            <selector>collection-object-catalogNumber</selector>
+        </field>
+    </section>
+</record>
