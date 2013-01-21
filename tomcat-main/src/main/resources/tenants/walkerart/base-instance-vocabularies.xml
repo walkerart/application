@@ -196,7 +196,6 @@
                         <title-ref>collections</title-ref>
                         <title>Collections</title>
                         <options>
-                            <option id="">Please select a value</option>
                             <option id="permanentcollection">Permanent Collection</option>
                             <option id="studycollection">Study Collection</option>
                             <option id="librarycollection">Library Collection</option>
