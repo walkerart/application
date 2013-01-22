@@ -191,7 +191,7 @@
                             <option id="employee">Employee</option>
                         </options>
                     </instance>
-                    <instance id="vocab-collection">
+                    <instance id="vocab-collections">
                         <web-url>collections</web-url>
                         <title-ref>collections</title-ref>
                         <title>Collections</title>
