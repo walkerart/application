@@ -199,6 +199,100 @@
                             <option id="permanentcollection">Permanent Collection</option>
                             <option id="studycollection">Study Collection</option>
                             <option id="librarycollection">Library Collection</option>
+                            <option id="deaccessioned">De-accessioned</option>
+                            <option id="filmvideo">Film/Video</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-inscriptiontype">
+                        <web-url>inscriptiontype</web-url>
+                        <title-ref>inscriptiontype</title-ref>
+                        <title>Inscription Type</title>
+                        <options>
+                            <option id="signature">Signature</option>
+                            <option id="castnumber">Cast Number</option>
+                            <option id="workshopnumber">Workshop Number</option>
+                            <option id="signedlocation">Signed/Location</option>
+                            <option id="printersmark">Printers Mark</option>
+                            <option id="foundrymark">Foundry Mark</option>
+                            <option id="inscriptionlocation">Inscription/Location</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-materialcomponent">
+                        <web-url>materialcomponent</web-url>
+                        <title-ref>materialcomponent</title-ref>
+                        <title>Material Component</title>
+                        <options>
+                            <option id="medium">Medium</option>
+                            <option id="support">Support</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-technicalattribute">
+                        <web-url>technicalattribute</web-url>
+                        <title-ref>technicalattribute</title-ref>
+                        <title>Technical Attribute</title>
+                        <options>
+                            <option id="uniqueframe">Unique Frame</option>
+                            <option id="artistspecifiedframe">Artist Specified Frame</option>
+                            <option id="numberofpages">Number of Pages</option>
+                            <option id="volno">Vol./No.</option>
+                            <option id="binding">Binding</option>
+                            <option id="slipcase">Slipcase</option>
+                            <option id="master">Master</option>
+                            <option id="submaster">Submaster</option>
+                            <option id="portfolio">Portfolio</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-objectcomponentname">
+                        <web-url>objectcomponentname</web-url>
+                        <title-ref>objectcomponentname</title-ref>
+                        <title>object Component Name</title>
+                        <options>
+                            <option id="elementsizes">Element Sizes</option>
+                            <option id="portfolio">Portfolio</option>
+                            <option id="relatedmateriallocation">Related Material Location</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-numbertype">
+                        <web-url>numbertype</web-url>
+                        <title-ref>numbertype</title-ref>
+                        <title>Number Type</title>
+                        <options>
+                            <option id="oldaccessionnumber">Old Accession Number</option>
+                            <option id="lcnumber">LC#</option>
+                            <option id="objectid">Object ID</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-objectnamecurrency">
+                        <web-url>objectnamecurrency</web-url>
+                        <title-ref>objectnamecurrency</title-ref>
+                        <title>Object Name Currency</title>
+                        <options>
+                            <option id="current">Current</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-objectnamelevel">
+                        <web-url>objectnamelevel</web-url>
+                        <title-ref>objectnamelevel</title-ref>
+                        <title>Object Name Level</title>
+                        <options>
+                            <option id="broaderterm">Broader term</option>
+                            <option id="narrowerterm">Narrower term</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-objectnamesystem">
+                        <web-url>objectnamesystem</web-url>
+                        <title-ref>objectnamesystem</title-ref>
+                        <title>Object Name System</title>
+                        <options>
+                            <option id="walkerartcenterinhouse">Walker Art Center In-house</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-objectnametype">
+                        <web-url>objectnametype</web-url>
+                        <title-ref>objectnametype</title-ref>
+                        <title>Object Name Type</title>
+                        <options>
+                            <option id="Classification">Classification</option>
                         </options>
                     </instance>
 </instances>

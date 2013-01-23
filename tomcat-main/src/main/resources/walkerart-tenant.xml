@@ -11,7 +11,7 @@
 		<records>
 			<enum-blank>Please select a value</enum-blank>
 
-			<include src="base-collectionobject.xml,walkerart-collectionobject.xml" merge="xmlmerge.properties"/>
+			<include src="base-collectionobject.xml,walkerart-collectionobject.xml" merge="xmlmerge-walkerart.properties"/>
 
 			<include src="base-procedure-acquisition.xml"/>
 			<include src="base-procedure-blobs.xml"/>
@@ -49,7 +49,7 @@
 			<include src="base-authz-userrole.xml"/>
 			<include src="base-authz-users.xml"/>
 
-			<include src="base-other-dimension.xml"/>
+			<include src="base-other-dimension.xml,walkerart-other-dimension.xml" merge="xmlmerge-walkerart.properties"/>
 			<include src="base-other-hierarchy.xml"/>
 			<include src="base-other-idgenerator.xml"/>
 			<include src="base-other-structureddate.xml"/>
