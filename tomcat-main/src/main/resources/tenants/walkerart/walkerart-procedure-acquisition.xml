@@ -1,0 +1,10 @@
+<record id="acquisition">
+    <services-record-path id="walkerart">acquisitions_walkerart:http://collectionspace.org/services/acquisition/local/walkerart,acquisitions_walkerart</services-record-path>
+    <section id="acquisitionInformation">
+        <repeat id="insuredByGroupWAC" section="walkerart">
+            <field id="insuredByWAC" autocomplete="organization-organization" section="walkerart">
+                <selector>acquisition-insuredByWAC</selector>
+            </field>
+        </repeat>
+    </section>
+</record>

@@ -13,7 +13,7 @@
 
 			<include src="base-collectionobject.xml,walkerart-collectionobject.xml" merge="xmlmerge-walkerart.properties"/>
 
-			<include src="base-procedure-acquisition.xml"/>
+			<include src="base-procedure-acquisition.xml,walkerart-procedure-acquisition.xml" merge="xmlmerge-walkerart.properties"/>
 			<include src="base-procedure-blobs.xml"/>
 			<include src="base-procedure-groups.xml"/>
 			<include src="base-procedure-intake.xml"/>
