@@ -295,4 +295,35 @@
                             <option id="Classification">Classification</option>
                         </options>
                     </instance>
+                    <instance id="vocab-personsassociation">
+                        <web-url>personsassociation</web-url>
+                        <title-ref>personsassociation</title-ref>
+                        <title>Persons Association</title>
+                        <options>
+                            <option id="artist">Artist</option>
+                            <option id="author">Author</option>
+                            <option id="editor">Editor</option>
+                            <option id="donor">Donor</option>
+                            <option id="source">Source</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-personssalutation">
+                        <web-url>personssalutation</web-url>
+                        <title-ref>personssalutation</title-ref>
+                        <title>Persons Salutation</title>
+                        <options>
+                            <option id="mister">Mr.</option>
+                            <option id="mrs">Mrs.</option>
+                        </options>
+                    </instance>
+                    <instance id="vocab-personsoccupation">
+                        <web-url>personsoccupation</web-url>
+                        <title-ref>personsoccupation</title-ref>
+                        <title>Persons Occupation</title>
+                        <options>
+                            <option id="artist">Artist</option>
+                            <option id="author">Author</option>
+                            <option id="editor">Editor</option>
+                        </options>
+                    </instance>
 </instances>

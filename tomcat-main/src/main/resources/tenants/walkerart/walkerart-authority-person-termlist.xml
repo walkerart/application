@@ -1,0 +1,27 @@
+<record id="preferredPA">
+     <section id="termInformation">
+        <repeat id="personTermGroupList/personTermGroup">
+            <field id="termStatus" ui-search="repeatable" seperate_ui_container="true"
+                mini="search,list,relate">
+                <!-- updating term list option values -->
+                <selector>personAuthority-termStatus</selector>
+                <options>
+                    <option id="">Please select a value</option>
+                    <option id="active">Active</option>
+                    <option id="inactice">Inactive</option>
+                </options>
+            </field>
+            <field id="salutation" autocomplete="vocab-personssalutation" ui-type="enum">
+                <!-- adding vocab-personssalutation vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>personAuthority-salutation</selector>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="mister">Mr.</option>
+                    <option id="mrs">Mrs.</option>
+                </options-->
+            </field>
+        </repeat>
+    </section>
+</record>

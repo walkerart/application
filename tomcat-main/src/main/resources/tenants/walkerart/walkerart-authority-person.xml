@@ -1,0 +1,28 @@
+<record id="person">
+    <services-record-path id="walkerart">persons_walkerart:http://collectionspace.org/services/person/local/walkerart,persons_walkerart</services-record-path>
+    <section id="personNameAuthorityInformation">
+    	<repeat id="occupations">
+            <field id="occupation" ui-search="repeatable" autocomplete="vocab-personsoccupation" ui-type="enum">
+            	<!-- adding vocab-personsoccupation vocabulary; hiding new options list -->
+            	<!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>personAuthority-occupation</selector>
+                <!--options>
+                	<option id="" default="yes">Please select a value</option>
+                    <option id="artist">Artist</option>
+                    <option id="author">Author</option>
+                    <option id="editor">Editor</option>
+                </options-->
+            </field>
+        </repeat>
+    	<field id="businessWAC" section="walkerart">
+            <selector>personAuthority-businessWAC</selector>
+        </field>
+        <field id="associationWAC" autocomplete="vocab-personsassociation" ui-type="enum" section="walkerart">
+            <selector>personAuthority-associationWAC</selector>
+        </field>
+        <field id="assistantWAC" section="walkerart">
+            <selector>personAuthority-assistantWAC</selector>
+        </field>
+    </section>
+</record>
