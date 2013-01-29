@@ -324,6 +324,7 @@
                             <option id="artist">Artist</option>
                             <option id="author">Author</option>
                             <option id="editor">Editor</option>
+                            <option id="lender">Lender</option>
                         </options>
                     </instance>
 </instances>
