@@ -327,4 +327,18 @@
                             <option id="lender">Lender</option>
                         </options>
                     </instance>
+                    <instance id="vocab-organizationfunction">
+                        <web-url>organizationfunction</web-url>
+                        <title-ref>organizationfunction</title-ref>
+                        <title>Organization Function</title>
+                        <options>
+                            <option id="foundry">Foundry</option>
+                            <option id="fabricator">Fabricator</option>
+                            <option id="fund">Fund</option>
+                            <option id="insurer">Insurer</option>
+                            <option id="lender">Lender</option>
+                            <option id="printer">Printer</option>
+                            <option id="publisher">Publisher</option>
+                        </options>
+                    </instance>
 </instances>

@@ -1,0 +1,22 @@
+<record id="organization">
+    <section id="organizationNameAuthorityInformation">
+        <repeat id="functions">
+            <field id="function" ui-search="repeatable" autocomplete="vocab-organizationfunction" ui-type="enum">
+                <!-- adding vocab-organizationfunction vocabulary; hiding new options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>orgAuthority-function</selector>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="foundry">Foundry</option>
+                    <option id="fabricator">Fabricator</option>
+                    <option id="fund">Fund</option>
+                    <option id="insurer">Insurer</option>
+                    <option id="lender">Lender</option>
+                    <option id="printer">Printer</option>
+                    <option id="publisher">Publisher</option>
+                </options-->
+            </field>
+        </repeat>
+    </section>
+</record>
