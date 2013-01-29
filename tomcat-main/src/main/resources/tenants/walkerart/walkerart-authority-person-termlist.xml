@@ -11,6 +11,14 @@
                     <option id="inactice">Inactive</option>
                 </options>
             </field>
+            <field id="termLanguage" autocomplete="vocab-languages" ui-type="enum">
+                <!-- adding URN for default language value -->
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                    <blank-value>Please select a value</blank-value>
+                </enum>
+                <selector>personAuthority-termLanguage</selector>
+            </field>
             <field id="salutation" autocomplete="vocab-personssalutation" ui-type="enum">
                 <!-- adding vocab-personssalutation vocabulary; hiding updated options list -->
                 <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
