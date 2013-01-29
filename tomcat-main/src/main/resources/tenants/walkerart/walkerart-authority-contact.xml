@@ -1,8 +1,8 @@
 <record id="contact">
     <services-record-path id="walkerart">contacts_walkerart:http://collectionspace.org/services/contact/local/walkerart,contacts_walkerart</services-record-path>
     <section id="contactInformation">
-        <repeat id="emailGroupList/emailGroup" section="walkerart">
-            <field id="emailType" section="walkerart">
+        <repeat id="emailGroupList/emailGroup">
+            <field id="emailType">
                 <!-- updating term list option values -->
                 <options>
                     <option id="">Please select a value</option>
