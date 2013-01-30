@@ -341,4 +341,18 @@
                             <option id="publisher">Publisher</option>
                         </options>
                     </instance>
+                    <instance id="vocab-contactaddresstype">
+                        <web-url>contactaddresstype</web-url>
+                        <title-ref>contactaddresstype</title-ref>
+                        <title>Contact Address Type</title>
+                        <options>
+                            <option id="business">Business</option>
+                            <option id="home">Home</option>
+                            <option id="husband">Husband</option>
+                            <option id="office">Office</option>
+                            <option id="summer">Summer</option>
+                            <option id="wife">Wife</option>
+                            <option id="winter">Winter</option>
+                        </options>
+                    </instance>
 </instances>
