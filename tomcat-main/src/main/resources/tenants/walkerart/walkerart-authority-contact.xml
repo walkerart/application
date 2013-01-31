@@ -13,6 +13,43 @@
                     </options>
                </field>
           </repeat>
+          <repeat id="webAddressGroupList/webAddressGroup">
+               <field id="webAddressType">
+                    <!-- updating term list option values -->
+                    <options>
+                         <option id="">Please select a value</option>
+                         <option id="business">business</option>
+                         <option id="personal">personal</option>
+                         <option id="primary">primary</option>
+                         <option id="other">other</option>
+                    </options>
+               </field>
+          </repeat>           
+          <repeat id="telephoneNumberGroupList/telephoneNumberGroup">
+               <field id="telephoneNumberType">
+                    <!-- updating term list option values -->
+                    <options>
+                         <option id="">Please select a value</option>
+                         <option id="business">business</option>
+                         <option id="home">home</option>
+                         <option id="mobile">mobile</option>
+                         <option id="primary">primary</option>
+                         <option id="other">other</option>
+                    </options>
+               </field>
+          </repeat>      
+          <repeat id="faxNumberGroupList/faxNumberGroup">
+               <field id="faxNumberType">
+                    <!-- updating term list option values -->
+                    <options>
+                         <option id="">Please select a value</option>
+                         <option id="business">business</option>
+                         <option id="home">home</option>
+                         <option id="primary">primary</option>
+                         <option id="other">other</option>
+                    </options>
+               </field>
+          </repeat>
           <repeat id="addressGroupListWAC/addressGroupWAC" section="walkerart">
                <field id="addressPlace1WAC" section="walkerart"></field>
                <field id="addressPlace2WAC" section="walkerart"></field>

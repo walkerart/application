@@ -109,9 +109,11 @@
                         <title-ref>entrymethod</title-ref>
                         <title>Entry Method</title>
                         <options>
+                            <option id="carrier">Carrier</option>
                             <option id="inperson">In person</option>
-                            <option id="post">Post</option>
                             <option id="foundondoorstep">Found on doorstep</option>
+                            <option id="post">Post</option>
+                            <option id="shipper">Shipper</option>
                         </options>
                     </instance>
                     <instance id="vocab-conditioncheckreason">
@@ -260,6 +262,7 @@
                             <option id="oldaccessionnumber">Old Accession Number</option>
                             <option id="lcnumber">LC#</option>
                             <option id="objectid">Object ID</option>
+                            <option id="receiptofnumber">Receipt of Number</option>
                         </options>
                     </instance>
                     <instance id="vocab-objectnamecurrency">
@@ -323,6 +326,7 @@
                         <options>
                             <option id="artist">Artist</option>
                             <option id="author">Author</option>
+                            <option id="donor">Donor</option>
                             <option id="editor">Editor</option>
                             <option id="lender">Lender</option>
                         </options>
@@ -332,6 +336,7 @@
                         <title-ref>organizationfunction</title-ref>
                         <title>Organization Function</title>
                         <options>
+                            <option id="endowment">Endowment</option>
                             <option id="foundry">Foundry</option>
                             <option id="fabricator">Fabricator</option>
                             <option id="fund">Fund</option>

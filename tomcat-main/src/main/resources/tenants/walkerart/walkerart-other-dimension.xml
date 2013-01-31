@@ -2,12 +2,13 @@
     <section id="dimensionInformation">
         <repeat id="measuredPartGroupList/measuredPartGroup">
             <field id="measuredPart" seperate_ui_container="true">
-                <!-- adding extra term, 'overall', to the options list -->
+                <!-- updating term list option values -->
                 <options>
                     <option id="">Please select a value</option>
                     <option id="base">base</option>
                     <option id="frame">frame</option>
                     <option id="framed">framed</option>
+                    <option id="element">element</option>
                     <option id="image-size">image size</option>
                     <option id="mount">mount</option>
                     <option id="overall">overall</option>
@@ -49,7 +50,7 @@
                         <!--option id="liters">liters</option-->
                         <!--option id="millimeters">millimeters</option-->
                         <!--option id="meters">meters</option-->
-                        <!--option id="minutes">minutes</option-->
+                        <option id="minutes">minutes</option>
                         <!--option id="pixels">pixels</option-->
                         <!--option id="square-feet">square feet</option-->
                         <!--option id="stories">stories</option-->

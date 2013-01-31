@@ -1,6 +1,18 @@
 <record id="acquisition">
     <services-record-path id="walkerart">acquisitions_walkerart:http://collectionspace.org/services/acquisition/local/walkerart,acquisitions_walkerart</services-record-path>
     <section id="acquisitionInformation">
+        <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true">
+            <selector>acquisition-acquisition-method</selector>
+            <options>
+                <option id="">Please select a value</option>
+                <option id="giftoffund">Gift of Fund</option>
+                <option id="purchase">Purchase</option>
+                <option id="exchange">Exchange</option>
+                <option id="partialgift">Partial Gift</option>
+                <option id="transfer">Transfer</option>
+                <option id="treasure">Treasure</option>
+            </options>
+        </field>
         <field id="groupPurchasePriceCurrency" autocomplete="vocab-currency" ui-type="enum">
             <!-- changing URN for default currency value -->
             <enum>
