@@ -1,0 +1,44 @@
+<record id="media">
+    <services-record-path id="walkerart">media_walkerart:http://collectionspace.org/services/media/local/walkerart,media_walkerart</services-record-path>
+    <section id="mediaInformation">
+        <repeat id="languages">
+            <services-tag>languageList</services-tag>
+            <field id="language" ui-search="repeatable" autocomplete="vocab-languages" ui-type="enum">
+                <!-- changing URN for default language value -->
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                </enum>
+            </field>
+        </repeat>
+        <field id="methodWAC" section="walkerart">
+            <selector>media-methodWAC</selector>
+        </field>
+        <field id="statusWAC" datatype="boolean" section="walkerart">
+            <selector>media-statusWAC</selector>
+        </field>
+        <field id="preferredWAC" datatype="boolean" section="walkerart">
+            <selector>media-preferredWAC</selector>
+        </field>
+        <field id="remarksWAC" section="walkerart">
+            <selector>media-remarksWAC</selector>
+        </field>
+        <field id="lastModifiedByWAC"  autocomplete="person-person" section="walkerart">
+            <selector>media-lastModifiedByWAC</selector>
+        </field>
+        <field id="viewDepictedWAC" seperate_ui_container="true" section="walkerart">
+            <selector>media-viewDepictedWAC</selector>
+             <options>
+                <option id="">Please select a value</option>
+                <option id="term1">Term 1</option>
+                <option id="term2">Term 2</option>
+                <option id="term3">Term 3</option>
+            </options>
+        </field>
+        <field id="viewDescriptionWAC" section="walkerart">
+            <selector>media-viewDescriptionWAC</selector>
+        </field>
+        <field id="publicallyAccessibleWAC" datatype="boolean" section="walkerart">
+            <selector>media-publicallyAccessibleWAC</selector>
+        </field>
+    </section>
+</record>
