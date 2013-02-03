@@ -67,5 +67,16 @@
                 <selector>acquisition-insuredByWAC</selector>
             </field>
         </repeat>
+        <repeat id="acquisitionFundingWACList/acquisitionFundingWAC" section="walkerart">
+            <field id="acquisitionFundingCurrencyWAC" autocomplete="vocab-currency" ui-type="enum" section="walkerart">
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+                </enum>
+            </field>
+            <field id="acquisitionFundingValueWAC" ui-type="validated" datatype="float" section="walkerart"></field>
+            <field id="acquisitionFundingCostWAC" ui-type="validated" datatype="float" section="walkerart"></field>
+            <field id="acquisitionFundingSourceWAC" ui-search="repeatable" autocomplete="person-person,organization-organization" section="walkerart"></field>
+            <field id="acquisitionFundingSourceProvisosWAC" section="walkerart"></field>
+        </repeat>
     </section>
 </record>
