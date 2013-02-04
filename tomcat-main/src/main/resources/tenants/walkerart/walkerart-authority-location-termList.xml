@@ -1,0 +1,23 @@
+<record id="preferredSLA">
+	<section id="termInformation">
+		<repeat id="locTermGroupList/locTermGroup">
+			<field id="termType">
+                <selector>locationAuthority-termType</selector>
+                <!-- changing term list options -->
+                <options>
+                    <option id="">Please select a value</option>
+                    <option id="building">Building</option>
+                    <option id="room">Room</option>
+                    <option id="shelf">Shelf</option>
+                </options>
+            </field>
+            <field id="termLanguage" ui-search="repeatable" autocomplete="vocab-languages" ui-type="enum">
+                <selector>locationAuthority-termLanguage</selector>
+                <!-- changing URN for default language value -->
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                </enum>
+            </field>
+		</repeat>
+	</section>
+</record>
