@@ -102,6 +102,13 @@
         </repeat>
         <field id="formatWAC" section="walkerart">
             <selector>object-identification-formatWAC</selector>
+            <!-- temporary term list until a full list can be provided -->
+            <options>
+                <option id="">Please select a value</option>
+                <option id="term1">Term 1</option>
+                <option id="term2">Term 2</option>
+                <option id="term3">Term 3</option>
+            </options>
         </field>
         <repeat id="collectionsWAC" section="walkerart">
             <field id="collectionWAC" section="walkerart" autocomplete="vocab-collections" ui-type="enum">
