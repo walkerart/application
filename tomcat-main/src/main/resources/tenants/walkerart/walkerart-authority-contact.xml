@@ -53,8 +53,24 @@
           <repeat id="addressGroupListWAC/addressGroupWAC" section="walkerart">
                <field id="addressPlace1WAC" section="walkerart"></field>
                <field id="addressPlace2WAC" section="walkerart"></field>
-               <field id="addressMunicipalityWAC" section="walkerart"></field>
-               <field id="addressStateOrProvinceWAC" section="walkerart"></field>
+               <field id="addressMunicipalityWAC" section="walkerart">
+                    <!-- temporary term list until a full list can be provided -->
+                    <options>
+                         <option id="">Please select a value</option>
+                         <option id="term1">Term 1</option>
+                         <option id="term2">Term 2</option>
+                         <option id="term3">Term 3</option>
+                    </options>
+               </field>
+               <field id="addressStateOrProvinceWAC" section="walkerart">
+                    <!-- temporary term list until a full list can be provided -->
+                    <options>
+                         <option id="">Please select a value</option>
+                         <option id="term1">Term 1</option>
+                         <option id="term2">Term 2</option>
+                         <option id="term3">Term 3</option>
+                    </options>
+               </field>
                <field id="addressPostCodeWAC" section="walkerart"></field>
                <field id="addressCountryWAC" section="walkerart">
                <!-- Options conform to ISO-3166-1 List of Countries Codes, available free of charge for "non-commercial purposes." 
