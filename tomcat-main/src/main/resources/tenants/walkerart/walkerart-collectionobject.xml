@@ -37,9 +37,12 @@
         <repeat id="objectNameList/objectNameGroup">
             <field id="objectNameCurrency" autocomplete="vocab-objectnamecurrency" ui-type="enum">
                 <!-- adding vocab-objectnamecurrency vocabulary; hiding updated options list -->
-                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes and enum block; 
                         and add seperate_ui_container="true" to field tag -->
                 <selector>object-identification-object-currency</selector>
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(objectnamecurrency):item:name(active)'Active'</default>
+                </enum>
                 <!--options>
                     <option id="">Please select a value</option>
                     <option id="current">Current</option>
@@ -58,9 +61,12 @@
             </field>
             <field id="objectNameSystem" autocomplete="vocab-objectnamesystem" ui-type="enum">
                 <!-- adding vocab-objectnamesystem vocabulary; hiding updated options list -->
-                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes and enum block; 
                         and add seperate_ui_container="true" to field tag -->
                 <selector>object-identification-object-system</selector>
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(objectnamesystem):item:name(walkerartcenterinhouse)'Walker Art Center In-house'</default>
+                </enum>
                 <!--options>
                     <option id="">Please select a value</option>
                     <option id="walkerartcenterinhouse">Walker Art Ceter In-house</option>
@@ -68,9 +74,12 @@
             </field>
             <field id="objectNameType" autocomplete="vocab-objectnametype" ui-type="enum">
                 <!-- adding vocab-objectnametype vocabulary; hiding updated options list -->
-                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes and enum block; 
                         and add seperate_ui_container="true" to field tag -->
                 <selector>object-identification-object-type</selector>
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(objectnametype):item:name(classification)'Classification'</default>
+                </enum>
                 <!--options>
                     <option id="">Please select a value</option>
                     <option id="Classification">Classification</option>
@@ -162,6 +171,14 @@
                 <selector>object-description-technical-attribute-measurement</selector>
             </field>
         </repeat>
+        <section id="contentInformation">
+            <repeat id="contentConcepts">
+                <field id="contentConcept">
+                    <!-- removing vocabs -->
+                    <selector>object-description-content-concept</selector>
+                </field>
+            </repeat>
+        </section>
         <section id="textualInscriptionInformation">
             <repeat id="textualInscriptionGroupList/textualInscriptionGroup">
                 <field id="inscriptionContentLanguage" autocomplete="vocab-languages" ui-type="enum">

@@ -270,7 +270,7 @@
                         <title-ref>objectnamecurrency</title-ref>
                         <title>Object Name Currency</title>
                         <options>
-                            <option id="current">Current</option>
+                            <option id="active">Active</option>
                         </options>
                     </instance>
                     <instance id="vocab-objectnamelevel">
@@ -295,7 +295,7 @@
                         <title-ref>objectnametype</title-ref>
                         <title>Object Name Type</title>
                         <options>
-                            <option id="Classification">Classification</option>
+                            <option id="classification">Classification</option>
                         </options>
                     </instance>
                     <instance id="vocab-personsassociation">
