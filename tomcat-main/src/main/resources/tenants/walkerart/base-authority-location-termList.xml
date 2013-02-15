@@ -1,6 +1,7 @@
 
 <record id="preferredSLA" in-recordlist="no" separate-record="false">
     <hassoftdelete>true</hassoftdelete>
+    <!-- adding missing tag id. This is necessary for merging local schema extensions -->
     <section id="termInformation">
         <repeat id="locTermGroupList/locTermGroup">
             <!-- Fields common across all authority items -->
