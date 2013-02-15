@@ -13,4 +13,4 @@ tomcat-main/src/main/resources/tenants/core/cow.xml
 *.bak
 target/
 .DS_Store
-
+tomcat-main/src/main/resources/tenants/walkerart/local-walkerart-settings.xml
