@@ -15,7 +15,7 @@
         <repeat id="copiesProvidedOnAcquisition" section="variablemedia">
             <field id="copyProvidedOnAcquisition" section="variablemedia">
                 <!-- needs term list -->
-                <selector>collection-object-copyProvidedonAcquisition</selector>
+                <selector>collection-object-copyProvidedOnAcquisition</selector>
             </field>
         </repeat>
     </section>
