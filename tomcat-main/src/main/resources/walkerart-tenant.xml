@@ -11,7 +11,7 @@
 		<records>
 			<enum-blank>Please select a value</enum-blank>
 
-			<include src="base-collectionobject.xml,walkerart-collectionobject.xml" merge="xmlmerge-walkerart.properties"/>
+			<include src="base-collectionobject.xml,variablemedia-collectionobject.xml,walkerart-collectionobject.xml" merge="xmlmerge-walkerart.properties"/>
 
 			<include src="base-procedure-acquisition.xml,walkerart-procedure-acquisition.xml" merge="xmlmerge-walkerart.properties"/>
 			<include src="base-procedure-blobs.xml"/>
