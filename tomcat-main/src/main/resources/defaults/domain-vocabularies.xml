@@ -85,7 +85,7 @@
             <title-ref>playbackhardware</title-ref>
             <title>Playback Hardware</title>
             <options>
-                <option id="blurayvideoplayer">Blue-ray video player</option>
+                <option id="blurayvideoplayer">Blu-ray video player</option>
                 <option id="cdplayer">CD player</option>
                 <option id="dvdplayer">DVD player</option>
                 <option id="laserdiscplayer">Laserdisc player</option>
