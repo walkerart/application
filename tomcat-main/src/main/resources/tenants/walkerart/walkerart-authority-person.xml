@@ -45,11 +45,29 @@
     	<field id="businessWAC" section="walkerart">
             <selector>personAuthority-businessWAC</selector>
         </field>
-        <field id="associationWAC" autocomplete="vocab-personsassociation" ui-type="enum" section="walkerart">
-            <selector>personAuthority-associationWAC</selector>
-        </field>
+        <repeat id="associationsWAC" section="walkerart">
+            <field id="associationWAC" autocomplete="vocab-personsassociation" ui-type="enum" section="walkerart">
+                <selector>personAuthority-associationWAC</selector>
+            </field>
+        </repeat>
         <field id="assistantWAC" section="walkerart">
             <selector>personAuthority-assistantWAC</selector>
+        </field>
+        <field id="recordTypeWAC" autocomplete="vocab-recordtype" ui-type="enum" section="walkerart">
+            <selector>personAuthority-recordTypeWAC</selector>
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(recordtype):item:name(individual)'Individual'</default>
+            </enum>
+        </field>
+        <field id="recordStatusWAC" section="walkerart">
+            <selector>personAuthority-recordStatusWAC</selector>
+            <!-- temporary term list until a full list can be provided -->
+            <options>
+                <option id="">Please select a value</option>
+                <option id="term1">Term 1</option>
+                <option id="term2">Term 2</option>
+                <option id="term3">Term 3</option>
+            </options>
         </field>
     </section>
 </record>

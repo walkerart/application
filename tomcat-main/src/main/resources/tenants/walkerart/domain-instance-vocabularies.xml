@@ -176,4 +176,13 @@
             <option id="winter">Winter</option>
         </options>
     </instance>
+    <instance id="vocab-recordtype">
+        <web-url>recordtype</web-url>
+        <title-ref>recordtype</title-ref>
+        <title>Record Type</title>
+        <options>
+            <option id="individual">Individual</option>
+            <option id="corporatebody">Corporate Body</option>
+        </options>
+    </instance>
 </instances>

@@ -1,23 +1,14 @@
 <record id="preferredPA">
-     <section id="termInformation">
+    <section id="termInformation">
         <repeat id="personTermGroupList/personTermGroup">
-            <field id="termStatus" ui-search="repeatable" seperate_ui_container="true"
-                mini="search,list,relate">
-                <!-- updating term list option values -->
-                <selector>personAuthority-termStatus</selector>
+            <field id="termType">
+                <selector>personAuthority-termType</selector>
+                <!-- adding static term list; overwriting vocab-persontermtype -->
                 <options>
                     <option id="">Please select a value</option>
-                    <option id="active">Active</option>
-                    <option id="inactive">Inactive</option>
+                    <option default="yes" id="preferred">Preferred</option>
+                    <option id="variant">Variant</option>
                 </options>
-            </field>
-            <field id="termLanguage" autocomplete="vocab-languages" ui-type="enum">
-                <!-- adding URN for default language value -->
-                <enum>
-                    <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
-                    <blank-value>Please select a value</blank-value>
-                </enum>
-                <selector>personAuthority-termLanguage</selector>
             </field>
             <field id="salutation" autocomplete="vocab-personssalutation" ui-type="enum">
                 <!-- adding vocab-personssalutation vocabulary; hiding updated options list -->
