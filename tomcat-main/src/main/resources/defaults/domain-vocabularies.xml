@@ -89,7 +89,7 @@
                 <option id="cdplayer">CD player</option>
                 <option id="dvdplayer">DVD player</option>
                 <option id="laserdiscplayer">Laserdisc player</option>
-                <option id="tapecassetteplayer">tape cassette player</option>
+                <option id="tapecassetteplayer">Tape cassette player</option>
                 <option id="televisionset">Television set</option>
                 <option id="videocassetteplayer">Videocassette player</option>
             </options>
