@@ -85,6 +85,7 @@ public class TestService extends ServicesBaseClass {
 		testXMLJSON(spec, "location", "location.xml", "location.json");
 		testXMLJSON(spec, "concept", "concept.xml", "concept.json");
         testXMLJSON(spec, "place", "placeXMLJSON.xml", "placeJSON.json");
+        testXMLJSON(spec, "exhibition", "exhibition.xml", "exhibition.json");
 		testXMLJSON(spec, "collection-object", "objectsXMLJSON.xml",
 				"objectsJSON.json");
 
@@ -131,6 +132,7 @@ public class TestService extends ServicesBaseClass {
 		testJSONXML(spec, "location", "location.xml", "location.json");
 		testJSONXML(spec, "concept", "concept.xml", "concept.json");
         testJSONXML(spec, "place", "placeXMLJSON.xml", "placeJSON.json");
+        testJSONXML(spec, "exhibition", "exhibition.xml", "exhibition.json");
 		testJSONXML(spec, "collection-object", "objectsXMLJSON.xml",
 				"objectsJSON.json");
 		

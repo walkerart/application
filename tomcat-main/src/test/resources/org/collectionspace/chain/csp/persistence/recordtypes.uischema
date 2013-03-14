@@ -48,7 +48,8 @@
           "place", 
           "tgn_place",
           "common_ta",
-          "taxon"
+          "taxon",
+          "exhibition"
         ], 
         "type": "array"
       }

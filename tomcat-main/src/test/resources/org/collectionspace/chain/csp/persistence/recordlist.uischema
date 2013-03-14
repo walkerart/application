@@ -22,7 +22,8 @@
             "taxon",
             "tgn_place",
             "ulan_oa",
-            "ulan_pa"
+            "ulan_pa",
+            "exhibition"
         ],
         "type": "array"
     }

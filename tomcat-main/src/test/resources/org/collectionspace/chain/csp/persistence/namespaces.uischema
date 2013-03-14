@@ -198,6 +198,24 @@
                 }
             },
             "type": "object"
+        },
+        "exhibition": {
+            "properties": {
+                "exhibition": {
+                    "properties": {
+                        "order": {
+                            "default": 0,
+                            "type": "integer"
+                        },
+                        "nptAllowed": {
+                            "default": true,
+                            "type": "boolean"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
         }
     },
     "type": "object"

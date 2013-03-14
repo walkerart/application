@@ -1,0 +1,50 @@
+{
+    "shortIdentifier": "exhibitiontest1",
+    "exhibitionStartDate": "2013-03-01",
+    "exhibitionEndDate": "2014-03-31",
+    "exhibitionRemarks": "remark goes here",
+    "exhibitionOrganizers": [
+        {
+            "_primary": true,
+            "exhibitionOrganizer": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(MariaOrganizer)'Maria Organizer'",
+            "de-urned-exhibitionOrganizer": "Maria Organizer"
+        }
+    ],
+    "exhibitionSponsors": [
+        {
+            "_primary": true,
+            "exhibitionSponsor": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(SeanSponsor)'Sean Sponsor'",
+            "de-urned-exhibitionSponsor": "Sean Sponsor"
+        }
+    ],
+    "exhibitionLocationsInternal": [
+        {
+            "_primary": true,
+            "exhibitionLocationInternal": "urn:cspace:core.collectionspace.org:locationauthorities:name(location):item:name(Shelf1)'Shelf 1'",
+            "de-urned-exhibitionLocationInternal": "Shelf 1"
+        }
+    ],
+    "exhibitionLocationsExternal": [
+        {
+            "_primary": true,
+            "exhibitionLocationExternal": "urn:cspace:core.collectionspace.org:locationauthorities:name(offsite_sla):item:name(Gallery1)'Gallery 1'",
+            "de-urned-exhibitionLocationExternal": "Gallery 1"
+        }
+    ],
+    "exhibitionTermGroup": [
+        {
+            "_primary": true,
+            "termDisplayName": "Space Wars! (2013)",
+            "termName": "Space Wars!",
+            "termLanguage": "english",
+            "termPrefForLang": true,
+            "termType": "public name",
+            "termQualifier": "term qualifier",
+            "termSource": "internal",
+            "termSourceID": "12345",
+            "termSourceDetail": "internal",
+            "termSourceNote": "source note goes here",
+            "termStatus": "accepted"
+        }
+    ]
+}

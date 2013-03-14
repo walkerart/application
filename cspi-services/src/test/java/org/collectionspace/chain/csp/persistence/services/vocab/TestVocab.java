@@ -39,6 +39,8 @@ public class TestVocab extends ServicesBaseClass {
 		//XXX disable until soft delete works better everywhere
 		//testAllAuthorities(ss,"/organization/organization","displayName");
 		//testAllAuthorities(ss,"/place/place","displayName");
+		log.info("testAuthorities:exhibition");
+		//testAllAuthorities(ss,"/exhibition/exhibition","displayName");
 		log.info("testAuthorities:concept");
 		//testAllAuthorities(ss,"/concept/concept","displayName");
 		log.info("testAuthorities_finish");
