@@ -1,50 +1,55 @@
 {
     "shortIdentifier": "exhibitiontest1",
-    "exhibitionStartDate": "2013-03-01",
-    "exhibitionEndDate": "2014-03-31",
     "exhibitionRemarks": "remark goes here",
+    "exhibitionPublication": "yes",
     "exhibitionOrganizers": [
         {
             "_primary": true,
-            "exhibitionOrganizer": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(MariaOrganizer)'Maria Organizer'",
-            "de-urned-exhibitionOrganizer": "Maria Organizer"
+            "exhibitionOrganizer": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(HirshhornMuseumandSculptureGarden)'Hirshhorn Museum and Sculpture Garden'",
+            "de-urned-exhibitionOrganizer": "Hirshhorn Museum and Sculpture Garden"
         }
     ],
-    "exhibitionSponsors": [
+    "exhibitionCurators": [
         {
             "_primary": true,
-            "exhibitionSponsor": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(SeanSponsor)'Sean Sponsor'",
-            "de-urned-exhibitionSponsor": "Sean Sponsor"
+            "exhibitionCurator": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(KerryBrougher)'Kerry Brougher'",
+            "de-urned-exhibitionCurator": "Kerry Brougher"
         }
     ],
     "exhibitionLocationsInternal": [
         {
             "_primary": true,
-            "exhibitionLocationInternal": "urn:cspace:core.collectionspace.org:locationauthorities:name(location):item:name(Shelf1)'Shelf 1'",
-            "de-urned-exhibitionLocationInternal": "Shelf 1"
+            "exhibitionLocationInternal": "urn:cspace:core.collectionspace.org:locationauthorities:name(location):item:name(Gallery4)'Gallery 4'",
+            "de-urned-exhibitionLocationInternal": "Gallery 4"
         }
     ],
-    "exhibitionLocationsExternal": [
+    "exhibitionCatalogues": [
         {
             "_primary": true,
-            "exhibitionLocationExternal": "urn:cspace:core.collectionspace.org:locationauthorities:name(offsite_sla):item:name(Gallery1)'Gallery 1'",
-            "de-urned-exhibitionLocationExternal": "Gallery 1"
+            "exhibitionCatalogue": "catalogue goes here"
+        }
+    ],
+    "exhibitionLinks": [
+        {
+            "_primary": true,
+            "exhibitionLink": "link goes here"
+        }
+    ],
+    "exhibitionVenueGroup": [
+        {
+            "_primary": true,
+            "venueName": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(HirshhornMuseumandSculptureGarden)'Hirshhorn Museum and Sculpture Garden'",
+            "de-urned-venueName": "Hirshhorn Museum and Sculpture Garden",
+            "venueStartDate": "2010-02-10",
+            "venueEndDate": "2010-05-31",
+            "venueAttendance": "123456"
         }
     ],
     "exhibitionTermGroup": [
         {
             "_primary": true,
-            "termDisplayName": "Space Wars! (2013)",
-            "termName": "Space Wars!",
-            "termLanguage": "english",
-            "termPrefForLang": true,
-            "termType": "public name",
-            "termQualifier": "term qualifier",
-            "termSource": "internal",
-            "termSourceID": "12345",
-            "termSourceDetail": "internal",
-            "termSourceNote": "source note goes here",
-            "termStatus": "accepted"
+            "termDisplayName": "Yves Klien: With the Void, Full Powers",
+            "termType": "preferred"
         }
     ]
 }

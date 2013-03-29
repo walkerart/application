@@ -16,20 +16,23 @@
                 },
                 "type": "array"
             },
-            "exhibitionStartDateStart": {
-                "type": "date"
-            },
-            "updatedAtEnd": {
-                "type": "date"
-            },
-            "exhibitionSponsors": {
+            "exhibitionVenueGroup": {
                 "items": {
                     "properties": {
                         "_primary": {
                             "default": true,
                             "type": "boolean"
                         },
-                        "exhibitionSponsor": {
+                        "venueStartDate": {
+                            "type": "date"
+                        },
+                        "venueAttendance": {
+                            "type": "integer"
+                        },
+                        "venueEndDate": {
+                            "type": "date"
+                        },
+                        "venueName": {
                             "type": "string"
                         }
                     },
@@ -37,39 +40,55 @@
                 },
                 "type": "array"
             },
+            "venueEndDateStart": {
+                "type": "date"
+            },
+            "exhibitionCurators": {
+                "items": {
+                    "properties": {
+                        "_primary": {
+                            "default": true,
+                            "type": "boolean"
+                        },
+                        "exhibitionCurator": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "type": "array"
+            },
+            "updatedAtEnd": {
+                "type": "date"
+            },
+            "venueAttendanceStart": {
+                "type": "string"
+            },
             "exhibitionTermGroup": {
                 "items": {
                     "properties": {
-                        "termName": {
-                            "type": "string"
-                        },
                         "_primary": {
                             "default": true,
                             "type": "boolean"
                         },
                         "termDisplayName": {
                             "type": "string"
-                        },
-                        "termStatus": {
-                            "default": "",
-                            "type": "string"
-                        },
-                        "termLanguage": {
-                            "default": "",
-                            "type": "string"
                         }
                     },
                     "type": "object"
                 },
                 "type": "array"
             },
+            "venueEndDateEnd": {
+                "type": "date"
+            },
             "updatedAtStart": {
                 "type": "date"
             },
-            "exhibitionEndDateEnd": {
-                "type": "date"
+            "venueAttendanceEnd": {
+                "type": "string"
             },
-            "exhibitionStartDateEnd": {
+            "venueStartDateStart": {
                 "type": "date"
             },
             "exhibitionOrganizers": {
@@ -87,15 +106,18 @@
                 },
                 "type": "array"
             },
-            "exhibitionLocationsExternal": {
+            "venueStartDateEnd": {
+                "type": "date"
+            },
+            "updatedBys": {
                 "items": {
                     "properties": {
-                        "exhibitionLocationExternal": {
-                            "type": "string"
-                        },
                         "_primary": {
                             "default": true,
                             "type": "boolean"
+                        },
+                        "updatedBy": {
+                            "type": "string"
                         }
                     },
                     "type": "object"
@@ -116,24 +138,6 @@
                     "type": "object"
                 },
                 "type": "array"
-            },
-            "updatedBys": {
-                "items": {
-                    "properties": {
-                        "_primary": {
-                            "default": true,
-                            "type": "boolean"
-                        },
-                        "updatedBy": {
-                            "type": "string"
-                        }
-                    },
-                    "type": "object"
-                },
-                "type": "array"
-            },
-            "exhibitionEndDateStart": {
-                "type": "date"
             }
         },
         "type": "object"

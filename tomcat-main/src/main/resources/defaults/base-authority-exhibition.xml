@@ -51,21 +51,35 @@
         <field id="preferredExhibition" ui-type="groupfield/preferredExhibition/selfrenderer" ui-func="cspace.preferred">
             <selector>preferred-exhibitionAuthority</selector>
         </field>
-        <field id="exhibitionStartDate" ui-search="range" ui-type="date"/>
-        <field id="exhibitionEndDate" ui-search="range" ui-type="date"/>
-        <field id="exhibitionRemarks"/>
         <repeat id="exhibitionOrganizers">
-            <field id="exhibitionOrganizer" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
+            <field id="exhibitionOrganizer" ui-search="repeatable" autocomplete="person-person"/>
         </repeat>
-        <repeat id="exhibitionSponsors">
-            <field id="exhibitionSponsor" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
+        <repeat id="exhibitionVenueGroupList/exhibitionVenueGroup">
+            <field id="venueName" ui-search="repeatable" autocomplete="person-person"/>
+            <field id="venueStartDate" ui-search="range" ui-type="date"/>
+            <field id="venueEndDate" ui-search="range" ui-type="date"/>
+            <field id="venueAttendance" ui-search="range" ui-type="validated" datatype="integer"/>
         </repeat>
         <repeat id="exhibitionLocationsInternal">
-            <field id="exhibitionLocationInternal" ui-search="repeatable" autocomplete="location-location,location-offsite_sla,organization-organization"/>
+            <field id="exhibitionLocationInternal" ui-search="repeatable" autocomplete="location-location"/>
         </repeat>
-        <repeat id="exhibitionLocationsExternal">
-            <field id="exhibitionLocationExternal" ui-search="repeatable" autocomplete="location-location,location-offsite_sla,organization-organization"/>
+        <repeat id="exhibitionCurators">
+            <field id="exhibitionCurator" ui-search="repeatable" autocomplete="person-person"/>
         </repeat>
+        <field id="exhibitionPublication">
+            <options>
+                <option id="">Please select a value</option>
+                <option id="yes">Y</option>
+                <option id="no">N</option>
+            </options>
+        </field>
+        <repeat id="exhibitionCatalogues">
+            <field id="exhibitionCatalogue"/>
+        </repeat>
+        <repeat id="exhibitionLinks">
+            <field id="exhibitionLink"/>
+        </repeat>
+        <field id="exhibitionRemarks"/>
     </section>
     <!-- not used in UI except in autocompletes -->
     <section id="otherInformation">

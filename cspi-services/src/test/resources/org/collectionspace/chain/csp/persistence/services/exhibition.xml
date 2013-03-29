@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <ns2:exhibitions_common xmlns:ns2="http://collectionspace.org/services/exhibition">
     <shortIdentifier>exhibitiontest1</shortIdentifier>
-    <exhibitionStartDate>2013-03-01</exhibitionStartDate>
-    <exhibitionEndDate>2014-03-31</exhibitionEndDate>
     <exhibitionRemarks>remark goes here</exhibitionRemarks>
+    <exhibitionPublication>yes</exhibitionPublication>
     <exhibitionOrganizers>
-        <exhibitionOrganizer>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(MariaOrganizer)'Maria Organizer'</exhibitionOrganizer>
+        <exhibitionOrganizer>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(HirshhornMuseumandSculptureGarden)'Hirshhorn Museum and Sculpture Garden'</exhibitionOrganizer>
     </exhibitionOrganizers>
-    <exhibitionSponsors>
-        <exhibitionSponsor>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(SeanSponsor)'Sean Sponsor'</exhibitionSponsor>
-    </exhibitionSponsors>
+    <exhibitionCurators>
+        <exhibitionCurator>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(KerryBrougher)'Kerry Brougher'</exhibitionCurator>
+    </exhibitionCurators>
     <exhibitionLocationsInternal>
-        <exhibitionLocationInternal>urn:cspace:core.collectionspace.org:locationauthorities:name(location):item:name(Shelf1)'Shelf 1'</exhibitionLocationInternal>
+        <exhibitionLocationInternal>urn:cspace:core.collectionspace.org:locationauthorities:name(location):item:name(Gallery4)'Gallery 4'</exhibitionLocationInternal>
     </exhibitionLocationsInternal>
-    <exhibitionLocationsExternal>
-        <exhibitionLocationExternal>urn:cspace:core.collectionspace.org:locationauthorities:name(offsite_sla):item:name(Gallery1)'Gallery 1'</exhibitionLocationExternal>
-    </exhibitionLocationsExternal>
+    <exhibitionCatalogues>
+        <exhibitionCatalogue>catalogue goes here</exhibitionCatalogue>
+    </exhibitionCatalogues>
+    <exhibitionLinks>
+        <exhibitionLink>link goes here</exhibitionLink>
+    </exhibitionLinks>
+    <exhibitionVenueGroupList>
+        <exhibitionVenueGroup>
+            <venueName>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(HirshhornMuseumandSculptureGarden)'Hirshhorn Museum and Sculpture Garden'</venueName>
+            <venueStartDate>2010-02-10</venueStartDate>
+            <venueEndDate>2010-05-31</venueEndDate>
+            <venueAttendance>123456</venueAttendance>
+        </exhibitionVenueGroup>
+    </exhibitionVenueGroupList>
     <exhibitionTermGroupList>
         <exhibitionTermGroup>
-            <termDisplayName>Space Wars! (2013)</termDisplayName>
-            <termName>Space Wars!</termName>
-            <termLanguage>english</termLanguage>
-            <termPrefForLang>true</termPrefForLang>
-            <termType>public name</termType>
-            <termQualifier>term qualifier</termQualifier>
-            <termSource>internal</termSource>
-            <termSourceID>12345</termSourceID>
-            <termSourceDetail>internal</termSourceDetail>
-            <termSourceNote>source note goes here</termSourceNote>
-            <termStatus>accepted</termStatus>
+            <termDisplayName>Yves Klien: With the Void, Full Powers</termDisplayName>
+            <termType>preferred</termType>
         </exhibitionTermGroup>
     </exhibitionTermGroupList>
 </ns2:exhibitions_common>

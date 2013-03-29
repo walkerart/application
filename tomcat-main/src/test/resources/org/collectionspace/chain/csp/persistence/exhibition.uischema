@@ -5,13 +5,29 @@
                 "default": {},
                 "type": "object"
             },
+            "termsUsed": {
+                "default": [],
+                "type": "array"
+            },
             "csid": {
                 "type": "string"
             },
             "fields": {
                 "properties": {
-                    "exhibitionEndDate": {
-                        "type": "date"
+                    "exhibitionLinks": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "exhibitionLink": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
                     },
                     "tenantID": {
                         "type": "string"
@@ -31,17 +47,23 @@
                         },
                         "type": "array"
                     },
-                    "csid": {
-                        "type": "string"
-                    },
-                    "exhibitionSponsors": {
+                    "exhibitionVenueGroup": {
                         "items": {
                             "properties": {
                                 "_primary": {
                                     "default": true,
                                     "type": "boolean"
                                 },
-                                "exhibitionSponsor": {
+                                "venueStartDate": {
+                                    "type": "date"
+                                },
+                                "venueAttendance": {
+                                    "type": "integer"
+                                },
+                                "venueEndDate": {
+                                    "type": "date"
+                                },
+                                "venueName": {
                                     "type": "string"
                                 }
                             },
@@ -49,19 +71,45 @@
                         },
                         "type": "array"
                     },
+                    "exhibitionCurators": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "exhibitionCurator": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "exhibitionCatalogues": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "exhibitionCatalogue": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "csid": {
+                        "type": "string"
+                    },
                     "uri": {
                         "type": "string"
                     },
                     "exhibitionTermGroup": {
                         "items": {
                             "properties": {
-                                "termPrefForLang": {
-                                    "default": false,
-                                    "type": "boolean"
-                                },
-                                "termName": {
-                                    "type": "string"
-                                },
                                 "_primary": {
                                     "default": true,
                                     "type": "boolean"
@@ -71,29 +119,6 @@
                                     "type": "string"
                                 },
                                 "termDisplayName": {
-                                    "type": "string"
-                                },
-                                "termSource": {
-                                    "type": "string"
-                                },
-                                "termStatus": {
-                                    "default": "provisional",
-                                    "type": "string"
-                                },
-                                "termSourceID": {
-                                    "type": "string"
-                                },
-                                "termQualifier": {
-                                    "type": "string"
-                                },
-                                "termSourceDetail": {
-                                    "type": "string"
-                                },
-                                "termSourceNote": {
-                                    "type": "string"
-                                },
-                                "termLanguage": {
-                                    "default": "",
                                     "type": "string"
                                 }
                             },
@@ -110,9 +135,6 @@
                     "updatedAt": {
                         "type": "date"
                     },
-                    "exhibitionStartDate": {
-                        "type": "date"
-                    },
                     "createdBy": {
                         "type": "string"
                     },
@@ -120,6 +142,10 @@
                         "type": "string"
                     },
                     "createdAt": {
+                        "type": "string"
+                    },
+                    "exhibitionPublication": {
+                        "default": "",
                         "type": "string"
                     },
                     "refName": {
@@ -134,21 +160,6 @@
                                 },
                                 "exhibitionOrganizer": {
                                     "type": "string"
-                                }
-                            },
-                            "type": "object"
-                        },
-                        "type": "array"
-                    },
-                    "exhibitionLocationsExternal": {
-                        "items": {
-                            "properties": {
-                                "exhibitionLocationExternal": {
-                                    "type": "string"
-                                },
-                                "_primary": {
-                                    "default": true,
-                                    "type": "boolean"
                                 }
                             },
                             "type": "object"

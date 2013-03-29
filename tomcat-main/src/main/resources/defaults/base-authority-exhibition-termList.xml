@@ -4,24 +4,24 @@
         <!-- List containing this item's preferred term and any non-preferred terms -->
         <repeat id="exhibitionTermGroupList/exhibitionTermGroup">
             <!-- Fields common across all authority items -->
+            <!-- Exhibition uses only a few of the common term group fields in the UI -->
             <field id="termDisplayName" ui-search="repeatable" in-title="yes" display-name="yes"
                 mini="summary,number,search,list,relate">
                 <selector>exhibitionAuthority-termDisplayName</selector>
                 <title-selector>titleBar-displayName</title-selector>
             </field>
-            <field id="termName" ui-search="repeatable">
+            <!--field id="termName" ui-search="repeatable">
                 <selector>exhibitionAuthority-termName</selector>
-            </field>
+            </field-->
             <field id="termType">
                 <selector>exhibitionAuthority-termType</selector>
                 <options>
                     <option id="">Please select a value</option>
-                    <option id="descriptor">Descriptor</option>
-                    <option id="alternate descriptor">Alternate Descriptor</option>
-                    <option id="used for term">Used for Term</option>
+                    <option id="preferred">Preferred</option>
+                    <option id="varient">Varient</option>
                 </options>
             </field>
-            <field id="termStatus" ui-search="repeatable" seperate_ui_container="true"
+            <!--field id="termStatus" ui-search="repeatable" seperate_ui_container="true"
                 mini="search,list,relate">
                 <selector>exhibitionAuthority-termStatus</selector>
                 <options>
@@ -30,29 +30,29 @@
                     <option id="accepted">Accepted</option>
                     <option id="rejected">Rejected</option>
                 </options>
-            </field>
-            <field id="termQualifier">
+            </field-->
+            <!--field id="termQualifier">
                 <selector>exhibitionAuthority-termQualifier</selector>
-            </field>
-            <field id="termLanguage" ui-search="repeatable" autocomplete="vocab-languages" ui-type="enum">
+            </field-->
+            <!--field id="termLanguage" ui-search="repeatable" autocomplete="vocab-languages" ui-type="enum">
                 <selector>exhibitionAuthority-termLanguage</selector>
-            </field>
-            <field id="termPrefForLang" datatype="boolean">
+            </field-->
+            <!--field id="termPrefForLang" datatype="boolean">
                 <selector>exhibitionAuthority-termPrefForLang</selector>
-            </field>
+            </field-->
             <!-- termSource will be a Citation Authority autocomplete field when that service is implemented -->
-            <field id="termSource">
+            <!--field id="termSource">
                 <selector>exhibitionAuthority-termSource</selector>
-            </field>
-            <field id="termSourceDetail">
+            </field-->
+            <!--field id="termSourceDetail">
                 <selector>exhibitionAuthority-termSourceDetail</selector>
-            </field>
-            <field id="termSourceID">
+            </field-->
+            <!--field id="termSourceID">
                 <selector>exhibitionAuthority-termSourceID</selector>
-            </field>
-            <field id="termSourceNote">
+            </field-->
+            <!--field id="termSourceNote">
                 <selector>exhibitionAuthority-termSourceNote</selector>
-            </field>
+            </field-->
         </repeat>
     </section>
 </record>
