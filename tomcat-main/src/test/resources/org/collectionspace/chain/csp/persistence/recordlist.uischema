@@ -25,7 +25,8 @@
             "ulan_oa",
             "ulan_pa",
             "work",
-            "cona_work"
+            "cona_work",
+            "exhibition"
         ],
         "type": "array"
     }

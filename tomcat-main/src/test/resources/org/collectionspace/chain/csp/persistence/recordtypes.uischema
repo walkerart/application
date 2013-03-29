@@ -51,7 +51,8 @@
           "common_ta",
           "taxon",
           "work",
-          "cona_work"
+          "cona_work",
+          "exhibition"
         ], 
         "type": "array"
       }
