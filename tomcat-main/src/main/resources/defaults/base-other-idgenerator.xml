@@ -28,6 +28,9 @@
                     <field id="loanout">
                         <selector>4b984865-f93d-4481-b874-3dba863ec589</selector>
                     </field>
+                    <field id="presentation">
+                        <selector>dc48e16e-3539-4c70-829d-3703b21d7715</selector>
+                    </field>
                     <!-- 'location' below pertains to 'generic locations' stored -->
                     <!-- in Location/Movement/Inventory records, rather than to -->
                     <!-- Storage Location authority term records -->

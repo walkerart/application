@@ -93,6 +93,7 @@ public class TestService extends ServicesBaseClass {
 		testXMLJSON(spec, "intake", "intake.xml", "intake.json");
 		testXMLJSON(spec, "loanin", "loanin.xml", "loanin.json");
 		testXMLJSON(spec, "loanout", "loanout.xml", "loanout.json");
+		testXMLJSON(spec, "presentation", "presentation.xml", "presentation.json");
 		testXMLJSON(spec, "movement", "movement.xml", "movement.json");
 		testXMLJSON(spec, "objectexit", "objectexit.xml", "objectexit.json");
 		testXMLJSON(spec, "group", "group.xml", "group.json");
@@ -140,6 +141,7 @@ public class TestService extends ServicesBaseClass {
 		testJSONXML(spec, "media", "media.xml", "mediaJSON.json");
 		testJSONXML(spec, "loanin", "loanin.xml", "loanin.json");
 		testJSONXML(spec, "loanout", "loanout.xml", "loanout.json");
+		testJSONXML(spec, "presentation", "presentation.xml", "presentation.json");
 		testJSONXML(spec, "intake", "intake.xml", "intake.json");
 		testJSONXML(spec, "movement", "movement.xml", "movement.json");
 		testJSONXML(spec, "objectexit", "objectexit.xml", "objectexit.json");
@@ -650,6 +652,8 @@ public class TestService extends ServicesBaseClass {
 				"loansin_common/loanInNumber", "LI2010.1.21");
 		testPostGetDelete("loansout/", "loansout_common", "loanout.xml",
 				"loansout_common/loanOutNumber", "LO2010.117");
+		testPostGetDelete("presentations/", "presentations_common", "presentation.xml",
+				"presentations_common/presentationRefNumber", "PR2013.42");
 		testPostGetDelete("movements/", "movements_common", "movement.xml",
 				"movements_common/movementReferenceNumber", "MV2010.99");
 		testPostGetDelete("objectexit/", "objectexit_common", "objectexit.xml",

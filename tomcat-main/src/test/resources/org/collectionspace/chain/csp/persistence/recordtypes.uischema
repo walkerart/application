@@ -24,7 +24,8 @@
       "procedures": {
         "default": [
           "loanin", 
-          "loanout", 
+          "loanout",
+          "presentation", 
           "acquisition", 
           "movement", 
           "objectexit", 

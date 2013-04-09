@@ -1,0 +1,87 @@
+<record id="presentation" in-findedit="yes" type="record,procedure">
+    <services-url>presentations</services-url>
+    <services-tenant-plural>Presentations</services-tenant-plural>
+    <services-tenant-singular>Presentation</services-tenant-singular>
+    <services-list-path>abstract-common-list/list-item</services-list-path>
+    <services-record-path>presentations_common:http://collectionspace.org/services/presentation,presentations_common</services-record-path>
+    <services-record-path id="collectionspace_core">collectionspace_core:http://collectionspace.org/collectionspace_core/,collectionspace_core</services-record-path>
+    <hassoftdelete>true</hassoftdelete>
+    <structures>
+        <structure id="search">
+            <view>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+        </structure>
+        <structure id="screen">
+            <view>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+        </structure>
+        <structure id="tab">
+            <view>
+                <titlebar show="false"></titlebar>
+                <sidebar show="false"></sidebar>
+                <edit-section id="details" show="true"></edit-section>
+                <list-section id="list" show="false"></list-section>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+            <repeat id="list" asSibling="true">
+                <selector>recordList-row:</selector>
+                <field id="summary" ui-type="list">
+                    <selector>related-summary</selector>
+                </field>
+                <field id="number" ui-type="list">
+                    <selector>related-number</selector>
+                </field>
+            </repeat>
+        </structure>
+    </structures>
+	
+	<include src="domain-procedure-presentation.xml" strip-root="yes"/>
+	
+    <row-selector>.csc-recordList-row:</row-selector>
+    <section id="coreInformation">
+        <field id="tenantID" section="collectionspace_core" attributes="GET"></field>
+        <field id="createdBy" section="collectionspace_core" attributes="GET"></field>
+        <field id="updatedBy" ui-search="repeatable" section="collectionspace_core" attributes="GET"></field>
+        <field id="createdAt" section="collectionspace_core" attributes="GET"></field>
+        <field id="updatedAt" ui-search="range" ui-type="date" section="collectionspace_core" attributes="GET" mini="search,list,relate"></field>
+        <field id="nametitle" mini="summary,search,list,relate" exists-in-services="false">
+            <selector>presentation-nametitle</selector>
+            <merges>
+                <merge id="exhibitionTitle" rank="1"/>
+                <merge id="updatedVenueName" rank="2"/>
+            </merges>
+        </field>
+    </section>
+    <section id="presentationInformation">
+        <field id="presentationRefNumber" ui-search="repeatable" in-title="yes" chooser="yes" mini="number,search,list,relate" seperate_ui_container="true">
+            <title-selector>titleBar-presentationRefNumber</title-selector>
+            <selector>presentation-presentationRefNumber</selector>
+            <container-selector>presentation-presentationRefNumber-patternChooserContainer</container-selector>
+            <options>
+                <option id="presentation" sample="PR2013.1">Presentation</option>
+            </options>
+        </field>
+        <field id="presentationPresenter" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
+        <field id="presentationType" ui-search="repeatable">
+            <options>
+                <option id="">Please select a value</option>
+                <option id="premiere">Premiere</option>
+                <option id="otherterm">Other term</option>
+            </options>
+        </field>
+        <!-- change to exhibition authority (exhibition-exhibition) when available -->
+        <field id="exhibitionTitle" ui-search="repeatable" autocomplete="person-person,organization-organization" mini="search,list,relate"/>
+        <field id="overrideExhibitionVenues" datatype="boolean"/>
+        <repeat id="updatedExhibitionVenueGroupList/updatedExhibitionVenueGroup">
+            <field id="updatedVenueName" ui-search="repeatable" autocomplete="person-person,organization-organization" mini="search,list,relate"/>
+            <field id="updatedVenueStartDate" ui-search="range" ui-type="date"/>
+            <field id="updatedVenueEndDate" ui-search="range" ui-type="date"/>
+            <field id="updatedVenueAttendance" ui-search="range" ui-type="validated" datatype="integer"/>
+        </repeat>
+        <field id="presentationLocationInternal" ui-search="repeatable" autocomplete="location-location,location-offsite_sla,organization-organization"/>
+        <field id="circulatedVenues"/>
+        <field id="presentationNote"/>
+    </section>
+</record>
