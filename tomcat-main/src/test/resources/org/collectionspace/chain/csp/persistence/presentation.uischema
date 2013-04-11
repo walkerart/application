@@ -1,0 +1,91 @@
+{
+    "presentation": {
+        "properties": {
+            "relations": {
+                "default": {},
+                "type": "object"
+            },
+            "termsUsed": {
+                "default": [],
+                "type": "array"
+            },
+            "csid": {
+                "type": "string"
+            },
+            "fields": {
+                "properties": {
+                    "presentationLocationInternal": {
+                        "type": "string"
+                    },
+                    "tenantID": {
+                        "type": "string"
+                    },
+                    "presentationType": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "overrideExhibitionVenues": {
+                        "default": false,
+                        "type": "boolean"
+                    },
+                    "exhibitionTitle": {
+                        "type": "string"
+                    },
+                    "updatedExhibitionVenueGroup": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "updatedVenueName": {
+                                    "type": "string"
+                                },
+                                "updatedVenueEndDate": {
+                                    "type": "date"
+                                },
+                                "updatedVenueAttendance": {
+                                    "type": "integer"
+                                },
+                                "updatedVenueStartDate": {
+                                    "type": "date"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "presentationNote": {
+                        "type": "string"
+                    },
+                    "updatedBy": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "date"
+                    },
+                    "nametitle": {
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "presentationPresenter": {
+                        "type": "string"
+                    },
+                    "presentationRefNumber": {
+                        "type": "string"
+                    },
+                    "circulatedVenues": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}

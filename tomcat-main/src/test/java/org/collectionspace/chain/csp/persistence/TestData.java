@@ -42,6 +42,7 @@ public class TestData {
 	public final String loaninCreate(){ return addData("loaninCreate.json").toString(); };
 	public final String loanoutCreate(){ return addData("loanoutCreate.json").toString(); };
 	public final String conditioncheckCreate(){ return addData("conditioncheckCreate.json").toString(); };
+	public final String presentationCreate(){ return addData("presentationCreate.json").toString(); };
 	public final String movementCreate(){ return addData("movementCreate.json").toString(); };
 	public final String mediaCreate(){ return addData("mediaCreate.json").toString(); };
  	public final String objectexitCreate(){ return addData("objectexitCreate.json").toString(); };
