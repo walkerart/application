@@ -12,7 +12,7 @@
         <field id="presentationPresenter" ui-search="repeatable" autocomplete="person-person"/>
         <!-- changing to exhibition authority (exhibition-exhibition); adding as number field -->
         <field id="exhibitionTitle" ui-search="repeatable" autocomplete="exhibition-exhibition" mini="number,search,list,relate">
-            <title-selector>titleBar-presentationRefNumber</title-selector>
+            <title-selector>titleBar-exhibitionTitle</title-selector>
         </field>
         <repeat id="updatedExhibitionVenueGroupList/updatedExhibitionVenueGroup">
             <!-- removing organization vocabulary; adding as summary field -->
@@ -20,7 +20,7 @@
         </repeat>
         <!-- removing location and organization vocabulary -->
         <field id="presentationLocationInternal" ui-search="repeatable" autocomplete="location-location"/>
-        <!-- commenting out additional local schema field. may be used in a phase 3 task -->
+        <!-- commenting out additional local schema field. may be used in a Phase 3 task -->
         <!--field id="computedSummary" section="walkerart" mini="summary,search,list,relate" ui-type="computed" in-title="yes"
             ui-func="walkerart.concatenateFields" ui-args="circulatedVenues,presentationNote" ui-readonly="true"/-->
     </section>
