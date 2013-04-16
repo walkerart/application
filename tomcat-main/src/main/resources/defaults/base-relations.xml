@@ -44,7 +44,7 @@
 				<!-- Groan - the code that handles generic relations uses services-url 
 						 as the types against which it checks, while the hierarchy code 
 						 uses the record id. Ugh. -->
-        <sourceTypes>collectionobjects,intakes,acquisitions,groups,loansin,loansout,conditionchecks,,presentations,movements,objectexit,media</sourceTypes>
+        <sourceTypes>collectionobjects,intakes,acquisitions,groups,loansin,loansout,conditionchecks,presentations,movements,objectexit,media</sourceTypes>
         <destinationTypes>collectionobjects,intakes,acquisitions,groups,loansin,loansout,conditionchecks,presentations,movements,objectexit,media</destinationTypes>
     </relation>
 </relationships>
