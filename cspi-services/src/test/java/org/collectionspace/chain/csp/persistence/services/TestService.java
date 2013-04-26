@@ -98,6 +98,7 @@ public class TestService extends ServicesBaseClass {
 		testXMLJSON(spec, "conditioncheck", "conditioncheck.xml", "conditioncheck.json");
 		testXMLJSON(spec, "presentation", "presentation.xml", "presentation.json");
 		testXMLJSON(spec, "movement", "movement.xml", "movement.json");
+		testXMLJSON(spec, "valuationcontrol", "valuationcontrol.xml", "valuationcontrol.json");
 		testXMLJSON(spec, "objectexit", "objectexit.xml", "objectexit.json");
 		testXMLJSON(spec, "group", "group.xml", "group.json");
 		testXMLJSON(spec, "media", "media.xml", "mediaJSON.json");
@@ -150,6 +151,7 @@ public class TestService extends ServicesBaseClass {
 		testJSONXML(spec, "presentation", "presentation.xml", "presentation.json");
 		testJSONXML(spec, "intake", "intake.xml", "intake.json");
 		testJSONXML(spec, "movement", "movement.xml", "movement.json");
+		testJSONXML(spec, "valuationcontrol", "valuationcontrol.xml", "valuationcontrol.json");
 		testJSONXML(spec, "objectexit", "objectexit.xml", "objectexit.json");
 		testJSONXML(spec, "group", "group.xml", "group.json");
 
@@ -664,6 +666,8 @@ public class TestService extends ServicesBaseClass {
 				"presentations_common/presentationRefNumber", "PR2013.42");
 		testPostGetDelete("movements/", "movements_common", "movement.xml",
 				"movements_common/movementReferenceNumber", "MV2010.99");
+		testPostGetDelete("valuationcontrols/", "valuationcontrols_common", "valuationcontrol.xml",
+				"valuationcontrols_common/valuationcontrolRefNumber", "VC2013.4.22");
 		testPostGetDelete("objectexit/", "objectexit_common", "objectexit.xml",
 				"objectexit_common/exitNumber", "EX2011.5");
 		testPostGetDelete("groups/", "groups_common", "group.xml",

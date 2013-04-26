@@ -29,6 +29,7 @@
           "presentation", 
           "acquisition", 
           "movement", 
+          "valuationcontrol", 
           "objectexit", 
           "intake", 
           "group", 

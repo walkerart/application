@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ns2:valuationcontrols_common xmlns:ns2="http://collectionspace.org/services/valuationcontrol">
+    <valuationcontrolRefNumber>VC2013.4.22</valuationcontrolRefNumber>
+    <valueCurrency>usd</valueCurrency>
+    <valueAmount>1234.56</valueAmount>
+    <valueDate>2011-01-01</valueDate>
+    <valueSource>value source goes here</valueSource>
+    <valueType>appraised</valueType>
+    <valueNote>value note goes here</valueNote>
+</ns2:valuationcontrols_common>
