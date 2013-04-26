@@ -1,0 +1,78 @@
+<record id="valuationcontrol" in-findedit="yes" type="record,procedure">
+    <services-url>valuationcontrols</services-url>
+    <services-tenant-plural>Valuationcontrols</services-tenant-plural>
+    <services-tenant-singular>Valuationcontrol</services-tenant-singular>
+    <services-list-path>abstract-common-list/list-item</services-list-path>
+    <services-record-path>valuationcontrols_common:http://collectionspace.org/services/valuationcontrol,valuationcontrols_common</services-record-path>
+    <services-record-path id="collectionspace_core">collectionspace_core:http://collectionspace.org/collectionspace_core/,collectionspace_core</services-record-path>
+    <hassoftdelete>true</hassoftdelete>
+    <structures>
+        <structure id="search">
+            <view>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+        </structure>
+        <structure id="screen">
+            <view>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+        </structure>
+        <structure id="tab">
+            <view>
+                <titlebar show="false"></titlebar>
+                <sidebar show="false"></sidebar>
+                <edit-section id="details" show="true"></edit-section>
+                <list-section id="list" show="false"></list-section>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+            <repeat id="list" asSibling="true">
+                <selector>recordList-row:</selector>
+                <field id="summary" ui-type="list">
+                    <selector>related-summary</selector>
+                </field>
+                <field id="number" ui-type="list">
+                    <selector>related-number</selector>
+                </field>
+            </repeat>
+        </structure>
+    </structures>
+    
+    <include src="domain-procedure-valuationcontrol.xml" strip-root="yes"/>
+    
+    <row-selector>.csc-recordList-row:</row-selector>
+    <section id="coreInformation">
+        <field id="tenantID" section="collectionspace_core" attributes="GET"></field>
+        <field id="createdBy" section="collectionspace_core" attributes="GET"></field>
+        <field id="updatedBy" ui-search="repeatable" section="collectionspace_core" attributes="GET"></field>
+        <field id="createdAt" section="collectionspace_core" attributes="GET"></field>
+        <field id="updatedAt" ui-search="range" ui-type="date" section="collectionspace_core" attributes="GET" mini="search,list,relate"></field>
+    </section>
+    <section id="objectValuationInformation">
+        <field id="valuationcontrolRefNumber" ui-search="repeatable" in-title="yes" chooser="yes" mini="number,search,list,relate" seperate_ui_container="true">
+            <title-selector>titleBar-valuationcontrolRefNumber</title-selector>
+            <selector>valuationcontrol-valuationcontrolRefNumber</selector>
+            <container-selector>valuationcontrol-valuationcontrolRefNumber-patternChooserContainer</container-selector>
+            <options>
+                <option id="valuationcontrol" sample="VC2013.1">Valuation Control</option>
+            </options>
+        </field>
+        <field id="valueCurrency" ui-search="repeatable" autocomplete="vocab-currency" ui-type="enum">
+            <enum>
+                <default>urn:cspace:core.collectionspace.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+        </field>
+        <field id="valueAmount" ui-search="range" ui-type="validated" datatype="float"/>
+        <field id="valueDate" ui-search="range" ui-type="date"/>
+        <field id="valueSource"/>
+        <field id="valueType" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate">
+            <options>
+                <option id="">Please select a value</option>
+                <option id="Appraised">Appraised</option>
+                <option id="Discounted Price">Discounted Price</option>
+                <option id="Full Price">Full Price</option>
+                <option id="Insurance">Insurance</option>
+            </options>
+        </field>
+        <field id="valueNote"/>
+    </section>
+</record>

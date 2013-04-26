@@ -1,0 +1,61 @@
+{
+    "valuationcontrol": {
+        "properties": {
+            "relations": {
+                "default": {},
+                "type": "object"
+            },
+            "termsUsed": {
+                "default": [],
+                "type": "array"
+            },
+            "csid": {
+                "type": "string"
+            },
+            "fields": {
+                "properties": {
+                    "updatedAt": {
+                        "type": "date"
+                    },
+                    "valuationcontrolRefNumber": {
+                        "type": "string"
+                    },
+                    "valueCurrency": {
+                        "default": "urn:cspace:core.collectionspace.org:vocabularies:name(currency):item:name(USD)'US Dollar'",
+                        "type": "string"
+                    },
+                    "tenantID": {
+                        "type": "string"
+                    },
+                    "valueAmount": {
+                        "type": "float"
+                    },
+                    "valueDate": {
+                        "type": "date"
+                    },
+                    "createdBy": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "valueSource": {
+                        "type": "string"
+                    },
+                    "valueType": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "updatedBy": {
+                        "type": "string"
+                    },
+                    "valueNote": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}

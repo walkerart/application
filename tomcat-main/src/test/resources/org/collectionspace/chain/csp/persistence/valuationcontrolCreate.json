@@ -1,0 +1,9 @@
+{
+    "valuationcontrolRefNumber": "VC2013.4.22",
+    "valueCurrency": "usd",
+    "valueAmount": "1234.56",
+    "valueDate": "2011-01-01",
+    "valueSource": "value source goes here",
+    "valueType": "appraised",
+    "valueNote": "value note goes here"
+}
