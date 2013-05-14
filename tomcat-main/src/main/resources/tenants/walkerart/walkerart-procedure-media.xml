@@ -37,8 +37,8 @@
         <field id="viewDescriptionWAC" section="walkerart">
             <selector>media-viewDescriptionWAC</selector>
         </field>
-        <field id="publicallyAccessibleWAC" datatype="boolean" section="walkerart">
-            <selector>media-publicallyAccessibleWAC</selector>
+        <field id="publiclyAccessibleWAC" datatype="boolean" section="walkerart">
+            <selector>media-publiclyAccessibleWAC</selector>
         </field>
     </section>
 </record>
