@@ -1,0 +1,32 @@
+<record id="intake">      
+    <section id="objectEntryInformation">
+        <field id="currentOwner" in-title="yes" mini="summary,search,list,relate" ui-search="repeatable" autocomplete="person-person">
+            <!-- removing org auth ref -->
+            <selector>intake-current-owner</selector>
+        </field>
+        <field id="depositor" ui-search="repeatable" autocomplete="person-person">
+            <!-- removing org auth ref -->
+            <selector>intake-depositor</selector>
+        </field>
+    </section>
+    <section id="objectCollectionInformation">
+        <repeat id="fieldCollectors">
+            <field id="fieldCollector" autocomplete="person-person">
+                <!-- removing org auth ref -->
+            </field>
+        </repeat>
+    </section>
+    <section id="valuationInformation">
+        <field id="valuer" autocomplete="person-person">
+            <!-- removing org auth ref -->
+        </field>
+    </section>
+    <section id="insuranceInformation">
+        <repeat id="insurers">
+            <selector>intake-insurer</selector>
+            <field id="insurer" autocomplete="person-person">
+                <!-- removing org auth ref -->
+            </field>
+        </repeat>
+    </section>
+</record>

@@ -1,0 +1,10 @@
+<record id="objectexit">
+    <section id="objectexitInformation">
+        <field id="currentOwner" ui-search="repeatable" autocomplete="person-person" mini="summary,list" in-title="yes">
+            <!-- removing org auth ref -->
+        </field>
+        <field id="depositor" ui-search="repeatable" autocomplete="person-person">
+            <!-- removing org auth ref -->
+        </field>
+    </section>
+</record>

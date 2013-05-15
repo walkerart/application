@@ -1,0 +1,8 @@
+<record id="loanout">
+    <section id="loanoutInformation">
+        <field id="borrower" ui-search="repeatable" autocomplete="person-person" mini="summary,list" in-title="yes">
+            <!-- removing org auth ref -->
+            <selector>loanOut-borrower</selector>
+        </field>
+    </section>
+</record>
