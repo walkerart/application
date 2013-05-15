@@ -1,0 +1,7 @@
+<record id="conditioncheck">
+    <section id="conditionCheckInformation">
+        <field id="conditionChecker" autocomplete="person-person">
+            <!-- removing org auth ref -->
+        </field>
+    </section>
+</record>

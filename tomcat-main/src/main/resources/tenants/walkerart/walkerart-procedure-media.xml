@@ -1,6 +1,12 @@
 <record id="media">
     <services-record-path id="walkerart">media_walkerart:http://collectionspace.org/services/media/local/walkerart,media_walkerart</services-record-path>
     <section id="mediaInformation">
+        <field id="contributor" autocomplete="person-person">
+            <!-- removing org auth ref -->
+        </field>
+        <field id="creator" ui-search="repeatable" autocomplete="person-person">
+            <!-- removing org auth ref -->
+        </field>
         <repeat id="languages">
             <services-tag>languageList</services-tag>
             <field id="language" ui-search="repeatable" autocomplete="vocab-languages" ui-type="enum">
@@ -10,6 +16,12 @@
                 </enum>
             </field>
         </repeat>
+        <field id="publisher" ui-search="repeatable" autocomplete="person-person">
+            <!-- removing org auth ref -->
+        </field>
+        <field id="rightsHolder" ui-search="repeatable" autocomplete="person-person">
+            <!-- removing org auth ref -->
+        </field>
         <field id="methodWAC" section="walkerart">
             <selector>media-methodWAC</selector>
         </field>

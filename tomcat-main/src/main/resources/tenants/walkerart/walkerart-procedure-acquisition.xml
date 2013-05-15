@@ -13,6 +13,20 @@
                 <option id="treasure">Treasure</option>
             </options>
         </field>
+        <repeat id="acquisitionSources">
+            <!-- removing org auth ref -->
+            <field id="acquisitionSource" mini="summary,search,list,relate" in-title="yes"
+                ui-search="repeatable" autocomplete="person-person">
+                <selector>acquisition-acquisitionSource</selector>
+            </field>
+        </repeat>
+        <repeat id="owners">
+            <selector>acquisition-owner</selector>
+            <!-- removing org auth ref -->
+            <field id="owner" autocomplete="person-person">
+                <selector>acquisition-owner</selector>
+            </field>
+        </repeat>
         <field id="groupPurchasePriceCurrency" autocomplete="vocab-currency" ui-type="enum">
             <!-- changing URN for default currency value -->
             <enum>
@@ -63,7 +77,7 @@
             </field>
         </repeat>
         <repeat id="insuredByGroupWAC" section="walkerart">
-            <field id="insuredByWAC" autocomplete="organization-organization" section="walkerart">
+            <field id="insuredByWAC" autocomplete="person-person" section="walkerart">
                 <selector>acquisition-insuredByWAC</selector>
             </field>
         </repeat>
@@ -75,7 +89,7 @@
             </field>
             <field id="acquisitionFundingValueWAC" ui-type="validated" datatype="float" section="walkerart"></field>
             <field id="acquisitionFundingCostWAC" ui-type="validated" datatype="float" section="walkerart"></field>
-            <field id="acquisitionFundingSourceWAC" ui-search="repeatable" autocomplete="person-person,organization-organization" section="walkerart"></field>
+            <field id="acquisitionFundingSourceWAC" ui-search="repeatable" autocomplete="person-person" section="walkerart"></field>
             <field id="acquisitionFundingSourceProvisosWAC" section="walkerart"></field>
         </repeat>
     </section>

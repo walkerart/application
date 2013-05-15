@@ -18,6 +18,9 @@
                 </options>
             </field>
             <repeat id="dimensionSubGroupList/dimensionSubGroup">
+                <field id="measuredBy"  autocomplete="person-person">
+                    <!-- removing org auth ref -->
+                </field>
                 <field id="dimension" seperate_ui_container="true">
                     <!-- removing unneeded terms from the options list -->
                     <options>

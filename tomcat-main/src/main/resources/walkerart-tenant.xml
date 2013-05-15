@@ -19,7 +19,7 @@
 			<include src="base-procedure-intake.xml"/>
 			<include src="base-procedure-loanin.xml"/>
 			<include src="base-procedure-loanout.xml"/>
-			<include src="base-procedure-conditioncheck.xml"/>
+			<include src="base-procedure-conditioncheck.xml,walkerart-procedure-conditioncheck.xml" merge="xmlmerge-walkerart.properties"/>
 			<include src="base-procedure-presentation.xml,walkerart-procedure-presentation.xml" merge="xmlmerge-walkerart.properties"/>
 			<include src="base-procedure-media.xml,walkerart-procedure-media.xml" merge="xmlmerge-walkerart.properties"/>
 			<include src="base-procedure-movement.xml,walkerart-procedure-movement.xml" merge="xmlmerge-walkerart.properties"/>

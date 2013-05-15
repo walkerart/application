@@ -192,9 +192,27 @@
                     <selector>object-description-content-concept</selector>
                 </field>
             </repeat>
+            <repeat id="contentPersons">
+                <field id="contentPerson" autocomplete="person-person">
+                    <!-- removing person-ulan_pa auth ref -->
+                    <selector>object-description-content-person</selector>
+                </field>
+            </repeat>
+            <repeat id="contentOrganizations">
+                <!-- need to see if this field should be removed since WAC will not use an org-org authority type -->
+                <!-- in the mean time, changing the authority types from organization-organization,organization-ulan_oa -->
+                <!-- to person-person -->
+                <field id="contentOrganization" autocomplete="person-person">
+                    <selector>object-description-content-organization</selector>
+                </field>
+            </repeat>
         </section>
         <section id="textualInscriptionInformation">
             <repeat id="textualInscriptionGroupList/textualInscriptionGroup">
+                <field id="inscriptionContentInscriber" autocomplete="person-person" ui-search="repeatable">
+                    <!-- removing org-org authority ref -->
+                    <selector>object-description-inscription-content-inscriber</selector>
+                </field>
                 <field id="inscriptionContentLanguage" autocomplete="vocab-languages" ui-type="enum">
                     <!-- changing URN for default language value -->
                     <enum>
@@ -223,6 +241,12 @@
         </section>
     </section>
     <section id="objectHistoryAssociationInformation">
+        <repeat id="owners">
+            <!-- removing org-org auth ref -->
+            <field id="owner" autocomplete="person-person">
+                <selector>object-history-association-owner</selector>
+            </field>
+        </repeat>
         <field id="ownershipExchangePriceCurrency" autocomplete="vocab-currency" ui-type="enum">
             <!-- changing URN for default language value -->
             <enum>
@@ -230,6 +254,20 @@
             </enum>
             <selector>object-history-association-denomination</selector>
         </field>
+        <section id="associationInformation">
+            <repeat id="assocOrganizationGroupList/assocOrganizationGroup">
+                <!-- replacing org-org auth ref with person-person -->
+                <!-- need to check if this entire repeatable block should be removed -->
+                <field id="assocOrganization" autocomplete="person-person"/>
+            </repeat>
+            <repeat id="assocEventOrganizations">
+                <field id="assocEventOrganization" autocomplete="person-person">
+                    <!-- replacing org-org auth ref with person-person -->
+                    <!-- need to check if this entire repeatable block should be removed -->
+                    <selector>object-history-association-event-organization</selector>
+                </field>
+            </repeat>
+        </section>
     </section>
     <section id="referenceInformation">
         <field id="catalogNumberWAC" section="walkerart">
