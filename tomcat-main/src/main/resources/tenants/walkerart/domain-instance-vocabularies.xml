@@ -19,6 +19,7 @@
             <option id="librarycollection">Library Collection</option>
             <option id="deaccessioned">De-accessioned</option>
             <option id="filmvideo">Film/Video</option>
+            <option id="performingarts">Performing Arts</option>
         </options>
     </instance>
     <instance id="vocab-inscriptiontype">
@@ -79,6 +80,7 @@
             <option id="lcnumber">LC#</option>
             <option id="objectid">Object ID</option>
             <option id="receiptofnumber">Receipt of Number</option>
+            <option id="cataloguqraisonne">Catalogue Raisonne</option>
         </options>
     </instance>
     <instance id="vocab-objectnamecurrency">
@@ -104,6 +106,7 @@
         <title>Object Name System</title>
         <options>
             <option id="walkerartcenterinhouse">Walker Art Center In-house</option>
+            <option id="aat">AAT</option>
         </options>
     </instance>
     <instance id="vocab-objectnametype">
@@ -133,6 +136,8 @@
         <options>
             <option id="mister">Mr.</option>
             <option id="mrs">Mrs.</option>
+            <option id="doctor">Dr.</option>
+            <option id="miss">Miss</option>
         </options>
     </instance>
     <instance id="vocab-personsoccupation">

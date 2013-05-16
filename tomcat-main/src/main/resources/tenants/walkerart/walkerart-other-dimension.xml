@@ -30,7 +30,7 @@
                         <!--option id="circumference">circumference</option-->
                         <!--option id="count">count</option-->
                         <option id="depth">depth</option>
-                        <!--option id="diameter">diameter</option-->
+                        <option id="diameter">diameter</option>
                         <option id="height">height</option>
                         <!--option id="length">length</option-->
                         <option id="running-time">running time</option>
@@ -47,12 +47,12 @@
                         <!--option id="carats">carats</option-->
                         <option id="centimeters">centimeters</option>
                         <!--option id="cubic-centimeters">cubic centimeters</option-->
-                        <!--option id="feet">feet</option-->
+                        <option id="feet">feet</option>
                         <option id="inches">inches</option>
                         <!--option id="kilograms">kilograms</option-->
                         <!--option id="liters">liters</option-->
                         <!--option id="millimeters">millimeters</option-->
-                        <!--option id="meters">meters</option-->
+                        <option id="meters">meters</option>
                         <option id="minutes">minutes</option>
                         <!--option id="pixels">pixels</option-->
                         <!--option id="square-feet">square feet</option-->
