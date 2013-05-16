@@ -1,0 +1,16 @@
+<record id="exhibition">
+    <section id="exhibitionAuthorityInformation">
+        <repeat id="exhibitionOrganizers">
+            <!-- removing org auth ref -->
+            <field id="exhibitionOrganizer" ui-search="repeatable" autocomplete="person-person"/>
+        </repeat>
+        <repeat id="exhibitionVenueGroupList/exhibitionVenueGroup">
+            <!-- removing org auth ref -->
+            <field id="venueName" ui-search="repeatable" autocomplete="person-person"/>
+        </repeat>
+        <repeat id="exhibitionCurators">
+            <!-- removing org auth ref -->
+            <field id="exhibitionCurator" ui-search="repeatable" autocomplete="person-person"/>
+        </repeat>
+    </section>
+</record>

@@ -44,7 +44,7 @@
 			<include src="base-authority-work-termList.xml"/>
 			<include src="base-authority-work.xml"/>
 			<include src="base-authority-exhibition-termList.xml"/>
-			<include src="base-authority-exhibition.xml"/>
+			<include src="base-authority-exhibition.xml,walkerart-authority-exhibition.xml" merge="xmlmerge-walkerart.properties"/>
 
 			<include src="base-vocabularies.xml"/>
 
