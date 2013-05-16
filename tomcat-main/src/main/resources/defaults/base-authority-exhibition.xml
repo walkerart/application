@@ -52,10 +52,10 @@
             <selector>preferred-exhibitionAuthority</selector>
         </field>
         <repeat id="exhibitionOrganizers">
-            <field id="exhibitionOrganizer" ui-search="repeatable" autocomplete="person-person"/>
+            <field id="exhibitionOrganizer" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
         </repeat>
         <repeat id="exhibitionVenueGroupList/exhibitionVenueGroup">
-            <field id="venueName" ui-search="repeatable" autocomplete="person-person"/>
+            <field id="venueName" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
             <field id="venueStartDate" ui-search="range" ui-type="date"/>
             <field id="venueEndDate" ui-search="range" ui-type="date"/>
             <field id="venueAttendance" ui-search="range" ui-type="validated" datatype="integer"/>
@@ -64,7 +64,7 @@
             <field id="exhibitionLocationInternal" ui-search="repeatable" autocomplete="location-location"/>
         </repeat>
         <repeat id="exhibitionCurators">
-            <field id="exhibitionCurator" ui-search="repeatable" autocomplete="person-person"/>
+            <field id="exhibitionCurator" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
         </repeat>
         <field id="exhibitionPublication">
             <options>

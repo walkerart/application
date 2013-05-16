@@ -399,8 +399,23 @@
                         "protoTree": {
                             "expander": {
                                 "tree": {
+                                    ".csc-preferredExhibition-termStatus-label": {
+                                        "messagekey": "preferredExhibition-termStatusLabel"
+                                    },
                                     ".csc-preferredExhibition-termInformation-label": {
                                         "messagekey": "preferredExhibition-termInformationLabel"
+                                    },
+                                    ".csc-preferredExhibition-termSource-label": {
+                                        "messagekey": "preferredExhibition-termSourceLabel"
+                                    },
+                                    ".csc-preferredExhibition-termPrefForLang-label": {
+                                        "messagekey": "preferredExhibition-termPrefForLangLabel"
+                                    },
+                                    ".csc-preferredExhibition-termSourceDetail-label": {
+                                        "messagekey": "preferredExhibition-termSourceDetailLabel"
+                                    },
+                                    ".csc-preferredExhibition-termSourceNote-label": {
+                                        "messagekey": "preferredExhibition-termSourceNoteLabel"
                                     },
                                     ".csc-preferredExhibition-exhibitionTermGroup": {
                                         "decorators": [
@@ -411,6 +426,11 @@
                                                     "repeatTree": {
                                                         "expander": {
                                                             "tree": {
+                                                                ".csc-exhibitionAuthority-termSourceID": "${{row}.termSourceID}",
+                                                                ".csc-exhibitionAuthority-termName": "${{row}.termName}",
+                                                                ".csc-exhibitionAuthority-termSourceDetail": "${{row}.termSourceDetail}",
+                                                                ".csc-exhibitionAuthority-termPrefForLang": "${{row}.termPrefForLang}",
+                                                                ".csc-exhibitionAuthority-termQualifier": "${{row}.termQualifier}",
                                                                 ".csc-exhibitionAuthority-termType": {
                                                                     "optionnames": [
                                                                         "Please select a value",
@@ -424,7 +444,38 @@
                                                                     ],
                                                                     "selection": "${{row}.termType}"
                                                                 },
-                                                                ".csc-exhibitionAuthority-termDisplayName": "${{row}.termDisplayName}"
+                                                                ".csc-exhibitionAuthority-termSourceNote": "${{row}.termSourceNote}",
+                                                                ".csc-exhibitionAuthority-termSource": "${{row}.termSource}",
+                                                                ".csc-exhibitionAuthority-termDisplayName": "${{row}.termDisplayName}",
+                                                                ".csc-exhibitionAuthority-termLanguage": {
+                                                                    "decorators": [
+                                                                        {
+                                                                            "func": "cspace.termList",
+                                                                            "type": "fluid",
+                                                                            "options": {
+                                                                                "root": "{row}",
+                                                                                "elPath": "termLanguage",
+                                                                                "termListType": "termLanguage"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                ".csc-exhibitionAuthority-termStatus": {
+                                                                    "default": "provisional",
+                                                                    "optionnames": [
+                                                                        "Provisional",
+                                                                        "Under Review",
+                                                                        "Accepted",
+                                                                        "Rejected"
+                                                                    ],
+                                                                    "optionlist": [
+                                                                        "provisional",
+                                                                        "under review",
+                                                                        "accepted",
+                                                                        "rejected"
+                                                                    ],
+                                                                    "selection": "${{row}.termStatus}"
+                                                                }
                                                             },
                                                             "type": "fluid.noexpand"
                                                         }
@@ -434,14 +485,26 @@
                                             }
                                         ]
                                     },
+                                    ".csc-preferredExhibition-termDisplayName-label": {
+                                        "messagekey": "preferredExhibition-termDisplayNameLabel"
+                                    },
+                                    ".csc-preferredExhibition-termName-label": {
+                                        "messagekey": "preferredExhibition-termNameLabel"
+                                    },
+                                    ".csc-preferredExhibition-termSourceID-label": {
+                                        "messagekey": "preferredExhibition-termSourceIDLabel"
+                                    },
+                                    ".csc-preferredExhibition-termLanguage-label": {
+                                        "messagekey": "preferredExhibition-termLanguageLabel"
+                                    },
                                     ".csc-preferredExhibition-termType-label": {
                                         "messagekey": "preferredExhibition-termTypeLabel"
                                     },
+                                    ".csc-preferredExhibition-termQualifier-label": {
+                                        "messagekey": "preferredExhibition-termQualifierLabel"
+                                    },
                                     ".csc-preferredExhibition-exhibitionTermGroup-label": {
                                         "messagekey": "preferredExhibition-exhibitionTermGroupLabel"
-                                    },
-                                    ".csc-preferredExhibition-termDisplayName-label": {
-                                        "messagekey": "preferredExhibition-termDisplayNameLabel"
                                     }
                                 },
                                 "type": "fluid.noexpand"
