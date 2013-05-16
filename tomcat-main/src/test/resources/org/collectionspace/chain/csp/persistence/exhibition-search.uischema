@@ -67,11 +67,22 @@
             "exhibitionTermGroup": {
                 "items": {
                     "properties": {
+                        "termName": {
+                            "type": "string"
+                        },
                         "_primary": {
                             "default": true,
                             "type": "boolean"
                         },
                         "termDisplayName": {
+                            "type": "string"
+                        },
+                        "termStatus": {
+                            "default": "",
+                            "type": "string"
+                        },
+                        "termLanguage": {
+                            "default": "",
                             "type": "string"
                         }
                     },

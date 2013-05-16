@@ -29,7 +29,16 @@
     <exhibitionTermGroupList>
         <exhibitionTermGroup>
             <termDisplayName>Yves Klien: With the Void, Full Powers</termDisplayName>
+            <termName>Yves Klien: With the Void, Full Powers</termName>
             <termType>preferred</termType>
+            <termLanguage>english</termLanguage>
+            <termPrefForLang>true</termPrefForLang>
+            <termQualifier>term qualifier</termQualifier>
+            <termSource>internal</termSource>
+            <termSourceID>12345</termSourceID>
+            <termSourceDetail>internal</termSourceDetail>
+            <termSourceNote>source note goes here</termSourceNote>
+            <termStatus>accepted</termStatus>
         </exhibitionTermGroup>
     </exhibitionTermGroupList>
 </ns2:exhibitions_common>

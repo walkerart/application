@@ -49,7 +49,16 @@
         {
             "_primary": true,
             "termDisplayName": "Yves Klien: With the Void, Full Powers",
-            "termType": "preferred"
+            "termName": "Yves Klien: With the Void, Full Powers",
+            "termLanguage": "english",
+            "termPrefForLang": true,
+            "termType": "preferred",
+            "termQualifier": "term qualifier",
+            "termSource": "internal",
+            "termSourceID": "12345",
+            "termSourceDetail": "internal",
+            "termSourceNote": "source note goes here",
+            "termStatus": "accepted"
         }
     ]
 }

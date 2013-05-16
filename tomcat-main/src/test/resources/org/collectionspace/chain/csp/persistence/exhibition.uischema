@@ -110,6 +110,13 @@
                     "exhibitionTermGroup": {
                         "items": {
                             "properties": {
+                                "termPrefForLang": {
+                                    "default": false,
+                                    "type": "boolean"
+                                },
+                                "termName": {
+                                    "type": "string"
+                                },
                                 "_primary": {
                                     "default": true,
                                     "type": "boolean"
@@ -119,6 +126,29 @@
                                     "type": "string"
                                 },
                                 "termDisplayName": {
+                                    "type": "string"
+                                },
+                                "termSource": {
+                                    "type": "string"
+                                },
+                                "termStatus": {
+                                    "default": "provisional",
+                                    "type": "string"
+                                },
+                                "termSourceID": {
+                                    "type": "string"
+                                },
+                                "termQualifier": {
+                                    "type": "string"
+                                },
+                                "termSourceDetail": {
+                                    "type": "string"
+                                },
+                                "termSourceNote": {
+                                    "type": "string"
+                                },
+                                "termLanguage": {
+                                    "default": "",
                                     "type": "string"
                                 }
                             },
