@@ -31,8 +31,8 @@
 			<include src="base-authority-location.xml"/>
 			<include src="base-authority-organization-termList.xml"/>
 			<include src="base-authority-organization.xml"/>
-			<include src="base-authority-person-termList.xml"/>
-			<include src="base-authority-person.xml"/>
+			<include src="base-authority-person-termList.xml,walkerart-authority-person-termList.xml" merge="xmlmerge-walkerart.properties"/>
+			<include src="base-authority-person.xml,walkerart-authority-person.xml" merge="xmlmerge-walkerart.properties"/>
 			<include src="base-authority-citation-termList.xml"/>
 			<include src="base-authority-citation.xml"/>
 			<include src="base-authority-place-termList.xml"/>

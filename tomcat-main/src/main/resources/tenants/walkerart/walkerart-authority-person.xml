@@ -1,0 +1,73 @@
+<record id="person" is-extension="true">
+    <services-record-path id="walkerart">persons_walkerart:http://collectionspace.org/services/person/local/walkerart,persons_walkerart</services-record-path>
+    <section id="personNameAuthorityInformation">
+        <repeat id="groups">
+            <selector>personAuthority-group</selector>
+            <field id="group" ui-search="repeatable">
+                <selector>personAuthority-group</selector>
+                <!-- temporary term list until a full list can be provided -->
+                <options>
+                    <option id="">Please select a value</option>
+                    <option id="term1">Term 1</option>
+                    <option id="term2">Term 2</option>
+                    <option id="term3">Term 3</option>
+                </options>
+            </field>
+        </repeat>
+        <repeat id="nationalities">
+            <selector>personAuthority-nationality</selector>
+            <field id="nationality" ui-search="repeatable">
+                <selector>personAuthority-nationality</selector>
+                <!-- temporary term list until a full list can be provided -->
+                <options>
+                    <option id="">Please select a value</option>
+                    <option id="term1">Term 1</option>
+                    <option id="term2">Term 2</option>
+                    <option id="term3">Term 3</option>
+                </options>
+            </field>
+        </repeat>
+            <repeat id="occupations">
+            <field id="occupation" ui-search="repeatable" autocomplete="vocab-personsoccupation" ui-type="enum">
+                    <!-- adding vocab-personsoccupation vocabulary; hiding new options list -->
+                    <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>personAuthority-occupation</selector>
+                <!--options>
+                        <option id="" default="yes">Please select a value</option>
+                    <option id="artist">Artist</option>
+                    <option id="author">Author</option>
+                    <option id="editor">Editor</option>
+                    <option id="lender">Lender</option>
+                </options-->
+            </field>
+        </repeat>
+            <field id="businessWAC" section="walkerart">
+            <selector>personAuthority-businessWAC</selector>
+        </field>
+        <repeat id="associationsWAC" section="walkerart">
+            <field id="associationWAC" autocomplete="vocab-personsassociation" ui-type="enum" section="walkerart">
+                <selector>personAuthority-associationWAC</selector>
+            </field>
+        </repeat>
+        <field id="assistantWAC" section="walkerart">
+            <selector>personAuthority-assistantWAC</selector>
+        </field>
+        <field id="recordTypeWAC" autocomplete="vocab-recordtype" ui-type="enum" section="walkerart">
+            <selector>personAuthority-recordTypeWAC</selector>
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(recordtype):item:name(individual)'Individual'</default>
+            </enum>
+        </field>
+        <field id="recordStatusWAC" section="walkerart">
+            <selector>personAuthority-recordStatusWAC</selector>
+            <!-- temporary term list until a full list can be provided -->
+            <options>
+                <option id="">Please select a value</option>
+                <option id="term1">Term 1</option>
+                <option id="term2">Term 2</option>
+                <option id="term3">Term 3</option>
+            </options>
+        </field>
+    </section>
+</record>
