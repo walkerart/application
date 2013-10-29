@@ -1,0 +1,193 @@
+<instances>
+    <instance id="vocab-persontermtype">
+        <web-url>persontermtype</web-url>
+        <title-ref>persontermtype</title-ref>
+        <title>personTermType</title>
+        <options>
+            <option id="artist">Artist</option>
+            <option id="donor">Donor</option>
+            <option id="employee">Employee</option>
+        </options>
+    </instance>
+    <instance id="vocab-collections">
+        <web-url>collections</web-url>
+        <title-ref>collections</title-ref>
+        <title>Collections</title>
+        <options>
+            <option id="permanentcollection">Permanent Collection</option>
+            <option id="studycollection">Study Collection</option>
+            <option id="librarycollection">Library Collection</option>
+            <option id="deaccessioned">De-accessioned</option>
+            <option id="filmvideo">Film/Video</option>
+            <option id="performingarts">Performing Arts</option>
+        </options>
+    </instance>
+    <instance id="vocab-inscriptiontype">
+        <web-url>inscriptiontype</web-url>
+        <title-ref>inscriptiontype</title-ref>
+        <title>Inscription Type</title>
+        <options>
+            <option id="signature">Signature</option>
+            <option id="castnumber">Cast Number</option>
+            <option id="workshopnumber">Workshop Number</option>
+            <option id="signedlocation">Signed/Location</option>
+            <option id="printersmark">Printers Mark</option>
+            <option id="foundrymark">Foundry Mark</option>
+            <option id="inscriptionlocation">Inscription/Location</option>
+        </options>
+    </instance>
+    <instance id="vocab-materialcomponent">
+        <web-url>materialcomponent</web-url>
+        <title-ref>materialcomponent</title-ref>
+        <title>Material Component</title>
+        <options>
+            <option id="medium">Medium</option>
+            <option id="support">Support</option>
+        </options>
+    </instance>
+    <instance id="vocab-technicalattribute">
+        <web-url>technicalattribute</web-url>
+        <title-ref>technicalattribute</title-ref>
+        <title>Technical Attribute</title>
+        <options>
+            <option id="uniqueframe">Unique Frame</option>
+            <option id="artistspecifiedframe">Artist Specified Frame</option>
+            <option id="numberofpages">Number of Pages</option>
+            <option id="volno">Vol./No.</option>
+            <option id="binding">Binding</option>
+            <option id="slipcase">Slipcase</option>
+            <option id="master">Master</option>
+            <option id="submaster">Submaster</option>
+            <option id="portfolio">Portfolio</option>
+        </options>
+    </instance>
+    <instance id="vocab-objectcomponentname">
+        <web-url>objectcomponentname</web-url>
+        <title-ref>objectcomponentname</title-ref>
+        <title>object Component Name</title>
+        <options>
+            <option id="elementsizes">Element Sizes</option>
+            <option id="portfolio">Portfolio</option>
+            <option id="relatedmateriallocation">Related Material Location</option>
+        </options>
+    </instance>
+    <instance id="vocab-numbertype">
+        <web-url>numbertype</web-url>
+        <title-ref>numbertype</title-ref>
+        <title>Number Type</title>
+        <options>
+            <option id="oldaccessionnumber">Old Accession Number</option>
+            <option id="lcnumber">LC#</option>
+            <option id="objectid">Object ID</option>
+            <option id="receiptofnumber">Receipt of Number</option>
+            <option id="cataloguqraisonne">Catalogue Raisonne</option>
+        </options>
+    </instance>
+    <instance id="vocab-objectnamecurrency">
+        <web-url>objectnamecurrency</web-url>
+        <title-ref>objectnamecurrency</title-ref>
+        <title>Object Name Currency</title>
+        <options>
+            <option id="active">Active</option>
+        </options>
+    </instance>
+    <instance id="vocab-objectnamelevel">
+        <web-url>objectnamelevel</web-url>
+        <title-ref>objectnamelevel</title-ref>
+        <title>Object Name Level</title>
+        <options>
+            <option id="broaderterm">Broader term</option>
+            <option id="narrowerterm">Narrower term</option>
+        </options>
+    </instance>
+    <instance id="vocab-objectnamesystem">
+        <web-url>objectnamesystem</web-url>
+        <title-ref>objectnamesystem</title-ref>
+        <title>Object Name System</title>
+        <options>
+            <option id="walkerartcenterinhouse">Walker Art Center In-house</option>
+            <option id="aat">AAT</option>
+        </options>
+    </instance>
+    <instance id="vocab-objectnametype">
+        <web-url>objectnametype</web-url>
+        <title-ref>objectnametype</title-ref>
+        <title>Object Name Type</title>
+        <options>
+            <option id="classification">Classification</option>
+        </options>
+    </instance>
+    <instance id="vocab-personsassociation">
+        <web-url>personsassociation</web-url>
+        <title-ref>personsassociation</title-ref>
+        <title>Persons Association</title>
+        <options>
+            <option id="artist">Artist</option>
+            <option id="author">Author</option>
+            <option id="editor">Editor</option>
+            <option id="donor">Donor</option>
+            <option id="source">Source</option>
+        </options>
+    </instance>
+    <instance id="vocab-personssalutation">
+        <web-url>personssalutation</web-url>
+        <title-ref>personssalutation</title-ref>
+        <title>Persons Salutation</title>
+        <options>
+            <option id="mister">Mr.</option>
+            <option id="mrs">Mrs.</option>
+            <option id="doctor">Dr.</option>
+            <option id="miss">Miss</option>
+        </options>
+    </instance>
+    <instance id="vocab-personsoccupation">
+        <web-url>personsoccupation</web-url>
+        <title-ref>personsoccupation</title-ref>
+        <title>Persons Occupation</title>
+        <options>
+            <option id="artist">Artist</option>
+            <option id="author">Author</option>
+            <option id="donor">Donor</option>
+            <option id="editor">Editor</option>
+            <option id="lender">Lender</option>
+        </options>
+    </instance>
+    <instance id="vocab-organizationfunction">
+        <web-url>organizationfunction</web-url>
+        <title-ref>organizationfunction</title-ref>
+        <title>Organization Function</title>
+        <options>
+            <option id="endowment">Endowment</option>
+            <option id="foundry">Foundry</option>
+            <option id="fabricator">Fabricator</option>
+            <option id="fund">Fund</option>
+            <option id="insurer">Insurer</option>
+            <option id="lender">Lender</option>
+            <option id="printer">Printer</option>
+            <option id="publisher">Publisher</option>
+        </options>
+    </instance>
+    <instance id="vocab-contactaddresstype">
+        <web-url>contactaddresstype</web-url>
+        <title-ref>contactaddresstype</title-ref>
+        <title>Contact Address Type</title>
+        <options>
+            <option id="business">Business</option>
+            <option id="home">Home</option>
+            <option id="husband">Husband</option>
+            <option id="office">Office</option>
+            <option id="summer">Summer</option>
+            <option id="wife">Wife</option>
+            <option id="winter">Winter</option>
+        </options>
+    </instance>
+    <instance id="vocab-recordtype">
+        <web-url>recordtype</web-url>
+        <title-ref>recordtype</title-ref>
+        <title>Record Type</title>
+        <options>
+            <option id="individual">Individual</option>
+            <option id="corporatebody">Corporate Body</option>
+        </options>
+    </instance>
+</instances>

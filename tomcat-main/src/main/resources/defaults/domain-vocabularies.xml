@@ -1,4 +1,98 @@
 <root>
-	<section id="domaindata">
-	</section>
+    <instances>
+        <instance id="vocab-originalformat">
+            <web-url>originalformat</web-url>
+            <title-ref>originalformat</title-ref>
+            <title>Original Format</title>
+            <options>
+                <option id="8mm">8mm</option>
+                <option id="16mm">16mm</option>
+                <option id="35mm">35mm</option>
+                <option id="50mm">50mm</option>
+                <option id="1s2in">1/2 in.</option>
+                <option id="3s4in">3/4 in.</option>
+                <option id="2in">2 in.</option>
+                <option id="beta">Beta</option>
+                <option id="digibeta">Digibeta</option>
+                <option id="minidv">MiniDV</option>
+                <option id="vhs">VHS</option>
+            </options>
+        </instance>
+        <instance id="vocab-programminglanguage">
+            <web-url>programminglanguage</web-url>
+            <title-ref>programminglanguage</title-ref>
+            <title>Programming Language</title>
+            <options>
+                <option id="c">C language</option>
+                <option id="cplusplus">C++</option>
+                <option id="csharp">C#</option>
+                <option id="java">Java</option>
+                <option id="javascript">JavaScript</option>
+                <option id="perl">Perl</option>
+                <option id="php">PHP</option>
+                <option id="python">Python</option>
+                <option id="ruby">Ruby</option>
+                <option id="sql">SQL</option>
+            </options>
+        </instance>
+        <instance id="vocab-authoringenvironment">
+            <web-url>authoringenvironment</web-url>
+            <title-ref>authoringenvironment</title-ref>
+            <title>Authoring Environment</title>
+            <options>
+                <option id="director">Director</option>
+                <option id="flash">Flash</option>
+                <option id="shockwave">Shockwave</option>
+            </options>
+        </instance>
+        <instance id="vocab-ratioformat">
+            <web-url>ratioformat</web-url>
+            <title-ref>ratioformat</title-ref>
+            <title>Ratio Format</title>
+            <options>
+                <option id="4to3">4:3</option>
+                <option id="3to2">3:2</option>
+                <option id="1p618to9">1.618:9</option>
+                <option id="1p85to1">1.85:1</option>
+            </options>
+        </instance>
+        <instance id="vocab-preferredscreenresolution">
+            <web-url>preferredscreenresolution</web-url>
+            <title-ref>preferredscreenresolution</title-ref>
+            <title>Preferred Screen Resolution</title>
+            <options>
+                <option id="480i">480i</option>
+                <option id="480p">480p</option>
+                <option id="720p">720p</option>
+                <option id="1080i">1080i</option>
+                <option id="1080p">1080p</option>
+                <option id="1024x768">1024x768</option>
+                <option id="1366x768">1366x768</option>
+                <option id="1280x800">1280x800</option>
+            </options>
+        </instance>
+        <instance id="vocab-preferredcolorpalette">
+            <web-url>preferredcolorpalette</web-url>
+            <title-ref>preferredcolorpalette</title-ref>
+            <title>Preferred Color Palette</title>
+            <options>
+                <option id="cmyk">CMYK</option>
+                <option id="rgb">RGB</option>
+            </options>
+        </instance>
+        <instance id="vocab-playbackhardware">
+            <web-url>playbackhardware</web-url>
+            <title-ref>playbackhardware</title-ref>
+            <title>Playback Hardware</title>
+            <options>
+                <option id="blurayvideoplayer">Blu-ray video player</option>
+                <option id="cdplayer">CD player</option>
+                <option id="dvdplayer">DVD player</option>
+                <option id="laserdiscplayer">Laserdisc player</option>
+                <option id="tapecassetteplayer">Tape cassette player</option>
+                <option id="televisionset">Television set</option>
+                <option id="videocassetteplayer">Videocassette player</option>
+            </options>
+        </instance>
+    </instances>
 </root>

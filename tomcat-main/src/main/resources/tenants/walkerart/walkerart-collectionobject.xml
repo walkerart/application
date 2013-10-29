@@ -1,0 +1,277 @@
+<record id="collection-object" is-extension="true" generate-services-schema="true">
+    <services-record-path id="walkerart">collectionobjects_walkerart:http://collectionspace.org/services/collectionobject/local/walkerart,collectionobjects_walkerart</services-record-path>
+    <section id="identificationInformation">
+        <repeat id="otherNumberList/otherNumber">
+            <field id="numberType" in-tab="yes" autocomplete="vocab-numbertype" ui-type="enum">
+                <!-- adding vocab-numbertype vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>object-identification-other-number-type</selector>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="oldaccessionnumber">Old Accession Number</option>
+                    <option id="lcnumber">LC#</option>
+                    <option id="objectid">Object ID</option>
+                </options-->
+            </field>
+        </repeat>
+        <repeat id="titleGroupList/titleGroup">
+            <field id="titleLanguage" autocomplete="vocab-languages" ui-type="enum">
+                <!-- changing URN for default language value -->
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                </enum>
+                <selector>object-identification-object-title-language</selector>
+            </field>
+            <repeat id="titleTranslationSubGroupList/titleTranslationSubGroup">
+                <field id="titleTranslationLanguage" autocomplete="vocab-languages" ui-type="enum">
+                    <!-- changing URN for default language value -->
+                    <enum>
+                        <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                        <blank-value>Please select a value</blank-value>
+                    </enum>
+                </field>
+            </repeat>
+        </repeat>
+
+        <repeat id="objectNameList/objectNameGroup">
+            <field id="objectNameCurrency" autocomplete="vocab-objectnamecurrency" ui-type="enum">
+                <!-- adding vocab-objectnamecurrency vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes and enum block; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>object-identification-object-currency</selector>
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(objectnamecurrency):item:name(active)'Active'</default>
+                </enum>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="current">Current</option>
+                </options-->
+            </field>
+            <field id="objectNameLevel" autocomplete="vocab-objectnamelevel" ui-type="enum">
+                <!-- adding vocab-objectnamelevel vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>object-identification-object-level</selector>
+                <!--options>
+                    <option id="" default="yes">Please select a value</option>
+                    <option id="broaderterm">Broader term</option>
+                    <option id="narrowerterm">Narrower term</option>
+                </options-->
+            </field>
+            <field id="objectNameSystem" autocomplete="vocab-objectnamesystem" ui-type="enum">
+                <!-- adding vocab-objectnamesystem vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes and enum block; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>object-identification-object-system</selector>
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(objectnamesystem):item:name(walkerartcenterinhouse)'Walker Art Center In-house'</default>
+                </enum>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="walkerartcenterinhouse">Walker Art Ceter In-house</option>
+                </options-->
+            </field>
+            <field id="objectNameType" autocomplete="vocab-objectnametype" ui-type="enum">
+                <!-- adding vocab-objectnametype vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes and enum block; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>object-identification-object-type</selector>
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(objectnametype):item:name(classification)'Classification'</default>
+                </enum>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="Classification">Classification</option>
+                </options-->
+            </field>
+            <field id="objectNameLanguage" autocomplete="vocab-languages" ui-type="enum">
+                <!-- changing URN for default language value -->
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                    <blank-value>Please select a value</blank-value>
+                </enum>
+                <selector>object-identification-object-language</selector>
+            </field>
+            <field id="objectNameNote">
+                <selector>object-identification-object-note</selector>
+            </field>
+            <field id="objectName" ui-search="repeatable" mini="search">
+                <selector>object-identification-object-name</selector>
+                <!-- temporary term list until a full list can be provided -->
+                <options>
+                    <option id="">Please select a value</option>
+                    <option id="term1">Term 1</option>
+                    <option id="term2">Term 2</option>
+                    <option id="term3">Term 3</option>
+                </options>
+            </field>
+        </repeat>
+        <field id="formatWAC" section="walkerart">
+            <selector>object-identification-formatWAC</selector>
+            <!-- temporary term list until a full list can be provided -->
+            <options>
+                <option id="">Please select a value</option>
+                <option id="term1">Term 1</option>
+                <option id="term2">Term 2</option>
+                <option id="term3">Term 3</option>
+            </options>
+        </field>
+        <repeat id="collectionsWAC" section="walkerart">
+            <field id="collectionWAC" section="walkerart" autocomplete="vocab-collections" ui-type="enum">
+                <selector>object-identification-collectionWAC</selector>
+            </field>
+        </repeat>
+    </section>
+    <section id="descriptionInformation">
+        <field id="sex" ui-search="repeatable" seperate_ui_container="true">
+            <!-- adding new term to options list -->
+            <selector>object-description-sex</selector>
+            <options>
+                <option id="">Please select a value</option>
+                <option id="male">male</option>
+                <option id="female">female</option>
+                <option id="unknown">unknown</option>
+            </options>
+        </field>
+        <repeat id="materialGroupList/materialGroup">
+            <field id="materialComponent" autocomplete="vocab-materialcomponent" ui-type="enum">
+                <!-- adding vocab-materialcomponent vocabulary; hiding new options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>object-description-material-component</selector>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="medium">Medium</option>
+                    <option id="support">Support</option>
+                </options-->
+            </field>
+        </repeat>
+        <repeat id="objectComponentGroupList/objectComponentGroup">
+            <field id="objectComponentName" ui-search="repeatable" autocomplete="vocab-objectcomponentname" ui-type="enum">
+                <!-- adding vocab-objectcomponentname vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>object-description-object-component-name</selector>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="elementsizes">Element Sizes</option>
+                    <option id="portfolio">Portfolio</option>
+                    <option id="relatedmateriallocation">Related Material Location</option>
+                </options-->
+            </field>
+        </repeat>
+        <repeat id="technicalAttributeGroupList/technicalAttributeGroup">
+            <field id="technicalAttribute" ui-search="repeatable" autocomplete="vocab-technicalattribute" ui-type="enum">
+                <!-- adding vocab-technicalattribute vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
+                <selector>object-description-technical-attribute</selector>
+                <!--options>
+                    <option id="">Please select a value</option>
+                    <option id="uniqueframe">Unique Frame</option>
+                    <option id="artistspecifiedframe">Artist Specified Frame</option>
+                    <option id="numberofpages">Number of Pages</option>
+                    <option id="volno">Vol./No.</option>
+                    <option id="binding">Binding</option>
+                    <option id="slipcase">Slipcase</option>
+                    <option id="master">Master</option>
+                    <option id="submaster">Submaster</option>
+                    <option id="portfolio">Portfolio</option>
+                </options-->
+            </field>
+            <field id="technicalAttributeMeasurement">
+                <!-- removing options list -->
+                <selector>object-description-technical-attribute-measurement</selector>
+            </field>
+        </repeat>
+        <section id="contentInformation">
+            <repeat id="contentConcepts">
+                <field id="contentConcept">
+                    <!-- removing vocabs -->
+                    <selector>object-description-content-concept</selector>
+                </field>
+            </repeat>
+            <repeat id="contentPersons">
+                <field id="contentPerson" autocomplete="person-person">
+                    <!-- removing person-ulan_pa auth ref -->
+                    <selector>object-description-content-person</selector>
+                </field>
+            </repeat>
+            <repeat id="contentOrganizations">
+                <!-- need to see if this field should be removed since WAC will not use an org-org authority type -->
+                <!-- in the mean time, changing the authority types from organization-organization,organization-ulan_oa -->
+                <!-- to person-person -->
+                <field id="contentOrganization" autocomplete="person-person">
+                    <selector>object-description-content-organization</selector>
+                </field>
+            </repeat>
+        </section>
+        <section id="textualInscriptionInformation">
+            <repeat id="textualInscriptionGroupList/textualInscriptionGroup">
+                <field id="inscriptionContentInscriber" autocomplete="person-person" ui-search="repeatable">
+                    <!-- removing org-org authority ref -->
+                    <selector>object-description-inscription-content-inscriber</selector>
+                </field>
+                <field id="inscriptionContentLanguage" autocomplete="vocab-languages" ui-type="enum">
+                    <!-- changing URN for default language value -->
+                    <enum>
+                        <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                        <blank-value>Please select a value</blank-value>
+                    </enum>
+                    <selector>object-description-inscription-content-language</selector>
+                </field>
+                <field id="inscriptionContentType" autocomplete="vocab-inscriptiontype" ui-type="enum">
+                    <!-- adding vocab-inscriptiontype vocabulary; hiding updated options list -->
+                    <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                            and add seperate_ui_container="true" to field tag -->
+                    <selector>object-description-inscription-content-type</selector>
+                    <!--options>
+                        <option id="">Please select a value</option>
+                        <option id="signature">Signature</option>
+                        <option id="castnumber">Cast Number</option>
+                        <option id="workshopnumber">Workshop Number</option>
+                        <option id="signedlocation">Signed/Location</option>
+                        <option id="printersmark">Printers Mark</option>
+                        <option id="foundrymark">Foundry Mark</option>
+                        <option id="inscriptionlocation">Inscription/Location</option>
+                    </options-->
+                </field>
+            </repeat>
+        </section>
+    </section>
+    <section id="objectHistoryAssociationInformation">
+        <repeat id="owners">
+            <!-- removing org-org auth ref -->
+            <field id="owner" autocomplete="person-person">
+                <selector>object-history-association-owner</selector>
+            </field>
+        </repeat>
+        <field id="ownershipExchangePriceCurrency" autocomplete="vocab-currency" ui-type="enum">
+            <!-- changing URN for default language value -->
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+            <selector>object-history-association-denomination</selector>
+        </field>
+        <section id="associationInformation">
+            <repeat id="assocOrganizationGroupList/assocOrganizationGroup">
+                <!-- replacing org-org auth ref with person-person -->
+                <!-- need to check if this entire repeatable block should be removed -->
+                <field id="assocOrganization" autocomplete="person-person"/>
+            </repeat>
+            <repeat id="assocEventOrganizations">
+                <field id="assocEventOrganization" autocomplete="person-person">
+                    <!-- replacing org-org auth ref with person-person -->
+                    <!-- need to check if this entire repeatable block should be removed -->
+                    <selector>object-history-association-event-organization</selector>
+                </field>
+            </repeat>
+        </section>
+    </section>
+    <section id="referenceInformation">
+        <field id="catalogNumberWAC" section="walkerart">
+            <selector>collection-object-catalogNumberWAC</selector>
+        </field>
+    </section>
+</record>
