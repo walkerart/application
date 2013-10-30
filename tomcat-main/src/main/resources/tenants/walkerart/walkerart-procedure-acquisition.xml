@@ -1,0 +1,96 @@
+<record id="acquisition" is-extension="true">
+    <services-record-path id="walkerart">acquisitions_walkerart:http://collectionspace.org/services/acquisition/local/walkerart,acquisitions_walkerart</services-record-path>
+    <section id="acquisitionInformation">
+        <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true">
+            <selector>acquisition-acquisition-method</selector>
+            <options>
+                <option id="">Please select a value</option>
+                <option id="giftoffund">Gift of Fund</option>
+                <option id="purchase">Purchase</option>
+                <option id="exchange">Exchange</option>
+                <option id="partialgift">Partial Gift</option>
+                <option id="transfer">Transfer</option>
+                <option id="treasure">Treasure</option>
+            </options>
+        </field>
+        <repeat id="acquisitionSources">
+            <!-- removing org auth ref -->
+            <field id="acquisitionSource" mini="summary,search,list,relate" in-title="yes"
+                ui-search="repeatable" autocomplete="person-person">
+                <selector>acquisition-acquisitionSource</selector>
+            </field>
+        </repeat>
+        <repeat id="owners">
+            <selector>acquisition-owner</selector>
+            <!-- removing org auth ref -->
+            <field id="owner" autocomplete="person-person" mini="list">
+                <selector>acquisition-owner</selector>
+            </field>
+        </repeat>
+        <field id="groupPurchasePriceCurrency" autocomplete="vocab-currency" ui-type="enum">
+            <!-- changing URN for default currency value -->
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+            <selector>acquisition-group-purchase-price-currency</selector>
+        </field>
+        <field id="objectOfferPriceCurrency" autocomplete="vocab-currency" ui-type="enum">
+            <!-- changing URN for default currency value -->
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+            <selector>acquisition-object-offer-price-currency</selector>
+        </field>
+        <field id="objectPurchaseOfferPriceCurrency" autocomplete="vocab-currency" ui-type="enum">
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+            <selector>acquisition-purchaser-price-denomination</selector>
+        </field>
+        <field id="objectPurchasePriceCurrency" autocomplete="vocab-currency" ui-type="enum">
+            <!-- changing URN for default currency value -->
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+            <selector>acquisition-object-purchase-price-currency</selector>
+        </field>
+        <field id="objectPurchaseOfferPriceCurrency" autocomplete="vocab-currency" ui-type="enum">
+            <!-- changing URN for default currency value -->
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+            <selector>acquisition-object-purchase-offer-price-currency</selector>
+        </field>
+        <field id="originalObjectPurchasePriceCurrency" autocomplete="vocab-currency" ui-type="enum">
+            <!-- changing URN for default currency value -->
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+            <selector>acquisition-original-object-purchase-price-currency</selector>
+        </field>
+        <repeat id="acquisitionFundingList/acquisitionFunding">
+            <field id="acquisitionFundingCurrency" autocomplete="vocab-currency" ui-type="enum">
+                <!-- changing URN for default currency value -->
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+                </enum>
+            </field>
+        </repeat>
+        <repeat id="insuredByGroupWAC" section="walkerart">
+            <field id="insuredByWAC" autocomplete="person-person" section="walkerart">
+                <selector>acquisition-insuredByWAC</selector>
+            </field>
+        </repeat>
+        <repeat id="acquisitionFundingWACList/acquisitionFundingWAC" section="walkerart">
+            <field id="acquisitionFundingCurrencyWAC" autocomplete="vocab-currency" ui-type="enum" section="walkerart">
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+                </enum>
+            </field>
+            <field id="acquisitionFundingValueWAC" ui-type="validated" datatype="float" section="walkerart"></field>
+            <field id="acquisitionFundingCostWAC" ui-type="validated" datatype="float" section="walkerart"></field>
+            <field id="acquisitionFundingSourceWAC" ui-search="repeatable" autocomplete="person-person" section="walkerart"></field>
+            <field id="acquisitionFundingSourceProvisosWAC" section="walkerart"></field>
+        </repeat>
+    </section>
+</record>
