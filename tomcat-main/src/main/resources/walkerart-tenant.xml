@@ -18,7 +18,7 @@
 			<include src="base-procedure-acquisition.xml,walkerart-procedure-acquisition.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-blobs.xml"/>
 			<include src="base-procedure-groups.xml"/>
-			<include src="base-procedure-intake.xml"/>
+			<include src="base-procedure-intake.xml,walkerart-procedure-intake.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-loanin.xml"/>
 			<include src="base-procedure-loanout.xml"/>
 			<include src="base-procedure-media.xml"/>
