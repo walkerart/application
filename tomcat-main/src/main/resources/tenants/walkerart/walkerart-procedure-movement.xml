@@ -1,0 +1,18 @@
+<record id="movement" is-extension="true">
+    <services-record-path id="walkerart">movements_walkerart:http://collectionspace.org/services/movement/local/walkerart,movements_walkerart</services-record-path>
+    <section id="movementControlInformation">
+        <field id="onViewWAC" datatype="boolean" section="walkerart">
+            <selector>movement-onViewWAC</selector>
+        </field>
+        <field id="onViewLocationWAC" section="walkerart">
+            <selector>movement-onViewLocationWAC</selector>
+            <!-- temporary term list until a full list can be provided -->
+            <options>
+                <option id="">Please select a value</option>
+                <option id="term1">Term 1</option>
+                <option id="term2">Term 2</option>
+                <option id="term3">Term 3</option>
+            </options>
+        </field>
+    </section>
+</record>
