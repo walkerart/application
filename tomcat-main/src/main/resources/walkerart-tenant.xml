@@ -23,7 +23,7 @@
 			<include src="base-procedure-loanout.xml,walkerart-procedure-loanout.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-media.xml,walkerart-procedure-media.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-movement.xml,walkerart-procedure-movement.xml" merge="xmlmerge.properties"/>
-			<include src="base-procedure-objectexit.xml"/>
+			<include src="base-procedure-objectexit.xml,walkerart-procedure-objectexit.xml" merge="xmlmerge.properties"/>
 
 			<include src="base-authority-contact.xml,walkerart-authority-contact.xml" merge="xmlmerge.properties"/>
                         <!-- IMPORTANT: *-termList.xml files MUST precede their equivalent files. -->
