@@ -1,0 +1,17 @@
+{
+    "presentationRefNumber": "PR2013.4.2",
+    "presentationPresenter": "Patty Presenter",
+    "presentationType":"premiere",
+    "exhibitionTitle": "Exhibition 1",
+    "overrideExhibitionVenues": true,
+    "updatedExhibitionVenueGroup": [
+        {
+            "updatedVenueName": "Venus Venue",
+            "updatedVenueStartDate": "2013-01-23",
+            "updatedVenueEndDate": "2014-02-13",
+            "updatedVenueAttendance": "112233"
+        }
+    ],
+    "circulatedVenues": "circulated venue name",
+    "presentationNote": "presentation note"
+}

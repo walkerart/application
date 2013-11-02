@@ -10,6 +10,7 @@
       "location", 
       "loanin", 
       "loanout", 
+      "presentation", 
       "acquisition", 
       "organization", 
       "ulan_oa", 

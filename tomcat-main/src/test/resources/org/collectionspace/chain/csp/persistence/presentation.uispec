@@ -1,0 +1,248 @@
+{
+    "recordEditor": {
+        ".csc-presentation-overrideExhibitionVenues": "${fields.overrideExhibitionVenues}",
+        ".csc-presentation-coreInformation-label": {
+            "messagekey": "presentation-coreInformationLabel"
+        },
+        ".csc-presentation-nametitle": "${fields.nametitle}",
+        ".csc-presentation-tenantId": "${fields.tenantId}",
+        ".csc-presentation-presentationRefNumber": "${fields.presentationRefNumber}",
+        ".csc-presentation-presentationLocationInternal": {
+            "decorators": [
+                {
+                    "func": "cspace.autocomplete",
+                    "type": "fluid",
+                    "options": {
+                        "queryUrl": "../../../tenant/core/presentation/autocomplete/presentationLocationInternal",
+                        "vocabUrl": "../../../tenant/core/presentation/source-vocab/presentationLocationInternal"
+                    }
+                }
+            ],
+            "value": "${fields.presentationLocationInternal}"
+        },
+        ".csc-presentation-nametitle-label": {
+            "messagekey": "presentation-nametitleLabel"
+        },
+        ".csc-presentation-exhibitionTitle-label": {
+            "messagekey": "presentation-exhibitionTitleLabel"
+        },
+        ".csc-presentation-updatedExhibitionVenueGroup-label": {
+            "messagekey": "presentation-updatedExhibitionVenueGroupLabel"
+        },
+        ".csc-presentation-domaindata-label": {
+            "messagekey": "presentation-domaindataLabel"
+        },
+        ".csc-presentation-uri": "${fields.uri}",
+        ".csc-presentation-updatedVenueAttendance-label": {
+            "messagekey": "presentation-updatedVenueAttendanceLabel"
+        },
+        ".csc-presentation-createdBy-label": {
+            "messagekey": "presentation-createdByLabel"
+        },
+        ".csc-presentation-createdBy": "${fields.createdBy}",
+        ".csc-presentation-updatedAt": {
+            "decorators": [
+                {
+                    "func": "cspace.datePicker",
+                    "type": "fluid"
+                }
+            ],
+            "value": "${fields.updatedAt}"
+        },
+        ".csc-presentation-presentationLocationInternal-label": {
+            "messagekey": "presentation-presentationLocationInternalLabel"
+        },
+        ".csc-presentation-createdAt-label": {
+            "messagekey": "presentation-createdAtLabel"
+        },
+        ".csc-presentation-exhibitionTitle": {
+            "decorators": [
+                {
+                    "func": "cspace.autocomplete",
+                    "type": "fluid",
+                    "options": {
+                        "queryUrl": "../../../tenant/core/presentation/autocomplete/exhibitionTitle",
+                        "vocabUrl": "../../../tenant/core/presentation/source-vocab/exhibitionTitle"
+                    }
+                }
+            ],
+            "value": "${fields.exhibitionTitle}"
+        },
+        ".csc-presentation-updatedVenueStartDate-label": {
+            "messagekey": "presentation-updatedVenueStartDateLabel"
+        },
+        ".csc-presentation-presentationNote-label": {
+            "messagekey": "presentation-presentationNoteLabel"
+        },
+        ".csc-presentation-presentationType-label": {
+            "messagekey": "presentation-presentationTypeLabel"
+        },
+        ".csc-presentation-updatedExhibitionVenueGroup": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-presentation-updatedVenueEndDate": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.datePicker",
+                                                "type": "fluid"
+                                            }
+                                        ],
+                                        "value": "${{row}.updatedVenueEndDate}"
+                                    },
+                                    ".csc-presentation-updatedVenueAttendance": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.inputValidator",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "label": "presentation-updatedVenueAttendanceLabel",
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        ],
+                                        "value": "${{row}.updatedVenueAttendance}"
+                                    },
+                                    ".csc-presentation-updatedVenueStartDate": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.datePicker",
+                                                "type": "fluid"
+                                            }
+                                        ],
+                                        "value": "${{row}.updatedVenueStartDate}"
+                                    },
+                                    ".csc-presentation-updatedVenueName": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.autocomplete",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "queryUrl": "../../../tenant/core/presentation/autocomplete/updatedVenueName",
+                                                    "vocabUrl": "../../../tenant/core/presentation/source-vocab/updatedVenueName"
+                                                }
+                                            }
+                                        ],
+                                        "value": "${{row}.updatedVenueName}"
+                                    }
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.updatedExhibitionVenueGroup"
+                    }
+                }
+            ]
+        },
+        ".csc-presentation-updatedBy-label": {
+            "messagekey": "presentation-updatedByLabel"
+        },
+        ".csc-presentation-presentationNote": "${fields.presentationNote}",
+        ".csc-presentation-uri-label": {
+            "messagekey": "presentation-uriLabel"
+        },
+        ".csc-presentation-presentationPresenter": {
+            "decorators": [
+                {
+                    "func": "cspace.autocomplete",
+                    "type": "fluid",
+                    "options": {
+                        "queryUrl": "../../../tenant/core/presentation/autocomplete/presentationPresenter",
+                        "vocabUrl": "../../../tenant/core/presentation/source-vocab/presentationPresenter"
+                    }
+                }
+            ],
+            "value": "${fields.presentationPresenter}"
+        },
+        ".csc-presentation-overrideExhibitionVenues-label": {
+            "messagekey": "presentation-overrideExhibitionVenuesLabel"
+        },
+        ".csc-presentation-updatedVenueEndDate-label": {
+            "messagekey": "presentation-updatedVenueEndDateLabel"
+        },
+        ".csc-presentation-presentationRefNumber-patternChooserContainer": {
+            "decorators": [
+                {
+                    "func": "cspace.numberPatternChooser",
+                    "type": "fluid",
+                    "options": {
+                        "model": {
+                            "names": [
+                                "Presentation"
+                            ],
+                            "list": [
+                                "presentation"
+                            ],
+                            "samples": [
+                                "PR2013.1"
+                            ]
+                        },
+                        "selectors": {
+                            "numberField": ".csc-presentation-presentationRefNumber"
+                        }
+                    }
+                }
+            ]
+        },
+        ".csc-presentation-presentationPresenter-label": {
+            "messagekey": "presentation-presentationPresenterLabel"
+        },
+        ".csc-presentation-presentationInformation-label": {
+            "messagekey": "presentation-presentationInformationLabel"
+        },
+        ".csc-presentation-refName": "${fields.refName}",
+        ".csc-presentation-updatedBy": "${fields.updatedBy}",
+        ".csc-presentation-tenantId-label": {
+            "messagekey": "presentation-tenantIdLabel"
+        },
+        ".csc-presentation-circulatedVenues-label": {
+            "messagekey": "presentation-circulatedVenuesLabel"
+        },
+        ".csc-presentation-createdAt": {
+            "decorators": [
+                {
+                    "func": "cspace.datePicker",
+                    "type": "fluid"
+                }
+            ],
+            "value": "${fields.createdAt}"
+        },
+        ".csc-presentation-presentationType": {
+            "optionnames": [
+                "Please select a value",
+                "Premiere",
+                "Other term"
+            ],
+            "optionlist": [
+                "",
+                "premiere",
+                "otherterm"
+            ],
+            "selection": "${fields.presentationType}"
+        },
+        ".csc-presentation-summary-label": {
+            "messagekey": "presentation-summaryLabel"
+        },
+        ".csc-presentation-presentationRefNumber-label": {
+            "messagekey": "presentation-presentationRefNumberLabel"
+        },
+        ".csc-presentation-refName-label": {
+            "messagekey": "presentation-refNameLabel"
+        },
+        ".csc-presentation-updatedVenueName-label": {
+            "messagekey": "presentation-updatedVenueNameLabel"
+        },
+        ".csc-presentation-updatedAt-label": {
+            "messagekey": "presentation-updatedAtLabel"
+        },
+        ".csc-presentation-number-label": {
+            "messagekey": "presentation-numberLabel"
+        },
+        ".csc-presentation-circulatedVenues": "${fields.circulatedVenues}"
+    }
+}

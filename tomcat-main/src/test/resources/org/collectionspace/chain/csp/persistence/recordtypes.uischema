@@ -28,6 +28,7 @@
           "intake", 
           "loanin", 
           "loanout", 
+          "presentation", 
           "media", 
           "movement", 
           "objectexit"
