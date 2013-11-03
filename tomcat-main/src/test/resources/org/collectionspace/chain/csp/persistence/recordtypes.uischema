@@ -29,6 +29,7 @@
           "loanin", 
           "loanout", 
           "presentation", 
+          "conditioncheck", 
           "media", 
           "movement", 
           "objectexit"

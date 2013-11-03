@@ -31,6 +31,9 @@
                     <field id="presentation">
                         <selector>dc48e16e-3539-4c70-829d-3703b21d7715</selector>
                     </field>
+                    <field id="conditioncheck">
+                        <selector>585af100-1a35-11e2-892e-0800200c9a66</selector>
+                    </field>
                     <!-- 'location' below pertains to 'generic locations' stored -->
                     <!-- in Location/Movement/Inventory records, rather than to -->
                     <!-- Storage Location authority term records -->

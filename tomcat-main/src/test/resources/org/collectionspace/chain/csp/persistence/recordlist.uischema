@@ -11,6 +11,7 @@
       "loanin", 
       "loanout", 
       "presentation", 
+      "conditioncheck", 
       "acquisition", 
       "organization", 
       "ulan_oa", 

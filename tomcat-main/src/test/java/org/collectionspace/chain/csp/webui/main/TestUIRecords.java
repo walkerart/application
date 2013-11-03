@@ -224,11 +224,15 @@ public class TestUIRecords {
 		tester.testUIspec(jetty, "/acquisition/uischema", "acquisition.uischema");
 		tester.testUIspec(jetty, "/presentation-search/uischema", "presentation-search.uischema");
  	    tester.testUIspec(jetty, "/presentation/uischema", "presentation.uischema");
+ 	    tester.testUIspec(jetty, "/conditioncheck-search/uischema", "conditioncheck-search.uischema");
+	    tester.testUIspec(jetty, "/conditioncheck/uischema", "conditioncheck.uischema");
 		
 		tester.testUIspec(jetty, "/cataloging/uispec", "collection-object.uispec");
 		tester.testUIspec(jetty, "/intake/uispec", "intake.uispec");
 		tester.testUIspec(jetty, "/presentation-search/uispec", "presentation-search.uispec");
  	    tester.testUIspec(jetty, "/presentation/uispec", "presentation.uispec");
+ 	    tester.testUIspec(jetty, "/conditioncheck/uispec", "conditioncheck.uispec");
+	    tester.testUIspec(jetty, "/conditioncheck-search/uispec", "conditioncheck-search.uispec");
 		tester.testUIspec(jetty, "/loanout/uispec", "loanout.uispec");
 		tester.testUIspec(jetty, "/loanin/uispec", "loanin.uispec");
 		tester.testUIspec(jetty, "/acquisition/uispec", "acquisition.uispec");
@@ -275,6 +279,24 @@ public class TestUIRecords {
 		tester.testUIspec(jetty, "/presentation-search/uispec", "presentation-search.uispec");
 		log.info("Testing Search UISCHEMA");
 		tester.testUIspec(jetty, "/presentation-search/uischema", "presentation-search.uischema");
+	}
+
+
+ 	/**
+     * Test Conditioncheck Procedure CRUDL
+     */
+	@Test public void testProcedureConditioncheck() throws Exception {
+		log.info("Testing conditioncheck Procedure");
+		tester.testPostGetDelete(jetty, "/conditioncheck/", tester.conditioncheckCreate(), "conditionCheckNote");
+		tester.testLists(jetty, "/conditioncheck/", tester.conditioncheckCreate(), "items");
+		log.info("Testing UISCHEMA");
+		tester.testUIspec(jetty, "/conditioncheck/uischema", "conditioncheck.uischema");
+		log.info("Testing UISPEC");
+		tester.testUIspec(jetty, "/conditioncheck/uispec", "conditioncheck.uispec");
+		log.info("Testing Search UISPEC");
+		tester.testUIspec(jetty, "/conditioncheck-search/uispec", "conditioncheck-search.uispec");
+		log.info("Testing Search UISCHEMA");
+		tester.testUIspec(jetty, "/conditioncheck-search/uischema", "conditioncheck-search.uischema");
 	}
 
 
@@ -434,7 +456,7 @@ public class TestUIRecords {
 	 */
 	@Test public void testSearch() throws Exception {
 		log.info("Testing Search ordering");
-		String[] allRecords = {"acquisition","loanin","loanout","cataloging","objectexit","intake","group","movement","presentation"};
+		String[] allRecords = {"acquisition","loanin","loanout","cataloging","objectexit","intake","group","movement","presentation","conditioncheck"};
 		
 		for(String r : allRecords) {
 			log.info("Testing Search ordering: "+r);
