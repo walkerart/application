@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ns2:exhibitions_common xmlns:ns2="http://collectionspace.org/services/exhibition">
+    <shortIdentifier>exhibitiontest1</shortIdentifier>
+    <exhibitionRemarks>remark goes here</exhibitionRemarks>
+    <exhibitionPublication>yes</exhibitionPublication>
+    <exhibitionOrganizers>
+        <exhibitionOrganizer>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(HirshhornMuseumandSculptureGarden)'Hirshhorn Museum and Sculpture Garden'</exhibitionOrganizer>
+    </exhibitionOrganizers>
+    <exhibitionCurators>
+        <exhibitionCurator>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(KerryBrougher)'Kerry Brougher'</exhibitionCurator>
+    </exhibitionCurators>
+    <exhibitionLocationsInternal>
+        <exhibitionLocationInternal>urn:cspace:core.collectionspace.org:locationauthorities:name(location):item:name(Gallery4)'Gallery 4'</exhibitionLocationInternal>
+    </exhibitionLocationsInternal>
+    <exhibitionCatalogues>
+        <exhibitionCatalogue>catalogue goes here</exhibitionCatalogue>
+    </exhibitionCatalogues>
+    <exhibitionLinks>
+        <exhibitionLink>link goes here</exhibitionLink>
+    </exhibitionLinks>
+    <exhibitionVenueGroupList>
+        <exhibitionVenueGroup>
+            <venueName>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(HirshhornMuseumandSculptureGarden)'Hirshhorn Museum and Sculpture Garden'</venueName>
+            <venueStartDate>2010-02-10</venueStartDate>
+            <venueEndDate>2010-05-31</venueEndDate>
+            <venueAttendance>123456</venueAttendance>
+        </exhibitionVenueGroup>
+    </exhibitionVenueGroupList>
+    <exhibitionTermGroupList>
+        <exhibitionTermGroup>
+            <termDisplayName>Yves Klien: With the Void, Full Powers</termDisplayName>
+            <termName>Yves Klien: With the Void, Full Powers</termName>
+            <termType>preferred</termType>
+            <termLanguage>english</termLanguage>
+            <termPrefForLang>true</termPrefForLang>
+            <termQualifier>term qualifier</termQualifier>
+            <termSource>internal</termSource>
+            <termSourceID>12345</termSourceID>
+            <termSourceDetail>internal</termSourceDetail>
+            <termSourceNote>source note goes here</termSourceNote>
+            <termStatus>accepted</termStatus>
+        </exhibitionTermGroup>
+    </exhibitionTermGroupList>
+</ns2:exhibitions_common>

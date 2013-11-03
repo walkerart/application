@@ -64,6 +64,8 @@
 				merge="xmlmerge.properties" /> <!-- Perform an XML merge -->
 			<include src="base-authority-work-termList.xml"/>
 			<include src="base-authority-work.xml"/>
+			<include src="base-authority-exhibition-termList.xml"/>
+			<include src="base-authority-exhibition.xml"/>
 
 			<include src="base-vocabularies.xml" />
 

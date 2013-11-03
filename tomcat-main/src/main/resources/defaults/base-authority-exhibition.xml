@@ -1,0 +1,94 @@
+<record id="exhibition" type="authority" cms-type="default" generate-services-schema="true">
+    <terms-used>true</terms-used>
+    <web-url>exhibition</web-url>
+
+    <services-tenant-auth-singular>Exhibitionauthority</services-tenant-auth-singular>
+    <services-tenant-auth-plural>Exhibitionauthorities</services-tenant-auth-plural>    
+    <services-tenant-singular>Exhibition</services-tenant-singular>
+    <services-tenant-doctype>Exhibitionitem</services-tenant-doctype>
+
+    <services-instances-path>exhibitionauthorities_common:http://collectionspace.org/services/exhibition,abstract-common-list/list-item</services-instances-path>
+    <services-single-instance-path>exhibitionauthorities_common:http://collectionspace.org/services/exhibition,exhibitionauthorities_common</services-single-instance-path>
+    <services-list-path>http://collectionspace.org/services/exhibition,abstract-common-list/list-item</services-list-path>
+
+    <services-record-path>exhibitions_common:http://collectionspace.org/services/exhibition,exhibitions_common</services-record-path>
+    <services-record-path id="collectionspace_core">collectionspace_core:http://collectionspace.org/collectionspace_core/,collectionspace_core</services-record-path>
+
+    <services-url>exhibitionauthorities</services-url>
+    <authority-vocab-type>ExhibitionAuthority</authority-vocab-type>
+    <hassoftdelete>true</hassoftdelete>
+    <structures>
+        <structure id="search">
+            <view>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+        </structure>
+        <structure id="screen">
+            <view>
+                <label-section id="messagekeys" show="true"></label-section>
+                <hierarchy-section show="true">
+                    <options>
+                        <option id="narrowerContext">exhibition-exhibition</option>
+                        <option id="broaderContext">exhibition-exhibition</option>
+                    </options>
+                </hierarchy-section>
+            </view>
+        </structure>
+    </structures>
+                
+    <include src="domain-authority-exhibition.xml" strip-root="yes"/>
+                
+    <instances id="exhibition">
+        <instance id="exhibition-exhibition">
+            <web-url>exhibition</web-url>
+            <title-ref>exhibition</title-ref>
+            <title>Exhibition</title>
+        </instance>
+    </instances>
+    <section id="coreInformation">
+        <include src="core-fields.xml"  strip-root="yes" />
+    </section>
+    <section id="exhibitionAuthorityInformation">
+        <field id="preferredExhibition" ui-type="groupfield/preferredExhibition/selfrenderer" ui-func="cspace.preferred">
+            <selector>preferred-exhibitionAuthority</selector>
+        </field>
+        <repeat id="exhibitionOrganizers">
+            <field id="exhibitionOrganizer" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
+        </repeat>
+        <repeat id="exhibitionVenueGroupList/exhibitionVenueGroup">
+            <field id="venueName" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
+            <field id="venueStartDate" ui-search="range" ui-type="date" datatype="date"/>
+            <field id="venueEndDate" ui-search="range" ui-type="date" datatype="date"/>
+            <field id="venueAttendance" ui-search="range" ui-type="validated" datatype="integer"/>
+        </repeat>
+        <repeat id="exhibitionLocationsInternal">
+            <field id="exhibitionLocationInternal" ui-search="repeatable" autocomplete="location-location"/>
+        </repeat>
+        <repeat id="exhibitionCurators">
+            <field id="exhibitionCurator" ui-search="repeatable" autocomplete="person-person,organization-organization"/>
+        </repeat>
+        <field id="exhibitionPublication">
+            <options>
+                <option id="">Please select a value</option>
+                <option id="yes">Y</option>
+                <option id="no">N</option>
+            </options>
+        </field>
+        <repeat id="exhibitionCatalogues">
+            <field id="exhibitionCatalogue"/>
+        </repeat>
+        <repeat id="exhibitionLinks">
+            <field id="exhibitionLink"/>
+        </repeat>
+        <field id="exhibitionRemarks"/>
+    </section>
+    <!-- not used in UI except in autocompletes -->
+    <section id="otherInformation">
+        <field id="inAuthority" services-should-index="true"></field>
+        <field id="deprecatedRefName">
+            <services-tag>refName</services-tag>
+        </field>
+        <field id="shortIdentifier" mini="search,list,relate" attributes="GET" services-should-index="true"/>
+        <field id="csid" exists-in-services="false" mini="search,list,relate" attributes="GET"/>
+    </section>
+</record>

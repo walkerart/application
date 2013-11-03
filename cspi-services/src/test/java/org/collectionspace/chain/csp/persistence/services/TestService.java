@@ -87,6 +87,7 @@ public class TestService extends ServicesBaseClass {
                 testXMLJSON(spec, "place", "placeXMLJSON.xml", "placeJSON.json");
                 testXMLJSON(spec, "citation", "citation.xml", "citation.json");
         testXMLJSON(spec, "work", "work.xml", "work.json");
+        testXMLJSON(spec, "exhibition", "exhibition.xml", "exhibition.json");
 		testXMLJSON(spec, "collection-object", "objectsXMLJSON.xml",
 				"objectsJSON.json");
 
@@ -137,6 +138,7 @@ public class TestService extends ServicesBaseClass {
 		testJSONXML(spec, "citation", "citation.xml", "citation.json");
                 testJSONXML(spec, "place", "placeXMLJSON.xml", "placeJSON.json");
         testJSONXML(spec, "work", "work.xml", "work.json");
+        testJSONXML(spec, "exhibition", "exhibition.xml", "exhibition.json");
         // CSPACE-6135: In CollectionObject, the computedCurrentLocation field is services-readonly,
         // so the JSON->XML->JSON conversion produces JSON that does not match the initial JSON
         // (computedCurrentLocation is omitted from the XML, so it does not appear in the JSON

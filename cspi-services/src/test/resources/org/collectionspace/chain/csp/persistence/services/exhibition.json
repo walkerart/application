@@ -1,0 +1,64 @@
+{
+    "shortIdentifier": "exhibitiontest1",
+    "exhibitionRemarks": "remark goes here",
+    "exhibitionPublication": "yes",
+    "exhibitionOrganizers": [
+        {
+            "_primary": true,
+            "exhibitionOrganizer": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(HirshhornMuseumandSculptureGarden)'Hirshhorn Museum and Sculpture Garden'",
+            "de-urned-exhibitionOrganizer": "Hirshhorn Museum and Sculpture Garden"
+        }
+    ],
+    "exhibitionCurators": [
+        {
+            "_primary": true,
+            "exhibitionCurator": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(KerryBrougher)'Kerry Brougher'",
+            "de-urned-exhibitionCurator": "Kerry Brougher"
+        }
+    ],
+    "exhibitionLocationsInternal": [
+        {
+            "_primary": true,
+            "exhibitionLocationInternal": "urn:cspace:core.collectionspace.org:locationauthorities:name(location):item:name(Gallery4)'Gallery 4'",
+            "de-urned-exhibitionLocationInternal": "Gallery 4"
+        }
+    ],
+    "exhibitionCatalogues": [
+        {
+            "_primary": true,
+            "exhibitionCatalogue": "catalogue goes here"
+        }
+    ],
+    "exhibitionLinks": [
+        {
+            "_primary": true,
+            "exhibitionLink": "link goes here"
+        }
+    ],
+    "exhibitionVenueGroup": [
+        {
+            "_primary": true,
+            "venueName": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(HirshhornMuseumandSculptureGarden)'Hirshhorn Museum and Sculpture Garden'",
+            "de-urned-venueName": "Hirshhorn Museum and Sculpture Garden",
+            "venueStartDate": "2010-02-10",
+            "venueEndDate": "2010-05-31",
+            "venueAttendance": "123456"
+        }
+    ],
+    "exhibitionTermGroup": [
+        {
+            "_primary": true,
+            "termDisplayName": "Yves Klien: With the Void, Full Powers",
+            "termName": "Yves Klien: With the Void, Full Powers",
+            "termLanguage": "english",
+            "termPrefForLang": true,
+            "termType": "preferred",
+            "termQualifier": "term qualifier",
+            "termSource": "internal",
+            "termSourceID": "12345",
+            "termSourceDetail": "internal",
+            "termSourceNote": "source note goes here",
+            "termStatus": "accepted"
+        }
+    ]
+}

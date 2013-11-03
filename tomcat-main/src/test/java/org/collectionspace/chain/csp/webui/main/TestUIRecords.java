@@ -356,6 +356,8 @@ public class TestUIRecords {
         tester.testUIspec(jetty, "/place-search/uispec", "place-search.uispec");
         tester.testUIspec(jetty, "/work/uispec", "work.uispec");
         tester.testUIspec(jetty, "/work-search/uispec", "work-search.uispec");
+        tester.testUIspec(jetty, "/exhibition/uispec", "exhibition.uispec");
+        tester.testUIspec(jetty, "/exhibition-search/uispec", "exhibition-search.uispec");
 
 		log.info("Testing UISCHEMA");
 		tester.testUIspec(jetty, "/person/uischema", "person.uischema");
@@ -365,6 +367,8 @@ public class TestUIRecords {
         tester.testUIspec(jetty, "/place-search/uischema", "place-search.uischema");
         tester.testUIspec(jetty, "/work/uischema", "work.uischema");
         tester.testUIspec(jetty, "/work-search/uischema", "work-search.uischema");
+        tester.testUIspec(jetty, "/exhibition/uischema", "exhibition.uischema");
+        tester.testUIspec(jetty, "/exhibition-search/uischema", "exhibition-search.uischema");
 	}
 	
 

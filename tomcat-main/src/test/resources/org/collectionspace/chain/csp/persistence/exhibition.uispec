@@ -1,0 +1,671 @@
+{
+    "hierarchy": {
+        ".csc-hierarchy-narrowerContext-label": {
+            "messagekey": "hierarchy-narrowerContextLabel"
+        },
+        ".csc-hierarchy-equivalentContext-label": {
+            "messagekey": "hierarchy-equivalentContextLabel"
+        },
+        ".csc-hierarchy-equivalentInformation-label": {
+            "messagekey": "hierarchy-equivalentInformationLabel"
+        },
+        ".csc-hierarchy-broaderContextType-label": {
+            "messagekey": "hierarchy-broaderContextTypeLabel"
+        },
+        ".csc-hierarchy-narrowerContextType-label": {
+            "messagekey": "hierarchy-narrowerContextTypeLabel"
+        },
+        ".csc-hierarchy-broaderContextType": {
+            "optionnames": [
+                "Set",
+                "Work (derivative)",
+                "Work (separable part)",
+                "Work (non-separable part)",
+                "Work (recto)",
+                "Work (verso)"
+            ],
+            "optionlist": [
+                "set",
+                "derivative",
+                "separable-part",
+                "non-separable-part",
+                "recto",
+                "verso"
+            ],
+            "selection": "${fields.broaderContextType}"
+        },
+        ".csc-hierarchy-narrowerContexts": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-hierarchy-narrowerContext": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.autocomplete",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "queryUrl": "../../../tenant/core/vocabularies/exhibition/autocomplete/narrowerContext",
+                                                    "vocabUrl": "../../../tenant/core/vocabularies/exhibition/source-vocab/narrowerContext",
+                                                    "invokers": {
+                                                        "selectMatch": {
+                                                            "funcName": "cspace.autocomplete.selectMatchConfirm"
+                                                        }
+                                                    },
+                                                    "strings": {
+                                                        "narrowerChange": "Warning: %narrower currently has broader term %broader."
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "func": "cspace.externalURL",
+                                                "type": "fluid"
+                                            }
+                                        ],
+                                        "value": "${{row}.narrowerContext}"
+                                    },
+                                    ".csc-hierarchy-narrowerContextType": {
+                                        "optionnames": [
+                                            "Item in a set",
+                                            "Derivative",
+                                            "Separable part",
+                                            "Non-separable part",
+                                            "Recto",
+                                            "Verso"
+                                        ],
+                                        "optionlist": [
+                                            "set",
+                                            "derivative",
+                                            "separable-part",
+                                            "non-separable-part",
+                                            "recto",
+                                            "verso"
+                                        ],
+                                        "selection": "${{row}.narrowerContextType}"
+                                    }
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.narrowerContexts"
+                    }
+                }
+            ]
+        },
+        ".csc-hierarchy-broaderContext": {
+            "decorators": [
+                {
+                    "func": "cspace.autocomplete",
+                    "type": "fluid",
+                    "options": {
+                        "queryUrl": "../../../tenant/core/vocabularies/exhibition/autocomplete/broaderContext",
+                        "vocabUrl": "../../../tenant/core/vocabularies/exhibition/source-vocab/broaderContext"
+                    }
+                },
+                {
+                    "func": "cspace.externalURL",
+                    "type": "fluid"
+                }
+            ],
+            "value": "${fields.broaderContext}"
+        },
+        ".csc-hierarchy-broaderContext-label": {
+            "messagekey": "hierarchy-broaderContextLabel"
+        },
+        "expander": [
+            {
+                "trueTree": {
+                    ".csc-hierarchy-equivalentContext-label": {
+                        "messagekey": "hierarchy-equivalentContextLabel"
+                    }
+                },
+                "condition": {
+                    "funcName": "cspace.hierarchy.assertEquivalentContexts",
+                    "args": {
+                        "equivalentContexts": "${fields.equivalentContexts}"
+                    }
+                },
+                "type": "fluid.renderer.condition",
+                "falseTree": {
+                    ".csc-hierarchy-equivalentContext-label": {
+                        "decorators": {
+                            "classes": "hidden",
+                            "type": "addClass"
+                        }
+                    }
+                }
+            },
+            {
+                "repeatID": ".csc-hierarchy-equivalentContext:",
+                "tree": {
+                    "decorators": [
+                        {
+                            "classes": "cs-hierarchy-equivalentContext",
+                            "type": "addClass"
+                        },
+                        {
+                            "func": "cspace.externalURL",
+                            "type": "fluid"
+                        }
+                    ],
+                    "value": "${{row}.equivalentContext}"
+                },
+                "type": "fluid.renderer.repeat",
+                "pathAs": "row",
+                "controlledBy": "fields.equivalentContexts"
+            }
+        ],
+        ".csc-hierarchy-domaindata-label": {
+            "messagekey": "hierarchy-domaindataLabel"
+        },
+        ".csc-hierarchy-relatedTerms-label": {
+            "messagekey": "hierarchy-relatedTermsLabel"
+        },
+        ".csc-hierarchy-narrowerContexts-label": {
+            "messagekey": "hierarchy-narrowerContextsLabel"
+        },
+        ".csc-hierarchy-hierarchyInformation-label": {
+            "messagekey": "hierarchy-hierarchyInformationLabel"
+        },
+        ".csc-hierarchy-relatedTerm": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-hierarchy-relatedTerm": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.autocomplete",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "queryUrl": "../../../tenant/core/vocabularies/exhibition/autocomplete/relatedTerm",
+                                                    "vocabUrl": "../../../tenant/core/vocabularies/exhibition/source-vocab/relatedTerm"
+                                                }
+                                            }
+                                        ],
+                                        "value": "${{row}.relatedTerm}"
+                                    }
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.relatedTerms"
+                    }
+                }
+            ]
+        },
+        ".csc-hierarchy-equivalentContexts-label": {
+            "messagekey": "hierarchy-equivalentContextsLabel"
+        },
+        ".csc-hierarchy-relatedTerm-label": {
+            "messagekey": "hierarchy-relatedTermLabel"
+        }
+    },
+    "recordEditor": {
+        ".csc-exhibition-venueStartDate-label": {
+            "messagekey": "exhibition-venueStartDateLabel"
+        },
+        ".csc-exhibition-updatedBy": "${fields.updatedBy}",
+        ".csc-exhibition-deprecatedRefName-label": {
+            "messagekey": "exhibition-deprecatedRefNameLabel"
+        },
+        ".csc-exhibition-exhibitionCatalogue-label": {
+            "messagekey": "exhibition-exhibitionCatalogueLabel"
+        },
+        ".csc-exhibition-exhibitionCatalogues-label": {
+            "messagekey": "exhibition-exhibitionCataloguesLabel"
+        },
+        ".csc-exhibition-exhibitionOrganizers-label": {
+            "messagekey": "exhibition-exhibitionOrganizersLabel"
+        },
+        ".csc-exhibition-exhibitionCurator-label": {
+            "messagekey": "exhibition-exhibitionCuratorLabel"
+        },
+        ".csc-exhibition-coreInformation-label": {
+            "messagekey": "exhibition-coreInformationLabel"
+        },
+        ".csc-exhibition-venueEndDate-label": {
+            "messagekey": "exhibition-venueEndDateLabel"
+        },
+        ".csc-exhibition-exhibitionLocationsInternal-label": {
+            "messagekey": "exhibition-exhibitionLocationsInternalLabel"
+        },
+        ".csc-exhibition-exhibitionOrganizer-label": {
+            "messagekey": "exhibition-exhibitionOrganizerLabel"
+        },
+        ".csc-exhibition-inAuthority": "${fields.inAuthority}",
+        ".csc-exhibition-exhibitionVenueGroup-label": {
+            "messagekey": "exhibition-exhibitionVenueGroupLabel"
+        },
+        ".csc-exhibition-exhibitionVenueGroup": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-exhibition-venueAttendance": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.inputValidator",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "label": "exhibition-venueAttendanceLabel",
+                                                    "type": "integer"
+                                                }
+                                            }
+                                        ],
+                                        "value": "${{row}.venueAttendance}"
+                                    },
+                                    ".csc-exhibition-venueStartDate": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.datePicker",
+                                                "type": "fluid"
+                                            }
+                                        ],
+                                        "value": "${{row}.venueStartDate}"
+                                    },
+                                    ".csc-exhibition-venueName": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.autocomplete",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "queryUrl": "../../../tenant/core/vocabularies/exhibition/autocomplete/venueName",
+                                                    "vocabUrl": "../../../tenant/core/vocabularies/exhibition/source-vocab/venueName"
+                                                }
+                                            }
+                                        ],
+                                        "value": "${{row}.venueName}"
+                                    },
+                                    ".csc-exhibition-venueEndDate": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.datePicker",
+                                                "type": "fluid"
+                                            }
+                                        ],
+                                        "value": "${{row}.venueEndDate}"
+                                    }
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.exhibitionVenueGroup"
+                    }
+                }
+            ]
+        },
+        ".csc-exhibition-exhibitionLinks-label": {
+            "messagekey": "exhibition-exhibitionLinksLabel"
+        },
+        ".csc-exhibition-updatedAt": {
+            "decorators": [
+                {
+                    "func": "cspace.datePicker",
+                    "type": "fluid"
+                }
+            ],
+            "value": "${fields.updatedAt}"
+        },
+        ".csc-exhibition-uri": "${fields.uri}",
+        ".csc-exhibition-createdBy-label": {
+            "messagekey": "exhibition-createdByLabel"
+        },
+        ".csc-exhibition-exhibitionAuthorityInformation-label": {
+            "messagekey": "exhibition-exhibitionAuthorityInformationLabel"
+        },
+        ".csc-exhibition-exhibitionRemarks-label": {
+            "messagekey": "exhibition-exhibitionRemarksLabel"
+        },
+        ".csc-exhibition-exhibitionPublication-label": {
+            "messagekey": "exhibition-exhibitionPublicationLabel"
+        },
+        ".csc-exhibition-venueAttendance-label": {
+            "messagekey": "exhibition-venueAttendanceLabel"
+        },
+        ".csc-exhibition-domaindata-label": {
+            "messagekey": "exhibition-domaindataLabel"
+        },
+        ".csc-exhibition-inAuthority-label": {
+            "messagekey": "exhibition-inAuthorityLabel"
+        },
+        ".csc-exhibition-uri-label": {
+            "messagekey": "exhibition-uriLabel"
+        },
+        ".csc-exhibition-refName": "${fields.refName}",
+        ".csc-exhibition-updatedAt-label": {
+            "messagekey": "exhibition-updatedAtLabel"
+        },
+        ".csc-exhibition-exhibitionRemarks": "${fields.exhibitionRemarks}",
+        ".csc-exhibition-preferredExhibition-label": {
+            "messagekey": "exhibition-preferredExhibitionLabel"
+        },
+        ".csc-exhibition-exhibitionCatalogue": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-exhibition-exhibitionCatalogue": "${{row}.exhibitionCatalogue}"
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.exhibitionCatalogues"
+                    }
+                }
+            ]
+        },
+        ".csc-exhibition-createdAt-label": {
+            "messagekey": "exhibition-createdAtLabel"
+        },
+        ".csc-exhibition-createdAt": {
+            "decorators": [
+                {
+                    "func": "cspace.datePicker",
+                    "type": "fluid"
+                }
+            ],
+            "value": "${fields.createdAt}"
+        },
+        ".csc-exhibition-exhibitionLocationInternal": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-exhibition-exhibitionLocationInternal": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.autocomplete",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "queryUrl": "../../../tenant/core/vocabularies/exhibition/autocomplete/exhibitionLocationInternal",
+                                                    "vocabUrl": "../../../tenant/core/vocabularies/exhibition/source-vocab/exhibitionLocationInternal"
+                                                }
+                                            }
+                                        ],
+                                        "value": "${{row}.exhibitionLocationInternal}"
+                                    }
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.exhibitionLocationsInternal"
+                    }
+                }
+            ]
+        },
+        ".csc-exhibition-shortIdentifier": "${fields.shortIdentifier}",
+        ".csc-exhibition-venueName-label": {
+            "messagekey": "exhibition-venueNameLabel"
+        },
+        ".csc-exhibition-deprecatedRefName": "${fields.deprecatedRefName}",
+        ".csc-exhibition-shortIdentifier-label": {
+            "messagekey": "exhibition-shortIdentifierLabel"
+        },
+        ".csc-exhibition-exhibitionLocationInternal-label": {
+            "messagekey": "exhibition-exhibitionLocationInternalLabel"
+        },
+        ".csc-exhibition-exhibitionPublication": {
+            "optionnames": [
+                "Please select a value",
+                "Y",
+                "N"
+            ],
+            "optionlist": [
+                "",
+                "yes",
+                "no"
+            ],
+            "selection": "${fields.exhibitionPublication}"
+        },
+        ".csc-exhibition-refName-label": {
+            "messagekey": "exhibition-refNameLabel"
+        },
+        ".csc-preferred-exhibitionAuthority": {
+            "decorators": [
+                {
+                    "func": "cspace.preferred",
+                    "type": "fluid",
+                    "options": {
+                        "protoTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-preferredExhibition-termStatus-label": {
+                                        "messagekey": "preferredExhibition-termStatusLabel"
+                                    },
+                                    ".csc-preferredExhibition-termInformation-label": {
+                                        "messagekey": "preferredExhibition-termInformationLabel"
+                                    },
+                                    ".csc-preferredExhibition-termSource-label": {
+                                        "messagekey": "preferredExhibition-termSourceLabel"
+                                    },
+                                    ".csc-preferredExhibition-termPrefForLang-label": {
+                                        "messagekey": "preferredExhibition-termPrefForLangLabel"
+                                    },
+                                    ".csc-preferredExhibition-termSourceDetail-label": {
+                                        "messagekey": "preferredExhibition-termSourceDetailLabel"
+                                    },
+                                    ".csc-preferredExhibition-termSourceNote-label": {
+                                        "messagekey": "preferredExhibition-termSourceNoteLabel"
+                                    },
+                                    ".csc-preferredExhibition-exhibitionTermGroup": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.makeRepeatable",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "repeatTree": {
+                                                        "expander": {
+                                                            "tree": {
+                                                                ".csc-exhibitionAuthority-termSourceID": "${{row}.termSourceID}",
+                                                                ".csc-exhibitionAuthority-termName": "${{row}.termName}",
+                                                                ".csc-exhibitionAuthority-termSourceDetail": "${{row}.termSourceDetail}",
+                                                                ".csc-exhibitionAuthority-termPrefForLang": "${{row}.termPrefForLang}",
+                                                                ".csc-exhibitionAuthority-termQualifier": "${{row}.termQualifier}",
+                                                                ".csc-exhibitionAuthority-termType": {
+                                                                    "optionnames": [
+                                                                        "Please select a value",
+                                                                        "Preferred",
+                                                                        "Varient"
+                                                                    ],
+                                                                    "optionlist": [
+                                                                        "",
+                                                                        "preferred",
+                                                                        "varient"
+                                                                    ],
+                                                                    "selection": "${{row}.termType}"
+                                                                },
+                                                                ".csc-exhibitionAuthority-termSourceNote": "${{row}.termSourceNote}",
+                                                                ".csc-exhibitionAuthority-termSource": "${{row}.termSource}",
+                                                                ".csc-exhibitionAuthority-termDisplayName": "${{row}.termDisplayName}",
+                                                                ".csc-exhibitionAuthority-termLanguage": {
+                                                                    "decorators": [
+                                                                        {
+                                                                            "func": "cspace.termList",
+                                                                            "type": "fluid",
+                                                                            "options": {
+                                                                                "root": "{row}",
+                                                                                "elPath": "termLanguage",
+                                                                                "termListType": "termLanguage"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                ".csc-exhibitionAuthority-termStatus": {
+                                                                    "default": "provisional",
+                                                                    "optionnames": [
+                                                                        "Provisional",
+                                                                        "Under Review",
+                                                                        "Accepted",
+                                                                        "Rejected"
+                                                                    ],
+                                                                    "optionlist": [
+                                                                        "provisional",
+                                                                        "under review",
+                                                                        "accepted",
+                                                                        "rejected"
+                                                                    ],
+                                                                    "selection": "${{row}.termStatus}"
+                                                                }
+                                                            },
+                                                            "type": "fluid.noexpand"
+                                                        }
+                                                    },
+                                                    "elPath": "fields.exhibitionTermGroup"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    ".csc-preferredExhibition-termDisplayName-label": {
+                                        "messagekey": "preferredExhibition-termDisplayNameLabel"
+                                    },
+                                    ".csc-preferredExhibition-termName-label": {
+                                        "messagekey": "preferredExhibition-termNameLabel"
+                                    },
+                                    ".csc-preferredExhibition-termSourceID-label": {
+                                        "messagekey": "preferredExhibition-termSourceIDLabel"
+                                    },
+                                    ".csc-preferredExhibition-termLanguage-label": {
+                                        "messagekey": "preferredExhibition-termLanguageLabel"
+                                    },
+                                    ".csc-preferredExhibition-termType-label": {
+                                        "messagekey": "preferredExhibition-termTypeLabel"
+                                    },
+                                    ".csc-preferredExhibition-termQualifier-label": {
+                                        "messagekey": "preferredExhibition-termQualifierLabel"
+                                    },
+                                    ".csc-preferredExhibition-exhibitionTermGroup-label": {
+                                        "messagekey": "preferredExhibition-exhibitionTermGroupLabel"
+                                    }
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        ".csc-exhibition-createdBy": "${fields.createdBy}",
+        ".csc-exhibition-tenantId": "${fields.tenantId}",
+        ".csc-exhibition-exhibitionCurators-label": {
+            "messagekey": "exhibition-exhibitionCuratorsLabel"
+        },
+        ".csc-exhibition-exhibitionLink": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-exhibition-exhibitionLink": "${{row}.exhibitionLink}"
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.exhibitionLinks"
+                    }
+                }
+            ]
+        },
+        ".csc-exhibition-exhibitionOrganizer": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-exhibition-exhibitionOrganizer": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.autocomplete",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "queryUrl": "../../../tenant/core/vocabularies/exhibition/autocomplete/exhibitionOrganizer",
+                                                    "vocabUrl": "../../../tenant/core/vocabularies/exhibition/source-vocab/exhibitionOrganizer"
+                                                }
+                                            }
+                                        ],
+                                        "value": "${{row}.exhibitionOrganizer}"
+                                    }
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.exhibitionOrganizers"
+                    }
+                }
+            ]
+        },
+        ".csc-exhibition-otherInformation-label": {
+            "messagekey": "exhibition-otherInformationLabel"
+        },
+        ".csc-exhibition-updatedBy-label": {
+            "messagekey": "exhibition-updatedByLabel"
+        },
+        ".csc-exhibition-csid-label": {
+            "messagekey": "exhibition-csidLabel"
+        },
+        ".csc-exhibition-tenantId-label": {
+            "messagekey": "exhibition-tenantIdLabel"
+        },
+        ".csc-exhibition-csid": "${fields.csid}",
+        ".csc-exhibition-exhibitionCurator": {
+            "decorators": [
+                {
+                    "func": "cspace.makeRepeatable",
+                    "type": "fluid",
+                    "options": {
+                        "repeatTree": {
+                            "expander": {
+                                "tree": {
+                                    ".csc-exhibition-exhibitionCurator": {
+                                        "decorators": [
+                                            {
+                                                "func": "cspace.autocomplete",
+                                                "type": "fluid",
+                                                "options": {
+                                                    "queryUrl": "../../../tenant/core/vocabularies/exhibition/autocomplete/exhibitionCurator",
+                                                    "vocabUrl": "../../../tenant/core/vocabularies/exhibition/source-vocab/exhibitionCurator"
+                                                }
+                                            }
+                                        ],
+                                        "value": "${{row}.exhibitionCurator}"
+                                    }
+                                },
+                                "type": "fluid.noexpand"
+                            }
+                        },
+                        "elPath": "fields.exhibitionCurators"
+                    }
+                }
+            ]
+        },
+        ".csc-exhibition-exhibitionLink-label": {
+            "messagekey": "exhibition-exhibitionLinkLabel"
+        }
+    }
+}

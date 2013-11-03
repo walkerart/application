@@ -261,6 +261,24 @@
           }
         }, 
         "type": "object"
+      },
+      "exhibition": {
+        "properties": {
+          "exhibition": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
       }
     }, 
     "type": "object"

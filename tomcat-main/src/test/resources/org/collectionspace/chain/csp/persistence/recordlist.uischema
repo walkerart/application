@@ -28,6 +28,7 @@
       "group", 
       "work",
       "cona_work",
+      "exhibition", 
       "media"
     ], 
     "type": "array"
