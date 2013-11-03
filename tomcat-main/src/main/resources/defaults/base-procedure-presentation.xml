@@ -69,7 +69,7 @@
             </options>
         </field>
         <!-- change to exhibition authority (exhibition-exhibition) when available -->
-        <field id="exhibitionTitle" ui-search="repeatable" autocomplete="person-person,organization-organization" mini="search,list,relate"/>
+        <field id="exhibitionTitle" ui-search="repeatable" autocomplete="person-person,organization-organization" mini="summary,search,list,relate"/>
         <field id="overrideExhibitionVenues" datatype="boolean"/>
         <repeat id="updatedExhibitionVenueGroupList/updatedExhibitionVenueGroup">
             <field id="updatedVenueName" ui-search="repeatable" autocomplete="person-person,organization-organization" mini="search,list,relate"/>
