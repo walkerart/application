@@ -1,0 +1,27 @@
+<record id="presentation">
+    <services-record-path id="walkerart">presentations_walkerart:http://collectionspace.org/services/presentation/local/walkerart,presentations_walkerart</services-record-path>
+    <section id="coreInformation">
+        <field id="nametitle" exists-in-services="false">
+            <selector>presentation-nametitle</selector>
+        </field>
+    </section>
+    <section id="presentationInformation">
+        <!-- removing as summary field -->
+        <field id="presentationRefNumber"/>
+        <!-- removing organization vocabulary -->
+        <field id="presentationPresenter" ui-search="repeatable" autocomplete="person-person"/>
+        <!-- changing to exhibition authority (exhibition-exhibition); adding as number field -->
+        <field id="exhibitionTitle" ui-search="repeatable" autocomplete="exhibition-exhibition" mini="number,search,list,relate">
+            <title-selector>titleBar-exhibitionTitle</title-selector>
+        </field>
+        <repeat id="updatedExhibitionVenueGroupList/updatedExhibitionVenueGroup">
+            <!-- removing organization vocabulary; adding as summary field -->
+            <field id="updatedVenueName" ui-search="repeatable" autocomplete="person-person" mini="summary,search,list,relate"/>
+        </repeat>
+        <!-- removing location and organization vocabulary -->
+        <field id="presentationLocationInternal" ui-search="repeatable" autocomplete="location-location"/>
+        <!-- commenting out additional local schema field. may be used in a Phase 3 task -->
+        <!--field id="computedSummary" section="walkerart" mini="summary,search,list,relate" ui-type="computed" in-title="yes"
+            ui-func="walkerart.concatenateFields" ui-args="circulatedVenues,presentationNote" ui-readonly="true"/-->
+    </section>
+</record>

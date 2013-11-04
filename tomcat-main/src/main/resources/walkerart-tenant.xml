@@ -21,7 +21,7 @@
 			<include src="base-procedure-intake.xml,walkerart-procedure-intake.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-loanin.xml,walkerart-procedure-loanin.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-loanout.xml,walkerart-procedure-loanout.xml" merge="xmlmerge.properties"/>
-			<include src="base-procedure-presentation.xml"/>
+			<include src="base-procedure-presentation.xml,walkerart-procedure-presentation.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-conditioncheck.xml"/>
 			<include src="base-procedure-media.xml,walkerart-procedure-media.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-movement.xml,walkerart-procedure-movement.xml" merge="xmlmerge.properties"/>
@@ -49,7 +49,7 @@
 			<include src="base-authority-work-termList.xml,walkerart-authority-work-termList.xml" merge="xmlmerge.properties"/>
 			<include src="base-authority-work.xml"/>
 			<include src="base-authority-exhibition-termList.xml"/>
-			<include src="base-authority-exhibition.xml"/>
+			<include src="base-authority-exhibition.xml,walkerart-authority-exhibition.xml" merge="xmlmerge.properties"/>
 
 			<include src="base-vocabularies.xml"/>
 
