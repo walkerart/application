@@ -4,5 +4,9 @@
             <!-- removing org auth ref -->
             <selector>loanOut-borrower</selector>
         </field>
+        <field id="loanReturnDate" ui-search="range" ui-type="date" datatype="date" mini="list">
+        	<!-- adding mini="list" -->
+            <selector>loanOut-loanReturnDate</selector>
+        </field>
     </section>
 </record>
