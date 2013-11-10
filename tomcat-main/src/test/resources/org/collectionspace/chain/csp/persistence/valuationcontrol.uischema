@@ -1,0 +1,67 @@
+{
+    "valuationcontrol": {
+        "properties": {
+            "relations": {
+                "default": {},
+                "type": "object"
+            },
+            "termsUsed": {
+                "default": [],
+                "type": "array"
+            },
+            "csid": {
+                "type": "string"
+            },
+            "fields": {
+                "properties": {
+                    "tenantId": {
+                        "type": "string"
+                    },
+                    "valuationcontrolRefNumber": {
+                        "type": "string"
+                    },
+                    "valueCurrency": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "valueAmount": {
+                        "type": "float"
+                    },
+                    "valueDate": {
+                        "type": "date"
+                    },
+                    "uri": {
+                        "type": "string"
+                    },
+                    "updatedBy": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "date"
+                    },
+                    "createdBy": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "date"
+                    },
+                    "valueSource": {
+                        "type": "string"
+                    },
+                    "refName": {
+                        "type": "string"
+                    },
+                    "valueType": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "valueNote": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}

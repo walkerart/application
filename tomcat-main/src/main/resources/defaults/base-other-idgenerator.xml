@@ -62,6 +62,9 @@
                     <field id="uuid">
                         <selector>1fa40353-05b8-4ae6-82a6-44a18b4f3c12</selector>
                     </field>
+                    <field id="valuationcontrol">
+                        <selector>eafbc0cd-70fe-4802-8476-b931b1b0e381</selector>
+                    </field>
                     <!--
                         This is the type for id generators - if you add a new record type that has an id_generator you need to:
                         log into cspace db and look at table id_generators and find the csid for the record type

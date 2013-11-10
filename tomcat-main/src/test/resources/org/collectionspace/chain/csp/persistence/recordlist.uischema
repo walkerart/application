@@ -12,6 +12,7 @@
       "loanout", 
       "presentation", 
       "conditioncheck", 
+      "valuationcontrol", 
       "acquisition", 
       "organization", 
       "ulan_oa", 

@@ -30,6 +30,7 @@
           "loanout", 
           "presentation", 
           "conditioncheck", 
+          "valuationcontrol", 
           "media", 
           "movement", 
           "objectexit"
