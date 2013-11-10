@@ -4,8 +4,9 @@
             <!-- removing org auth ref -->
             <selector>intake-current-owner</selector>
         </field>
-        <field id="depositor" ui-search="repeatable" autocomplete="person-person">
+        <field id="depositor" ui-search="repeatable" autocomplete="person-person" mini="list">
             <!-- removing org auth ref -->
+            <!-- adding mini="list" -->
             <selector>intake-depositor</selector>
         </field>
     </section>
