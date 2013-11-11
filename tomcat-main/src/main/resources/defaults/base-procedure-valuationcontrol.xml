@@ -53,8 +53,8 @@
             </options>
         </field>
         <field id="valueCurrency" ui-search="repeatable" autocomplete="vocab-currency" ui-type="enum" />
-        <field id="valueAmount" ui-search="range" ui-type="validated" datatype="float"/>
-        <field id="valueDate" ui-search="range" ui-type="date" datatype="date"/>
+        <field id="valueAmount" ui-search="range" ui-type="validated" datatype="float" mini="list"/>
+        <field id="valueDate" ui-search="range" ui-type="date" datatype="date" mini="list"/>
         <field id="valueSource"/>
         <field id="valueType" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate">
             <options>
