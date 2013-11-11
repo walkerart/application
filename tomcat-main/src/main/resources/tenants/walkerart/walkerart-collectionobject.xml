@@ -186,6 +186,16 @@
             </field>
         </repeat>
         <section id="contentInformation">
+            <repeat id="contentLanguages">
+                <field id="contentLanguage" autocomplete="vocab-languages" ui-type="enum">
+                    <!-- changing URN for default language value -->
+                    <enum>
+                        <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                        <blank-value>Please select a value</blank-value>
+                    </enum>
+                    <selector>object-description-content-language</selector>
+                </field>
+            </repeat>
             <repeat id="contentConcepts">
                 <field id="contentConcept">
                     <!-- removing vocabs -->
