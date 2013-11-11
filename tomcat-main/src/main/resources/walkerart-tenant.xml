@@ -48,7 +48,7 @@
 			<include src="base-authority-concept-termList.xml"/>
 			<include src="base-authority-concept.xml"/>
 			<include src="base-authority-work-termList.xml,walkerart-authority-work-termList.xml" merge="xmlmerge.properties"/>
-			<include src="base-authority-work.xml"/>
+			<include src="base-authority-work.xml,walkerart-authority-work.xml" merge="xmlmerge.properties"/>
 			<include src="base-authority-exhibition-termList.xml"/>
 			<include src="base-authority-exhibition.xml,walkerart-authority-exhibition.xml" merge="xmlmerge.properties"/>
 

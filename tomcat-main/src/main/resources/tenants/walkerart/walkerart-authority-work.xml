@@ -1,0 +1,14 @@
+<record id="work">
+    <section id="workAuthorityInformation">
+        <repeat id="creatorGroupList/creatorGroup">
+            <field id="creator" ui-search="repeatable" autocomplete="person-person">
+                <!-- removed org auth ref -->
+            </field>
+        </repeat>
+        <repeat id="publisherGroupList/publisherGroup">
+            <field id="publisher" ui-search="repeatable" autocomplete="person-person">
+                <!-- removed org auth ref -->
+            </field>
+        </repeat>
+    </section>
+</record>
