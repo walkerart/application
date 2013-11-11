@@ -5,4 +5,11 @@
             <field id="owner" autocomplete="person-person" ui-search="repeatable"/>
         </repeat>
     </section>
+    <section id="geoReferenceInformation">
+        <repeat id="placeGeoRefGroupList/placeGeoRefGroup">
+            <field id="geoReferencedBy" autocomplete="person-person">
+                <!-- removed org auth ref -->
+            </field>
+        </repeat>
+    </section>
 </record>
