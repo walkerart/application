@@ -36,8 +36,8 @@
 			<include src="base-authority-organization.xml"/>
 			<include src="base-authority-person-termList.xml,walkerart-authority-person-termList.xml" merge="xmlmerge.properties"/>
 			<include src="base-authority-person.xml,walkerart-authority-person.xml" merge="xmlmerge.properties"/>
-			<include src="base-authority-citation-termList.xml"/>
-			<include src="base-authority-citation.xml"/>
+			<include src="base-authority-citation-termList.xml,walkerart-authority-citation-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-citation.xml,walkerart-authority-citation.xml" merge="xmlmerge.properties"/>
 			<include src="base-authority-place-termList.xml"/>
 			<include src="base-authority-place.xml,walkerart-authority-place.xml" merge="xmlmerge.properties"/>
 			

@@ -1,0 +1,13 @@
+<record id="preferredCI">
+    <section id="termInformation">
+        <repeat id="citationTermGroupList/citationTermGroup">
+            <field id="termLanguage" ui-search="repeatable" autocomplete="vocab-languages" ui-type="enum">
+                <selector>citationAuthority-termLanguage</selector>
+                <!-- changing URN for default language value -->
+                <enum>
+                    <default>urn:cspace:walkerart.org:vocabularies:name(languages):item:name(eng)'English'</default>
+                </enum>
+            </field>
+        </repeat>
+    </section>
+</record>

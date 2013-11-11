@@ -1,0 +1,14 @@
+<record id="citation">
+    <section id="citationNameAuthorityInformation">
+        <repeat id="citationPublicationInfoGroupList/citationPublicationInfoGroup" >          
+            <field id="publisher" ui-search="repeatable" autocomplete="person-person">
+                <!-- replacing org auth ref with person auth ref -->
+            </field>
+        </repeat> 
+        <repeat id="citationAgentInfoGroupList/citationAgentInfoGroup" >          
+            <field id="agent" ui-search="repeatable" autocomplete="person-person">
+                <!-- removed org and person-ulan_pa auth ref -->
+            </field>
+        </repeat>
+    </section>
+</record>
