@@ -68,6 +68,9 @@
             </enum>
             <selector>acquisition-original-object-purchase-price-currency</selector>
         </field>
+        <field id="acquisitionReason" autocomplete="person-person">
+            <selector>acquisition-acquisition-reason</selector>
+        </field>
         <repeat id="acquisitionFundingList/acquisitionFunding">
             <field id="acquisitionFundingCurrency" autocomplete="vocab-currency" ui-type="enum">
                 <!-- changing URN for default currency value -->
