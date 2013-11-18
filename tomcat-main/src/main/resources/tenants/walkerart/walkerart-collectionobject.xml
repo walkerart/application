@@ -1,5 +1,15 @@
 <record id="collection-object" is-extension="true" generate-services-schema="true">
     <services-record-path id="walkerart">collectionobjects_walkerart:http://collectionspace.org/services/collectionobject/local/walkerart,collectionobjects_walkerart</services-record-path>
+    <section id="coreInformation">
+        <field id="nametitle" mini="summary,search,list,relate" exists-in-services="false" service-field-alias="title">
+            <selector>object-identification-object-nametitle</selector>
+            <merges>
+                <merge id="objectProductionPerson" rank="1"/>
+                <merge id="title" rank="2"/>
+                <!--merge id="objectName" rank="2"/-->
+            </merges>
+        </field>
+    </section>
     <section id="identificationInformation">
         <repeat id="otherNumberList/otherNumber">
             <field id="numberType" in-tab="yes" autocomplete="vocab-numbertype" ui-type="enum">
