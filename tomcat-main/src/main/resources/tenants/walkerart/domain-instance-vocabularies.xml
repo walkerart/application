@@ -190,4 +190,42 @@
             <option id="corporatebody">Corporate Body</option>
         </options>
     </instance>
+    <instance id="vocab-personnationality">
+        <web-url>personnationality</web-url>
+        <title-ref>personnationality</title-ref>
+        <title>Person Nationality</title>
+        <options>
+            <option id="American">American</option>
+            <option id="Australian">Australian</option>
+            <option id="Belgian">Belgian</option>
+            <option id="British">British</option>
+            <option id="Canadian">Canadian</option>
+            <option id="Chinese">Chinese</option>
+            <option id="Dane">Dane</option>
+            <option id="English">English</option>
+            <option id="Finn">Finn</option>
+            <option id="French">French</option>
+            <option id="German">German</option>
+            <option id="Greek">Greek</option>
+            <option id="Hungarian">Hungarian</option>
+            <option id="Indian">Indian</option>
+            <option id="Irish">Irish</option>
+            <option id="Israeli">Israeli</option>
+            <option id="Italian">Italian</option>
+            <option id="Japanese">Japanese</option>
+            <option id="Korean">Korean</option>
+            <option id="Lebanese">Lebanese</option>
+            <option id="Mexican">Mexican</option>
+            <option id="Moroccan">Moroccan</option>
+            <option id="Nepalese">Nepalese</option>
+            <option id="Russian">Russian</option>
+            <option id="Scot">Scot</option>
+            <option id="Spaniard">Spaniard</option>
+            <option id="Swiss">Swiss</option>
+            <option id="Taiwanese">Taiwanese</option>
+            <option id="Vietnamese">Vietnamese</option>
+            <option id="Welsh">Welsh</option>
+            <option id="Zambian">Zambian</option>
+        </options>
+    </instance>
 </instances>

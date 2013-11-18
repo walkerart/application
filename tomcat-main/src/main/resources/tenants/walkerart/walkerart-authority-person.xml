@@ -16,15 +16,9 @@
         </repeat>
         <repeat id="nationalities">
             <selector>personAuthority-nationality</selector>
-            <field id="nationality" ui-search="repeatable">
+            <field id="nationality" ui-search="repeatable" autocomplete="vocab-personnationality" ui-type="enum">
                 <selector>personAuthority-nationality</selector>
-                <!-- temporary term list until a full list can be provided -->
-                <options>
-                    <option id="">Please select a value</option>
-                    <option id="term1">Term 1</option>
-                    <option id="term2">Term 2</option>
-                    <option id="term3">Term 3</option>
-                </options>
+                <!-- changing term list to be dynamic -->
             </field>
         </repeat>
             <repeat id="occupations">
