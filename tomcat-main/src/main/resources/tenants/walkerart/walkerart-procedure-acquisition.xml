@@ -1,6 +1,18 @@
 <record id="acquisition" is-extension="true">
     <services-record-path id="walkerart">acquisitions_walkerart:http://collectionspace.org/services/acquisition/local/walkerart,acquisitions_walkerart</services-record-path>
     <section id="acquisitionInformation">
+        <field id="acquisitionReferenceNumber" ui-search="repeatable" in-title="yes" chooser="yes" mini="number,search,list,relate" seperate_ui_container="true">
+            <!-- removing as required field by removing 'numberPatternChooser' string from selector value -->
+            <selector>acquisition-reference-number</selector>
+            <title-selector>titleBar-acquisition-reference-number</title-selector>
+            <container-selector>acquisition-reference-number-patternChooserContainer</container-selector>
+            <options>
+                <!-- updating sample values -->
+                <option id="accession" sample="2014.1">Accession</option>
+                <option id="archive" sample="AR2014.42">Archives</option>
+                <option id="library" sample="LIB2014.1">Library</option>
+            </options>
+        </field>
         <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true">
             <selector>acquisition-acquisition-method</selector>
             <options>
