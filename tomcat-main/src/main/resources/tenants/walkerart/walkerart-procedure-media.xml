@@ -19,6 +19,15 @@
         <field id="publisher" ui-search="repeatable" autocomplete="person-person">
             <!-- removing org auth ref -->
         </field>
+        <field id="identificationNumber" ui-search="repeatable" chooser="yes" in-title="yes" mini="number,search,list,relate" seperate_ui_container="true">
+            <!-- adding modified selector and container-selector blocks as to remove this field as required -->
+            <selector>media-identificationNumber-noReq</selector>
+            <container-selector>media-identificationNumber-container</container-selector>
+            <options>
+                <!-- updating sample value -->
+                <option id="media" sample="MR2014.1.1">Media Resource</option>
+            </options>
+        </field>
         <field id="rightsHolder" ui-search="repeatable" autocomplete="person-person">
             <!-- removing org auth ref -->
         </field>
