@@ -1,0 +1,21 @@
+<record id="location" is-extension="true">
+	<services-record-path id="walkerart">locations_walkerart:http://collectionspace.org/services/location/local/walkerart,locations_walkerart</services-record-path>
+
+	<instances id="location">
+        <instance id="location-location">
+            <web-url>location</web-url>
+            <title-ref>location</title-ref>
+            <title>Local Storage Locations</title>
+        </instance>
+        <!-- remove location-offsite_sla vocabulary -->
+        <!--instance id="location-offsite_sla">
+            <web-url>offsite_sla</web-url>
+            <title-ref>offsite_sla</title-ref>
+            <title>Offsite Storage Locations</title>
+        </instance-->
+    </instances>
+
+    <section id="locationTermInformation">
+    	<field id="onView" datatype="boolean" section="walkerart"/>
+    </section>
+</record>

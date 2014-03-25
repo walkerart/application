@@ -1,15 +1,28 @@
 <record id="preferredSLA">
     <section id="termInformation">
         <repeat id="locTermGroupList/locTermGroup">
-            <field id="termType">
+            <field id="termType" autocomplete="vocab-locationtermtype" ui-type="enum">
+                <!-- adding vocab-locationtermtype vocabulary; hiding updated options list -->
+                <!-- to use static term lists: uncomment options list; remove autocomplete/ui-type attributes; 
+                        and add seperate_ui_container="true" to field tag -->
                 <selector>locationAuthority-termType</selector>
                 <!-- changing term list options -->
-                <options>
+                <!--options>
                     <option id="">Please select a value</option>
-                    <option id="building">Building</option>
-                    <option id="room">Room</option>
-                    <option id="shelf">Shelf</option>
-                </options>
+                    <option id="Art Storage">Art Storage</option>
+                    <option id="Frameshop">Frameshop</option>
+                    <option id="Gallery">Gallery</option>
+                    <option id="Isolation Room">Isolation Room</option>
+                    <option id="Lobby">Lobby</option>
+                    <option id="New Receiving">New Receiving</option>
+                    <option id="Office">Office</option>
+                    <option id="Other">Other</option>
+                    <option id="Painting Storage">Painting Storage</option>
+                    <option id="Print Storage">Print Storage</option>
+                    <option id="Print Study">Print Study</option>
+                    <option id="Receiving">Receiving</option>
+                    <option id="Upper Print Storage">Upper Print Storage</option>
+                </options-->
             </field>
             <field id="termLanguage" ui-search="repeatable" autocomplete="vocab-languages" ui-type="enum">
                 <selector>locationAuthority-termLanguage</selector>

@@ -228,4 +228,24 @@
             <option id="Zambian">Zambian</option>
         </options>
     </instance>
+    <instance id="vocab-locationtermtype">
+        <web-url>locationtermtype</web-url>
+        <title-ref>locationtermtype</title-ref>
+        <title>Location Term Type</title>
+        <options>
+            <option id="ArtStorage">Art Storage</option>
+            <option id="Frameshop">Frameshop</option>
+            <option id="Gallery">Gallery</option>
+            <option id="IsolationRoom">Isolation Room</option>
+            <option id="Lobby">Lobby</option>
+            <option id="NewReceiving">New Receiving</option>
+            <option id="Office">Office</option>
+            <option id="Other">Other</option>
+            <option id="PaintingStorage">Painting Storage</option>
+            <option id="PrintStorage">Print Storage</option>
+            <option id="PrintStudy">Print Study</option>
+            <option id="Receiving">Receiving</option>
+            <option id="UpperPrintStorage">Upper Print Storage</option>
+        </options>
+    </instance>
 </instances>
