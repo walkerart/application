@@ -83,6 +83,9 @@
 	                        <field id="valueDate" ui-type="date" datatype="date"></field>
 	                        <field id="valueQualifier"></field>
 	                        <field id="dimensionNote"></field>
+	                        <!-- adding new fields to core common schema -->
+	                        <field id="valueConvertedInch"></field>
+	                        <field id="valueConvertedCM"></field>
 	                    </repeat>
                     </repeat>
                 </section>
