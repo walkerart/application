@@ -1,6 +1,15 @@
 <record id="movement" is-extension="true">
     <services-record-path id="walkerart">movements_walkerart:http://collectionspace.org/services/movement/local/walkerart,movements_walkerart</services-record-path>
+    <section id="locationMovementInformation">
+        <field id="currentLocation" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate" autocomplete="location-location">
+            <!-- removing location-offsite_sla,organization-organization vocabularies -->
+            <title-selector>titleBar-currentLocation</title-selector>
+        </field>
+    </section>
     <section id="movementControlInformation">
+        <field id="movementContact" ui-search="repeatable">
+            <!-- changing to a free-text field -->
+        </field>
         <field id="onViewWAC" datatype="boolean" section="walkerart">
             <selector>movement-onViewWAC</selector>
         </field>
