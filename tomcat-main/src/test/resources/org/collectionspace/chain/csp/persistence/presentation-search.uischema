@@ -16,33 +16,6 @@
                 },
                 "type": "array"
             },
-            "updatedVenueAttendanceEnd": {
-                "type": "string"
-            },
-            "updatedExhibitionVenueGroup": {
-                "items": {
-                    "properties": {
-                        "_primary": {
-                            "default": true,
-                            "type": "boolean"
-                        },
-                        "updatedVenueName": {
-                            "type": "string"
-                        },
-                        "updatedVenueEndDate": {
-                            "type": "date"
-                        },
-                        "updatedVenueAttendance": {
-                            "type": "integer"
-                        },
-                        "updatedVenueStartDate": {
-                            "type": "date"
-                        }
-                    },
-                    "type": "object"
-                },
-                "type": "array"
-            },
             "presentationLocationInternals": {
                 "items": {
                     "properties": {
@@ -57,9 +30,6 @@
                     "type": "object"
                 },
                 "type": "array"
-            },
-            "updatedVenueEndDateStart": {
-                "type": "date"
             },
             "updatedAtEnd": {
                 "type": "date"
@@ -83,12 +53,6 @@
             "updatedAtStart": {
                 "type": "date"
             },
-            "updatedVenueStartDateStart": {
-                "type": "date"
-            },
-            "updatedVenueAttendanceStart": {
-                "type": "string"
-            },
             "presentationRefNumbers": {
                 "items": {
                     "properties": {
@@ -103,9 +67,6 @@
                     "type": "object"
                 },
                 "type": "array"
-            },
-            "updatedVenueStartDateEnd": {
-                "type": "date"
             },
             "presentationPresenters": {
                 "items": {
@@ -137,9 +98,6 @@
                 },
                 "type": "array"
             },
-            "updatedVenueEndDateEnd": {
-                "type": "date"
-            }
         },
         "type": "object"
     }

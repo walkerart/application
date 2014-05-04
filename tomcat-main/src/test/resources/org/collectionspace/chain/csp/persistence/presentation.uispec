@@ -1,6 +1,5 @@
 {
     "recordEditor": {
-        ".csc-presentation-overrideExhibitionVenues": "${fields.overrideExhibitionVenues}",
         ".csc-presentation-coreInformation-label": {
             "messagekey": "presentation-coreInformationLabel"
         },
@@ -26,16 +25,10 @@
         ".csc-presentation-exhibitionTitle-label": {
             "messagekey": "presentation-exhibitionTitleLabel"
         },
-        ".csc-presentation-updatedExhibitionVenueGroup-label": {
-            "messagekey": "presentation-updatedExhibitionVenueGroupLabel"
-        },
         ".csc-presentation-domaindata-label": {
             "messagekey": "presentation-domaindataLabel"
         },
         ".csc-presentation-uri": "${fields.uri}",
-        ".csc-presentation-updatedVenueAttendance-label": {
-            "messagekey": "presentation-updatedVenueAttendanceLabel"
-        },
         ".csc-presentation-createdBy-label": {
             "messagekey": "presentation-createdByLabel"
         },
@@ -68,76 +61,11 @@
             ],
             "value": "${fields.exhibitionTitle}"
         },
-        ".csc-presentation-updatedVenueStartDate-label": {
-            "messagekey": "presentation-updatedVenueStartDateLabel"
-        },
         ".csc-presentation-presentationNote-label": {
             "messagekey": "presentation-presentationNoteLabel"
         },
         ".csc-presentation-presentationType-label": {
             "messagekey": "presentation-presentationTypeLabel"
-        },
-        ".csc-presentation-updatedExhibitionVenueGroup": {
-            "decorators": [
-                {
-                    "func": "cspace.makeRepeatable",
-                    "type": "fluid",
-                    "options": {
-                        "repeatTree": {
-                            "expander": {
-                                "tree": {
-                                    ".csc-presentation-updatedVenueEndDate": {
-                                        "decorators": [
-                                            {
-                                                "func": "cspace.datePicker",
-                                                "type": "fluid"
-                                            }
-                                        ],
-                                        "value": "${{row}.updatedVenueEndDate}"
-                                    },
-                                    ".csc-presentation-updatedVenueAttendance": {
-                                        "decorators": [
-                                            {
-                                                "func": "cspace.inputValidator",
-                                                "type": "fluid",
-                                                "options": {
-                                                    "label": "presentation-updatedVenueAttendanceLabel",
-                                                    "type": "integer"
-                                                }
-                                            }
-                                        ],
-                                        "value": "${{row}.updatedVenueAttendance}"
-                                    },
-                                    ".csc-presentation-updatedVenueStartDate": {
-                                        "decorators": [
-                                            {
-                                                "func": "cspace.datePicker",
-                                                "type": "fluid"
-                                            }
-                                        ],
-                                        "value": "${{row}.updatedVenueStartDate}"
-                                    },
-                                    ".csc-presentation-updatedVenueName": {
-                                        "decorators": [
-                                            {
-                                                "func": "cspace.autocomplete",
-                                                "type": "fluid",
-                                                "options": {
-                                                    "queryUrl": "../../../tenant/core/presentation/autocomplete/updatedVenueName",
-                                                    "vocabUrl": "../../../tenant/core/presentation/source-vocab/updatedVenueName"
-                                                }
-                                            }
-                                        ],
-                                        "value": "${{row}.updatedVenueName}"
-                                    }
-                                },
-                                "type": "fluid.noexpand"
-                            }
-                        },
-                        "elPath": "fields.updatedExhibitionVenueGroup"
-                    }
-                }
-            ]
         },
         ".csc-presentation-updatedBy-label": {
             "messagekey": "presentation-updatedByLabel"
@@ -158,12 +86,6 @@
                 }
             ],
             "value": "${fields.presentationPresenter}"
-        },
-        ".csc-presentation-overrideExhibitionVenues-label": {
-            "messagekey": "presentation-overrideExhibitionVenuesLabel"
-        },
-        ".csc-presentation-updatedVenueEndDate-label": {
-            "messagekey": "presentation-updatedVenueEndDateLabel"
         },
         ".csc-presentation-presentationRefNumber-patternChooserContainer": {
             "decorators": [
@@ -233,9 +155,6 @@
         },
         ".csc-presentation-refName-label": {
             "messagekey": "presentation-refNameLabel"
-        },
-        ".csc-presentation-updatedVenueName-label": {
-            "messagekey": "presentation-updatedVenueNameLabel"
         },
         ".csc-presentation-updatedAt-label": {
             "messagekey": "presentation-updatedAtLabel"

@@ -5,15 +5,6 @@
     <presentationPresenter>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(WalkerArtCenter)'Walker Art Center'</presentationPresenter>
     <presentationType>premiere</presentationType>
     <exhibitionTitle>urn:cspace:core.collectionspace.org:exhibitionauthorities:name(exhibition):item:name(YvesKlienWiththeVoidFullPowers)'Yves Klien: With the Void, Full Powers'</exhibitionTitle>
-    <overrideExhibitionVenues>true</overrideExhibitionVenues>
-    <updatedExhibitionVenueGroupList>
-        <updatedExhibitionVenueGroup>
-            <updatedVenueName>urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(WalkerArtCenter)'Walker Art Center'</updatedVenueName>
-            <updatedVenueStartDate>2010-10-23</updatedVenueStartDate>
-            <updatedVenueEndDate>2011-02-13</updatedVenueEndDate>
-            <updatedVenueAttendance>234567</updatedVenueAttendance>
-        </updatedExhibitionVenueGroup>
-    </updatedExhibitionVenueGroupList>
     <presentationLocationInternal>urn:cspace:core.collectionspace.org:locationauthorities:name(location):item:name(Gallery4)'Gallery 4'</presentationLocationInternal>
     <circulatedVenues>circulated venues go here</circulatedVenues>
     <presentationNote>presentation note goes here</presentationNote>

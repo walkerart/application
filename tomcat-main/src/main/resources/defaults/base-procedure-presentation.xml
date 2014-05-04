@@ -70,13 +70,6 @@
         </field>
         <!-- change to exhibition authority (exhibition-exhibition) when available -->
         <field id="exhibitionTitle" ui-search="repeatable" autocomplete="person-person,organization-organization" mini="summary,search,list,relate"/>
-        <field id="overrideExhibitionVenues" datatype="boolean"/>
-        <repeat id="updatedExhibitionVenueGroupList/updatedExhibitionVenueGroup">
-            <field id="updatedVenueName" ui-search="repeatable" autocomplete="person-person,organization-organization" mini="search,list,relate"/>
-            <field id="updatedVenueStartDate" ui-search="range" ui-type="date" datatype="date"/>
-            <field id="updatedVenueEndDate" ui-search="range" ui-type="date" datatype="date"/>
-            <field id="updatedVenueAttendance" ui-search="range" ui-type="validated" datatype="integer"/>
-        </repeat>
         <field id="presentationLocationInternal" ui-search="repeatable" autocomplete="location-location,location-offsite_sla,organization-organization"/>
         <field id="circulatedVenues"/>
         <field id="presentationNote"/>

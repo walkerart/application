@@ -20,37 +20,9 @@
                     "tenantId": {
                         "type": "string"
                     },
-                    "overrideExhibitionVenues": {
-                        "default": false,
-                        "type": "boolean"
-                    },
                     "presentationType": {
                         "default": "",
                         "type": "string"
-                    },
-                    "updatedExhibitionVenueGroup": {
-                        "items": {
-                            "properties": {
-                                "_primary": {
-                                    "default": true,
-                                    "type": "boolean"
-                                },
-                                "updatedVenueName": {
-                                    "type": "string"
-                                },
-                                "updatedVenueEndDate": {
-                                    "type": "date"
-                                },
-                                "updatedVenueAttendance": {
-                                    "type": "integer"
-                                },
-                                "updatedVenueStartDate": {
-                                    "type": "date"
-                                }
-                            },
-                            "type": "object"
-                        },
-                        "type": "array"
                     },
                     "exhibitionTitle": {
                         "type": "string"
