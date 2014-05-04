@@ -16,6 +16,6 @@
     </instances>
 
     <section id="locationTermInformation">
-    	<field id="onView" datatype="boolean" section="walkerart"/>
+    	<field id="onView" datatype="boolean" mini="list" section="walkerart"/>
     </section>
 </record>

@@ -13,15 +13,7 @@
         <field id="onViewWAC" datatype="boolean" section="walkerart">
             <selector>movement-onViewWAC</selector>
         </field>
-        <field id="onViewLocationWAC" section="walkerart">
-            <selector>movement-onViewLocationWAC</selector>
-            <!-- temporary term list until a full list can be provided -->
-            <options>
-                <option id="">Please select a value</option>
-                <option id="term1">Term 1</option>
-                <option id="term2">Term 2</option>
-                <option id="term3">Term 3</option>
-            </options>
+        <field id="computedOnView" services-readonly="true" authref-in-services="true">
         </field>
     </section>
 </record>
