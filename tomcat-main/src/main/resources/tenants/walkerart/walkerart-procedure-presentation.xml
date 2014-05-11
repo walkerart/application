@@ -1,4 +1,4 @@
-<record id="presentation">
+<record id="presentation" is-extension="true">
     <services-record-path id="walkerart">presentations_walkerart:http://collectionspace.org/services/presentation/local/walkerart,presentations_walkerart</services-record-path>
     <section id="coreInformation">
         <field id="nametitle" exists-in-services="false">
@@ -14,14 +14,24 @@
         <field id="exhibitionTitle" ui-search="repeatable" autocomplete="exhibition-exhibition" mini="number,search,list,relate">
             <title-selector>titleBar-exhibitionTitle</title-selector>
         </field>
-        <repeat id="updatedExhibitionVenueGroupList/updatedExhibitionVenueGroup">
-            <!-- removing organization vocabulary; adding as summary field -->
-            <field id="updatedVenueName" ui-search="repeatable" autocomplete="person-person" mini="summary,search,list,relate"/>
-        </repeat>
         <!-- removing location and organization vocabulary -->
         <field id="presentationLocationInternal" ui-search="repeatable" autocomplete="location-location"/>
         <!-- commenting out additional local schema field. may be used in a Phase 3 task -->
         <!--field id="computedSummary" section="walkerart" mini="summary,search,list,relate" ui-type="computed" in-title="yes"
             ui-func="walkerart.concatenateFields" ui-args="circulatedVenues,presentationNote" ui-readonly="true"/-->
+
+        <!-- calculated venue fields -->
+        <field id="overrideExhibitionVenue"   datatype="boolean" section="walkerart"/>
+        <field id="calculatedVenueName"       services-readonly="true" authref-in-services="false" section="walkerart"/>
+        <field id="calculatedVenueStartDate"  services-readonly="true" authref-in-services="false" datatype="date" section="walkerart"/>
+        <field id="calculatedVenueEndDate"    services-readonly="true" authref-in-services="false" datatype="date" section="walkerart"/>
+        <field id="calculatedVenueAttendance" services-readonly="true" authref-in-services="false" section="walkerart"/>
+
+        <!-- overridden venue fields -->
+        <field id="overriddenVenueName" ui-search="repeatable" autocomplete="person-person" section="walkerart"/>
+        <field id="overriddenVenueStartDate" ui-search="range" ui-type="date" datatype="date" section="walkerart"/>
+        <field id="overriddenVenueEndDate" ui-search="range" ui-type="date" datatype="date" section="walkerart"/>
+        <field id="overriddenVenueAttendance" ui-search="range" ui-type="validated" datatype="integer" section="walkerart"/>
+
     </section>
 </record>
