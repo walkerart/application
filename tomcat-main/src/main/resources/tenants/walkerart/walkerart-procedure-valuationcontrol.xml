@@ -1,0 +1,14 @@
+<record id="valuationcontrol" is-extension="true">
+    <services-record-path id="walkerart">valuationcontrols_walkerart:http://collectionspace.org/services/valuationcontrol/local/walkerart,valuationcontrols_walkerart</services-record-path>
+    <section id="objectValuationInformation">
+        <field id="valueCurrency" ui-search="repeatable" autocomplete="vocab-currency" ui-type="enum">
+            <!-- changing URN for default currency value -->
+            <enum>
+                <default>urn:cspace:walkerart.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+            </enum>
+        </field>
+        <!-- adding extension field that uses datatype=currency, which is identical to datatype=float
+                except that it requires a varchar column type rather than double precision -->
+        <field id="valueAmountCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
+    </section>
+</record>

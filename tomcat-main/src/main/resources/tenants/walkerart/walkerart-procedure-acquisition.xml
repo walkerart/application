@@ -103,9 +103,18 @@
                 </enum>
             </field>
             <field id="acquisitionFundingValueWAC" ui-type="validated" datatype="float" section="walkerart"></field>
+            <field id="acquisitionFundingValueWACCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
             <field id="acquisitionFundingCostWAC" ui-type="validated" datatype="float" section="walkerart"></field>
+            <field id="acquisitionFundingCostWACCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
             <field id="acquisitionFundingSourceWAC" ui-search="repeatable" autocomplete="person-person" section="walkerart"></field>
             <field id="acquisitionFundingSourceProvisosWAC" section="walkerart"></field>
         </repeat>
+        <!-- adding extension fields that use datatype=currency, which is identical to datatype=float
+                except that it requires a varchar column type rather than double precision -->
+        <field id="groupPurchasePriceValueCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
+        <field id="objectOfferPriceValueCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
+        <field id="objectPurchasePriceValueCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
+        <field id="objectPurchaseOfferPriceValueCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
+        <field id="originalObjectPurchasePriceValueCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
     </section>
 </record>

@@ -20,6 +20,7 @@ public interface FieldSet {
 	public static final String DATATYPE_FLOAT = "float";
 	public static final String DATATYPE_DECIMAL = "decimal";
 	public static final String DATATYPE_BOOLEAN = "boolean";
+	public static final String DATATYPE_CURRENCY = "currency";
 	
 	public String getID();
 	public String[] getIDPath();

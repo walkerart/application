@@ -118,7 +118,7 @@ public abstract class FieldSetImpl implements FieldSet {
 					nsPrefix = XS;
 					if (datatype.equalsIgnoreCase(DATATYPE_FLOAT)) {
 						datatype = DATATYPE_DECIMAL;
-					} else if (datatype.equalsIgnoreCase(DATATYPE_LARGETEXT)) {
+					} else if (datatype.equalsIgnoreCase(DATATYPE_LARGETEXT) || datatype.equalsIgnoreCase(DATATYPE_CURRENCY)) {
 						datatype = DATATYPE_STRING;
 					}
 					result = datatype;

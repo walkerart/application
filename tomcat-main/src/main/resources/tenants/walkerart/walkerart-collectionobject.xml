@@ -274,6 +274,9 @@
             </enum>
             <selector>object-history-association-denomination</selector>
         </field>
+        <!-- adding extension field that use datatype=currency, which is identical to datatype=float
+                except that it requires a varchar column type rather than double precision -->
+        <field id="ownershipExchangePriceValueCurrency" ui-type="validated" datatype="currency" section="walkerart"></field>
         <section id="associationInformation">
             <repeat id="assocOrganizationGroupList/assocOrganizationGroup">
                 <!-- replacing org-org auth ref with person-person -->
